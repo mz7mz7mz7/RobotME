@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    
+    <event level="DEBUG" timestamp="1166970712775" message="MIDlet set to: org.example.midlet.TestTextBoxMIDlet@d590dbc"
+        exception="" replayable="false" assertion="false">
+        <log-event/>
+    </event>
+    
+    <event level="DEBUG" timestamp="1166970712838"
+        message="Command added to displayable: javax.microedition.lcdui.Command@1a4cfaaa" exception="" replayable="false"
+        assertion="false">
+        <log-event/>
+    </event>
+    
+    <event level="DEBUG" timestamp="1166970712853"
+        message="Command added to displayable: javax.microedition.lcdui.Command@1cb37664" exception="" replayable="false"
+        assertion="false">
+        <log-event/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970712900"
+        message="Displayable set to: javax.microedition.lcdui.TextBox@f828ed68" exception="" replayable="false"
+        assertion="true">
+        <displayable-changed title="LabelXXXXX" type="TEXTBOX"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970715088" message="" exception="" replayable="true" assertion="false">
+        <textbox-modification string="Text123"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970715103" message="Command invoked: COMMAND" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="COMMAND" displayableTitle="Label"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970720338" message="" exception="" replayable="true" assertion="false">
+        <textbox-modification string="Text123456"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970720353" message="Command invoked: COMMAND" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="COMMAND" displayableTitle="Label"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970722244" message="" exception="" replayable="true" assertion="false">
+        <textbox-modification string="Text123456789"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970722260" message="Command invoked: COMMAND" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="COMMAND" displayableTitle="Label"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970725260" message="" exception="" replayable="true" assertion="false">
+        <textbox-modification string="Text123456789abc"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970725275" message="Command invoked: COMMAND" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="COMMAND" displayableTitle="Label"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970727010" message="" exception="" replayable="true" assertion="false">
+        <textbox-modification string="Text123456789abcsdf"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970727041" message="Command invoked: COMMAND" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="COMMAND" displayableTitle="Label"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970730510" message="" exception="" replayable="true" assertion="false">
+        <textbox-modification string="marcin"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970730525" message="Command invoked: COMMAND" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="COMMAND" displayableTitle="Label"/>
+    </event>
+    
+    <event timestamp="1166970730526" message="" exception="" replayable="false" assertion="false">
+        <failure failureMessage="Faiure msg"
+            assertionClassName="org.robotme.core.log.assertion.AssertionDisplayableChangedLogEntry"/>
+    </event>
+    
+    <event level="INTERNAL" timestamp="1166970731525" message="Command invoked: EXIT" exception="" replayable="true"
+        assertion="false">
+        <command cmdLabel="EXIT" displayableTitle="Label"/>
+    </event>
+    
+</scenario>

@@ -1,0 +1,118 @@
+
+\documentclass[english,a4paper,oneside]{ppfcmthesis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[OT4]{fontenc}
+
+% A few changes from the ppfcmthesis style
+
+\usepackage[widespace]{fourier}                 % Use Utopia font set
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+
+\newcommand{\customtextsc}[1]{{\scriptsize \MakeUppercase{#1}}}
+\newcommand{\acro}[1]{\customtextsc{#1}}   % generic acronym
+
+\newcommand{\pcite}[1]{[\ref{#1}]}         % product citation
+
+\usepackage{tabularx}
+\usepackage{booktabs}                                  % Booktabs for tables
+\usepackage{varioref}                                  % variable references (\vref{})
+
+% Define colors for listings.
+\usepackage{xcolor}
+\usepackage{listings}
+
+\definecolor{codestrings}{rgb}{0.164,0,1}
+\definecolor{codecomment}{rgb}{0.25,0.49,0.37}
+\definecolor{codekeywords}{rgb}{0.49,0,0.33}
+\definecolor{codebackground}{rgb}{0.95,0.95,0.95}
+
+\lstset{
+  inputencoding=utf8,
+  language=Java,
+  extendedchars=true,
+  basicstyle=\ttfamily\scriptsize,
+  numbers=left,
+  numbersep=3pt,
+  framexleftmargin=2pt,
+  framerule=0pt,
+  frame=lines,
+  numberstyle=\tiny,
+  tabsize=2,
+  showstringspaces=false,
+  showspaces=false,
+  keywordstyle=\bfseries\color{codekeywords},
+  identifierstyle=\color{black},
+  stringstyle=\color{codestrings},
+  commentstyle=\color{codecomment},
+  columns=fullflexible,
+  abovecaptionskip=\medskipamount,
+  belowcaptionskip=\medskipamount,
+  backgroundcolor=\color{codebackground},  
+}
+
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}%
+    {fontsize=\footnotesize,frame=lines,numbers=left}
+
+\lstnewenvironment{javablock}{\lstset{language=Java}}{}
+\lstnewenvironment{codeblock}{\lstset{language=Java}}{}
+\lstnewenvironment{rubyblock}{\lstset{language=Ruby}}{}
+\lstnewenvironment{xmlblock}{\lstset{language=XML}}{}
+
+\DefineVerbatimEnvironment{screenblock}{Verbatim}%
+    {fontsize=\scriptsize,numbers=left,numbersep=3pt}
+
+\settypeblocksize{*}{32pc}{1.618}
+\setlrmargins{*}{1.47in}{*}
+\setulmargins{*}{*}{1.3}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{2\onelineskip}{*}
+
+\newcommand{\tabcaption}[1]{\multicolumn{1}{c}{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\author{Marcin Zduniak}
+\title{Automated GUI Testing of~Mobile~Java~Applications}
+\ppsupervisor{dr inż.~Bartosz Walter}
+\ppyear{2006--2007}
+
+\begin{document}
+
+% Front matter starts here
+\frontmatter\pagestyle{empty}%
+\maketitle\cleardoublepage%
+
+% Blank info page for "karta dyplomowa"
+\thispagestyle{empty}\vspace*{\fill}%
+\begin{center}Tutaj przychodzi karta pracy dyplomowej;\\oryginal wstawiamy do wersji dla archiwum PP, w pozostalych kopiach wstawiamy ksero.\end{center}%
+\vfill\cleardoublepage%
+
+% Table of contents.
+\pagenumbering{Roman}\pagestyle{ppfcmthesis}%
+\tableofcontents* \cleardoublepage%
+
+% Main content of your thesis starts here.
+\mainmatter%
+\input{01-introduction.tex}
+\input{02-background.tex}
+\input{03-design.tex}
+\input{04-implementation.tex}
+\input{05-evaluation.tex}
+\input{06-conclusions.tex}
+
+% All appendices and extra material, if you have any.
+\cleardoublepage\appendix%
+%\input{0a-appendix.tex}
+
+% Bibliography (books, articles) starts here.
+\bibliographystyle{alpha}{\raggedright\sloppy\small\bibliography{bibliography}}
+
+% Web resources
+\input{ap-web-resources.tex}
+
+% Colophon is a place where you should let others know about copyrights etc.
+\ppcolophon
+
+\end{document}
+

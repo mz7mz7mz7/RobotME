@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="uml-diagram-assertions" foregroundRGB="255,255,255" fontInfo="Omondo_Font_Default-10-0" id="" metadata="uml2-1.0" initialized="true" zoom="0.9725158562367865" scrolledX="-5" tag="1000" key="323030373036323920726F626F746D652D636F72652F636F6E73696C656F6E706C3134" LinkThickness="3">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.4/@sourceConnections.0" name="Assertion" location="480,173" size="115,46" id="org.robotme.core.log.assertion/Assertion" packageIndication="1" runTimeClassModel="checkAssertion(Lorg.robotme.core.log.entries.LogEntry;Lorg.robotme.core.replaying.RobotMEReplaying;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.core.log.assertion/Assertion->org.robotme.core.log.assertion/Failure" source="//@children.0" target="//@children.5" targetEnd="//@children.0/@sourceConnections.0/@children.1" label="//@children.0/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,20"/>
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="499,135" size="149,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AssertionListModificationLogEntry" location="22,349" size="311,30" id="org.robotme.core.log.assertion/AssertionListModificationLogEntry" packageIndication="1" runTimeClassModel="checkAssertion(Lorg.robotme.core.log.entries.LogEntry;Lorg.robotme.core.replaying.RobotMEReplaying;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="3,1" autoLocated="true" id="org.robotme.core.log.assertion/BaseAssertion&lt;-org.robotme.core.log.assertion/AssertionListModificationLogEntry" source="//@children.1" target="//@children.3/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,30"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AssertionAlertModificationLogEntry" location="740,349" size="319,30" id="org.robotme.core.log.assertion/AssertionAlertModificationLogEntry" packageIndication="1" runTimeClassModel="checkAssertion(Lorg.robotme.core.log.entries.LogEntry;Lorg.robotme.core.replaying.RobotMEReplaying;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="3,1" autoLocated="true" id="org.robotme.core.log.assertion/BaseAssertion&lt;-org.robotme.core.log.assertion/AssertionAlertModificationLogEntry" source="//@children.2" target="//@children.3/@sourceConnections.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="159,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,30"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AssertionDisplayableChangedLogEntry" location="363,349" size="347,30" id="org.robotme.core.log.assertion/AssertionDisplayableChangedLogEntry" packageIndication="1" runTimeClassModel="checkAssertion(Lorg.robotme.core.log.entries.LogEntry;Lorg.robotme.core.replaying.RobotMEReplaying;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.2/@sourceConnections.0" size="3,1" autoLocated="true" id="org.robotme.core.log.assertion/BaseAssertion&lt;-org.robotme.core.log.assertion/AssertionDisplayableChangedLogEntry" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,30" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="BaseAssertion" location="460,269" size="154,30" id="org.robotme.core.log.assertion/BaseAssertion" packageIndication="1" runTimeClassModel="createAssertionFailure(Ljava.lang.String;),createAssertionFailure(Ljava.lang.String;Ljava.lang.Object;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="3,1" autoLocated="true" id="org.robotme.core.log.assertion/Assertion&lt;-org.robotme.core.log.assertion/BaseAssertion" source="//@children.4" target="//@children.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="57,46"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="Failure" location="10,111" size="93,30" id="org.robotme.core.log.assertion/Failure" packageIndication="1" runTimeClassModel="getPresent(),setPresent(Ljava.lang.String;),toByteArray(),setFailureMessage(Ljava.lang.String;),setAssertionClassName(Ljava.lang.String;),getAssertionClassName(),failureMessage,setExpected(Ljava.lang.String;),getExpected(),assertionClassName,getLogId(),toString(),getFailureMessage(),present,expected,Failure(),initFromDIS(Ljava.io.DataInputStream;),toXML(),lOG_ID,Failure(JLjava.lang.String;Ljava.lang.Class;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="149,90"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,270"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="3,1" autoLocated="true" id="org.robotme.core.log.entries/LogEntry&lt;-org.robotme.core.log.assertion/Failure" source="//@children.5" target="//@children.6" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="46,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="56,30"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="LogEntry" location="0,31" size="113,30" id="org.robotme.core.log.entries/LogEntry" packageIndication="1" runTimeClassModel="getReplayerClass(Ljava.lang.String;),toByteArray(),getAssertionClass(),setTimestamp(J),getReplayerClass(),exception,setException(Ljava.lang.String;),lIST_MODIFICATION_LOG_ID,getTimestamp(),uSERDEFINED_LOGENTRY_MASK,cOMMAND_LOG_ID,toString(),fORM_MODIFICATION_LOG_ID,LogEntry(),timestamp,setReplayable(Z),getLevel(),level,isReplayable(),initFromDIS(Ljava.io.DataInputStream;),LogEntry(BLjava.lang.String;Ljava.lang.Throwable;),toXML(),cANVAS_MODIFICATION_LOG_ID,createReplayer(),LogEntry(BLjava.lang.String;),tEXTBOX_MODIFICATION_LOG_ID,fAILURE_LOG_ID,rOBOTME_LOGENTRY_MASK,aLERT_MODIFICATION_LOG_ID,assertion,getLogId(),setMessage(Ljava.lang.String;),message,appendLevelToXML(Ljava.lang.StringBuffer;),kEY_EVENT_ON_CANVAS_LOG_ID,createAssertion(),isAssertion(),setLevel(B),lOG_ID,setAssertion(Z),dISPLAYABLE_CHANGED_LOG_ID,getMessage(),replayable,pOINTER_EVENT_ON_CANVAS_LOG_ID,getException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="275,342"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,468"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true"/>
+</editmodel:ClassDiagramEditModel>

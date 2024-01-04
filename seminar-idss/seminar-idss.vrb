@@ -1,0 +1,29 @@
+\tiny  IBM's compiler
+    \begin{javablock}
+    public final int method(int i) {
+        int j;
+        if (i != 0)
+            goto  _L13;
+        jsr local;
+        j = 0;
+        return j;
+_L13:
+        if (i != 1) goto _L27;
+        jsr local;
+        j = 1;
+        return j;
+_L27
+        if (i != 2) goto _L2;
+        jsr local;
+        j = 2;
+        return j;
+_L2:
+        jsr local;
+        return -1;
+local:
+        System.out.println("aaa");
+        System.out.println("bbb");
+        System.out.println("ccc");
+        ret;
+    }
+    \end{javablock}

@@ -1,0 +1,7 @@
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Jar-URL: RobotMEExample.jar
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: TestMIDlet,,com.zduniak.midlet.TestFormMIDlet
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Name: RobotMEExample Midlet Suite

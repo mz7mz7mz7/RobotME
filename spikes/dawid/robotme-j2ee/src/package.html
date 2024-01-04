@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<style type="text/css">
+			pre {
+				font-size: x-small;
+				border: 1px solid black;
+				background-color: #e0e0e0;
+				padding: 2px;
+			}
+
+			.injected {
+				background-color: #ffe0e0;
+			}
+			
+			.original {
+				background-color: #e0ffe0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>RobotME</h1>
+		<h2>Event capturing and event generation mechanism</h2>
+
+
+
+		<h3>Glossary of terms</h3>
+
+		<dl>
+			<dt><b>target code</b>, <b>application code</b></dt>
+			<dd>Bytecode (compiled classes) of the application
+				to be tested. The classes are prior to preverification step.</dd>
+
+			<dt><b>template classes</b></dt>
+			<dd>Classes implementing functionality required to generate
+				and capture events. These classes are part of the RobotME
+				application. They contain methods with signatures
+				identical to those they wish to "override" in the target code.
+				RobotME application rewrites application code and substitutes
+				methods with identical signatures with template method implementations,
+				renaming original methods using a predefined naming convention.
+			</dd>
+		</dl>
+		
+
+		<h3>Event generation/ capturing -- implementation concepts</h3>
+		<p>
+			Event capturing and generation requires that we somehow
+			access internals of classes inside a midlet suite. Ideally,
+			we would like to capture and generate events <b>without
+			changing</b> anything in the target code -- including class inheritance
+			hierarchy.
+		</p>
+		
+		<p>
+			The current implementation <b>modifies the target code</b> by rewriting
+			all methods of the super class we want to capture events from. Let's say
+			we are interested in the <code>Canvas</code> class. The target
+			code contains a subclass of the <code>Canvas</code> class overriding
+			<code>paint(Graphics)</code>method:
+		</p>
+
+		<pre>
+/**
+ * A custom class extending {@link Canvas} directly.
+ */
+public final class CustomCanvas extends Canvas {
+    private final String title;
+    private int lastKeyCode;
+
+    public CustomCanvas() {
+        this.title = "Hello world.";
+    }
+
+    protected final void paint(Graphics graphics) {
+        final int x = graphics.getClipX();
+        final int y = graphics.getClipY();
+        final int w = graphics.getClipWidth();
+        final int h = graphics.getClipHeight();
+
+        graphics.setColor(0x000000);
+        graphics.fillRect(x, y, w, h);
+
+        graphics.setColor(0xa0a0a0a0);
+        graphics.drawString(title, getWidth()/2, getHeight()/2, Graphics.BASELINE | Graphics.HCENTER);
+
+        graphics.setColor(0x50a0f0);
+        graphics.drawString("Last keycode: " + lastKeyCode,
+                getWidth()/2, 0, Graphics.TOP | Graphics.HCENTER);
+    }
+
+    protected void keyPressed(int keyCode) {
+        lastKeyCode = keyCode;
+        repaint();
+    }
+}</pre>
+
+		<p>
+			There are a few problems with adding the robot code to the above example
+			(for capturing and generating events):
+			<ul>
+				<li><b>Subclassing.</b> Final methods and classes cannot be overriden. Even after removing the final attribute
+				we still have to rewrite all casts, object creations and method invocations to use our subclass.</li>
+				<li><b>Delegation to a separate class.</b> We could inject the code to delegate all method calls to a third
+				class. But we would still encounter issues with triggering events on protected and package-scope methods (inaccessible
+				from outside of the package scope).</li>
+			</ul>
+		</p>
+		
+		<p>One solution to the above problems is to rewrite the target class, <em>substituting methods of interest</em> with
+		our custom implementations. The original code of the target class needs to be moved to another method (preferably final
+			and private) so that it can be still invoked (both as a consequence of a system call and a simulated event).</p>
+		<p>
+		Potential code injection performing such <em>internal, injected delegation</em> is shown in the code snippet below
+			(<span class="injected">red-tinted</span> code blocks have been automatically injected, 
+			<span class="original">green-tinted</span> code blocks come from the original target code)</p>
+<pre>
+    protected void keyPressed(int i)
+    {
+<span class="injected">        System.out.println("Key pressed (captured): " + i);
+        robot$keyPressed(i);</span>
+    }
+
+<span class="injected">    protected final void robot$keyPressed(int i)
+    {</span>
+<span class="original">        lastKeyCode = i;
+        repaint();</span>
+    }
+
+<span class="injected">    public void robot$fireKeyPressed(int i)
+    {
+        System.out.println("Key pressed (simulation): " + i);
+        robot$keyPressed(i);
+    }</span>
+</pre>
+		
+		<p>
+			The above delegation model can be used to redirect call method control from any target class method
+			-- even private or final methods. We can also invoke such methods from the outside code using public
+			interfaces dynamically added to the target class signature:
+		</p>
+<pre>
+public final class CustomCanvas extends Canvas 
+	<span class="injected">implements IRobotized, IRobotizedCanvas</span>
+{
+...
+</pre>
+		<p>
+			where <code>IRobotizedCanvas</code> contains a public signatures for event generation methods and
+			other utility methods needed to automate script replay:
+		</p>
+<pre>
+public interface IRobotizedCanvas extends IRobotized {
+    /**
+     * Fires key pressed event programmatically. 
+     */
+    public void robot$fireKeyPressed(int keyCode);
+}	
+</pre>
+
+		<h3>Things still to be solved</h3>
+		<p>
+			<ul>
+				<li>When to begin script replay? I assume we may simply inject
+				the required code into a <code>Midlet</code> subclass (its constructor?),
+				and then capture all changes to the display, simply casting to our
+				robotized interfaces.
+				</li>
+				<li>Memory usage. I wouldn't worry about it. As a testing tool this won't
+				matter much.</li>
+			</ul>
+		</p>
+	</body>
+</html>

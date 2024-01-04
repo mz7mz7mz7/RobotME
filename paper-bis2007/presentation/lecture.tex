@@ -1,0 +1,521 @@
+
+\documentclass[compress,notes=hide]{beamer}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{dwlecture}
+\usepackage{tikz}
+
+\usepackage{lmodern}
+\usepackage[scaled]{uarial}
+
+
+\subject{Testing Java ME applications}
+
+\title[Automated Integration Tests for Mobile~Applications in J2ME]%
+{Automated Integration Tests for Mobile~Applications in Java~2~Micro~Edition}
+
+\author{Dawid Weiss, \textbf{Marcin Zduniak}}
+
+\institute{Institute of Computing Science\\Poznan University of Technology}
+
+\date{2007}
+
+% \AtBeginSection[] {
+%   \begin{frame}<beamer>
+%     \framesubtitle{\insertpart}
+%     \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide]
+%   \end{frame}
+% }
+% 
+% \AtBeginSubsection[] {
+%   \begin{frame}<beamer>
+%     \framesubtitle{\insertpart}
+%     \tableofcontents[sectionstyle=shaded,subsectionstyle=show/shaded/hide]
+%   \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+
+    \pplogo
+    
+    \note{\footnotesize%
+    Hello everyone, my name is Marcin Zduniak, I am a grad student at Poznan University of
+    Technology and I'm here to present the initial results of my Master's thesis.
+
+    \medskip
+    The subject of my work was a proof-of-concept -- to design and implement a semi-automatic
+    capture-replay testing environment for mobile applications written for the Java 2 Microedition
+    environment.
+
+    \medskip
+    I would like to share with you the difficulties of this task and the approaches in
+    which we solved them. First of all, let me give you an outline of the motivation and 
+    scope of our work.
+    }
+\end{frame}
+
+\section{Motivation}  % ----------------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Introduction: software testing}
+
+    \emph{Software testing} is the process used to help identify the correctness, completeness, 
+    security, and quality of developed computer software.
+
+    \bigskip
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{5cm}
+            \begin{exampleblock}{Test type \raisebox{3pt}{\tikz \draw [->,thick] (0,0) -- (2,0);}}
+                \begin{itemize}
+                    \item unit tests
+                    \item integration tests
+                    \item \textbf{acceptance testing}
+                    \item \textbf{regression tests}
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        \begin{column}{5cm}
+            \begin{exampleblock}{Covered aspect}
+                \begin{itemize}
+                    \item single-developer, classes
+                    \item cross-developer, modules
+                    \item client's requirements
+                    \item refactorings, bug fixes, stability
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+    
+    \note{
+    There are many categories of software tests, as shown on the slide. Some concentrate on 
+    verifying correctness of atomic units of the software (such as unit tests), 
+    some on assuring proper high-level functionality (acceptance tests) and yet another
+    class on providing quality assurance to the already written software -- these
+    are regression tests. 
+    
+    \medskip
+    In case of business mobile applications (we generally consider this to be any form-based
+    application, with many screens and transitions between them), a convenient way
+    to implement regressions tests is through \textbf{capturing} the interaction
+    between the program and the user and \textbf{replaying} this interaction during
+    testing, checking if the output is identical as before.
+
+    \medskip
+    Let me quickly demonstrate what this procedure is about.
+    }
+\end{frame}
+
+\begin{frame}[plain]
+    \rbcaption{Capture-replay regression test scenario.}
+    \hgraphics{figures/process-outline-2}
+    
+    \note{
+    Note that at the beginning the set of features planned for the release is a base
+    for preparing test scripts. Very often these scripts are informal and are a result
+    of the user's expectations.
+    
+    \medskip
+    After (or better: during) the software is developed, the informal scenarios are checked
+    against a candidate release. If the scenarios are fulfilled we release the software. Note
+    that during this checking the interaction with the program can be recorded and later reused 
+    to verify if the software behaves exactly as it used to during the initial release. This process
+    can be automated fairly easily for desktop and web applications, but turns out to be
+    quite difficult for mobile applications.
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Motivation}
+
+    Programming and testing in J2ME is \textbf{more difficult} compared to 
+    desktop programs:
+    \begin{itemize}
+        \item each device has slightly different hardware configuration,
+        \item ``standard'' APIs from various vendors differ,
+        \item a number of non-standard APIs and proprietary solutions exists.
+    \end{itemize}
+    
+    \medskip
+    Java 2 Mobile Edition \textbf{has no support} for fundamental facilities required
+    to implement a capture-replay testing environment:
+    \begin{itemize}
+        \item lack of system-level support for handling events (GUI, sounds, SMS, \ldots{}),
+        \item lack of system-level support for simulating events.
+    \end{itemize}
+
+    \note{
+    In reality, mobile application development stops at the level of unit tests because 
+    of lack of tools and techniques that would allow proper acceptance and regression tests.
+    This slide presents a list of reasons why this is the case.
+    
+    \medskip
+    First, in spite of the API specification, there is a wide range of hardware and software
+    vendors. This leads to various incompatibilities and quirks -- most notably that a piece
+    of software must be \textbf{repeatedly tested over and over on all available device/ software
+    configurations}.
+
+    \medskip
+    Additionally, the standard mobile environment does not provide any support for intercepting
+    system events (the standard Java edition has a \texttt{java.awt.Robot} class for this).
+    
+    \medskip
+    These issues made us think if it is at all possible to automate capture-replay
+    tests in the J2ME environment.
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Related work}
+
+	\begin{itemize}
+        \item J2ME Unit
+        \item Sony-Ericsson Mobile JUnit
+        \item Motorola Gatling
+        \item CLDC Unit
+        \item IBM Rational Test RT
+        \item Research In Motion -- BlackBerry Fledge emulator
+	\end{itemize}
+    
+    \note{
+    We did a literature search as well as search for commercial products that would
+    offer the functionality we required. Because of limited time I am not able
+    to provide you with a full list of features of these products, but it should
+    suffice to say that none of them fully implemented what we required. The most
+    ``advanced'' solutions -- such as IBM's or BlackBerry's -- are still quite limited.
+    For example, they run on software emulators (not on real devices) or are bound 
+    to a specific environment (as it is the case with BlackBerry).
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Scope of work}
+
+	\begin{itemize}
+        \item Design an environment for implementing acceptance, integration and 
+        regression tests for business applications in Java ME.
+        \item Possibly automatic capture-replay.
+        \item Should work on both actual devices and emulators ({\color{red}\bfseries !}).
+        \item Test scripts should be easily interpreted and modified/ 
+        maintained by human operators.
+	\end{itemize}
+    
+    \note{
+    We set up several goals which we wanted to achieve, outlined on the slide.
+    
+    Note that while this project is very close to a technical/ engineering one, 
+    it is absolutely not trivial to solve. Our major goal was to determine
+    if it is at all possible to design and implement an elegant capture-replay solution.
+    }
+\end{frame}
+
+\section{Solution} % -------------------------------------------------------------------------------
+
+\subsection[Code injection]{Dynamic code injection} % ----------------------------------------------
+
+\begin{frame}
+    \frametitle{Dynamic code injection}
+
+	\begin{itemize}
+        \item One possible solution for dealing with the mobile environment's constraints.
+        \item Intercepting \emph{events} and injecting our custom \emph{proxies}
+            at several \emph{injection points}.
+	\item User interaction simulator.
+	\end{itemize}
+
+    \note{
+    The only solution that seemed to solve our goals in practice was to use dynamic code injection.
+    
+    Code injection/ manipulation is quite common (in OR/M systems, for example). 
+    Our tool examines the code of a mobile application and searches for code fragments we would like to 
+    intercept. Then, it changes these fragments appropriately by adding (injecting) additional code. 
+    The whole process takes place on precompiled Java bytecode, but on the
+    following slides I will demonstrate a few examples using the source code for clarity.
+    }
+\end{frame}
+
+\begin{frame}[containsverbatim,plain]
+    \rbcaption{Code injection example -- capturing \texttt{startApp} event.}
+
+\begin{javablock}
+public final class MyMidlet extends MIDlet {
+    protected void startApp() 
+        throws MIDletStateChangeException {
+        // original code
+    }
+...
+\end{javablock}
+
+\begin{javablock}
+public final class MyMidlet extends MIDlet {
+    protected void startApp() 
+        throws MIDletStateChangeException {
+        // record: before-start-event
+        try {
+            this.orig$startApp();
+            // record: after-start-event
+        } catch (Throwable t) {
+            // record: start-exception-event
+        }
+    }
+
+    private void orig$startApp()
+        throws MIDletStateChangeException {
+        // original code
+    }
+...
+\end{javablock}
+
+    \note{
+    The first example demonstrates intercepting the start event of a mobile application. The code snippet on top
+    of the screen shows a class that extends the MIDlet class (base class for all mobile applications in Java,
+    where the initialization code is typically placed).
+
+    The code snippet on the bottom shows the modified class, where original code from the startApp() method was 
+    moved to new method named \texttt{orig.startApp()} and the entire block of previous code is wrapped in 
+    a \texttt{try-catch} statement. 
+    
+    Similar to the above, we are able to intercept all events related to starting, stopping and exceptions handling
+    in a mobile application.
+    }
+\end{frame}
+
+\begin{frame}[containsverbatim,plain]
+    \rbcaption{Code injection example -- capturing key events.}
+
+\begin{javablock}
+public class Class1 implements CommandListener {
+...
+	public void commandAction(Command c, Displayable d) {
+		// Handling command event
+	}
+...
+}
+\end{javablock}
+
+\begin{javablock}
+public class Class1 implements CommandListener {
+...
+	public void commandAction(Command c, Displayable d) {
+		RobotMERecorder.getRecorderInstance().commandInvoked(c, d);
+		// Handling command event
+	}
+...
+}
+\end{javablock}
+
+    \note{
+    On this slide we demonstrate how to intercept the events related to key pressing --
+    we basically inject custom code at the beginning of each \texttt{commandAction}
+    method.
+
+    This way we can intercept and record all user interaction with the mobile application.
+    }
+\end{frame}
+
+\begin{frame}[containsverbatim,plain]
+    \rbcaption{Code injection example -- capturing widgets creation.}
+
+\begin{javablock}
+final TextBox textBox = new TextBox("Title", 
+  "Hello world", 100, TextField.ANY);
+textBox.addCommand(CMD_EXIT);
+textBox.addCommand(CMD_OK);
+
+Display.getDisplay(this).setCurrent(textBox);
+\end{javablock}
+
+\begin{javablock}
+final TextBox textBox = new TextBox("Title", 
+  "Hello world", 100, TextField.ANY);
+
+textBox.addCommand(CMD_EXIT);
+RobotMERecorder.getRecorderInstance()
+  .cmdAddedToDisplayable(CMD_EXIT, textBox);
+
+textBox.addCommand(CMD_OK);
+RobotMERecorder.getRecorderInstance()
+  .cmdAddedToDisplayable(CMD_OK, textBox);
+
+Display.getDisplay(this).setCurrent(textBox);
+RobotMERecorder.getRecorderInstance().setCurrentDisplayable(textBox);
+\end{javablock}
+
+    \note{
+    The last example shows how to intercept events related to creation and display of various GUI
+    elements. These events are essential in order to correctly trace and record the interaction 
+    between the user and the application. As the example shows, we again inject some
+    additional code after identified parts of the examined application code.
+    }
+
+\end{frame}
+
+\subsection{Testing lifecycle} % -------------------------------------------------------------------
+
+\begin{frame}
+    \frametitle{Record/replay cycle}
+
+    \begin{center}\large
+        RECORD\\
+        $\Downarrow$\\
+        REPLAY $\Leftrightarrow$ MAINTAIN
+    \end{center}
+    
+    \note{
+    On the three following slides I would like to present the phases that we distinguish
+    in the record/replay cycle.
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Phase 1: Recording}
+
+	\begin{itemize}
+        \item Intercepting user events (key press, pointer events, text edit).
+        \item Intercepting environment events (sounds, screen changes, Internet access, SMS).
+        \item Transferring to remote console (through GPRS, bluetooth, IRDA or serial port).
+	\end{itemize}
+	
+    \note{
+    The first phase -- the recording phase -- is the process of capturing every event between the software
+    and the user, not necessarily events directly initiated by the user, but also sounds, screen changes etc.
+    
+    The recorded events are transferred through an effective binary protocol to the remote console. The remote console is a 
+    server application that is designed to receive data transferred by the recording mobile application
+    and store it in a file.
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Phase 2: Replaying}
+
+	\begin{itemize}
+        \item Simulating user events (key press, pointer events, text edit).
+        \item Assertions, injection points: intercepting environment events (sounds, screen changes, internet access, SMS).
+        \item Transferring to remote console (through GPRS, bluetooth, IRDA or serial port).
+	\end{itemize}
+
+    \note{
+    The second phase -- replay -- is a process of repeating previously recorded user interaction on the actual device (or simulator)
+    and verifying if the application responds similarly to when the recording was performed. This verification process is also called 
+    'assertion checking'. Similarly to the recording phase, also this time all the intercepted events are 
+    transferred back to the server for further investigation in case something went went wrong during replay.
+    }
+\end{frame}
+
+\begin{frame}[containsverbatim]
+    \frametitle{Phase 3: Test maintenance}
+
+    Maintenance through \emph{human-comprehensible test scripts}.
+
+    \bigskip
+\begin{xmlblock}
+<scenario>
+  <event timestamp="1000">
+      <displayable-changed title="Hello screen" type="TEXTBOX" />
+  </event>
+    
+  <event timestamp="2000">
+      <command cmdLabel="Start app" displayableTitle="Hello screen" />
+  </event>
+    
+  <event timestamp="3000">        
+      <textbox-modification assertion="true" strongAssertion="true" 
+                            string="I like testing" />
+  </event>
+</scenario>
+\end{xmlblock}
+
+    \note{
+    Test maintenance is a phase parallel to recording and replay of test scripts. 
+
+    For performance reasons, the recorded scripts are stored in a compact binary format. 
+    To enable its maintanance, we created a converter that transforms the binary format
+    to and from a human-comprehensible XML script.
+
+    This way we can edit the test scripts to, for example, skip some unnecessary assertions, or the opposite --
+    add additional assortions that the recording tool was not able to capture (like some additional time constraints).
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Example assertions}
+
+	\begin{itemize}
+        \item Text on the screen changed
+	\item Screen changed
+	\item Sound emission
+	\item Access to remote server
+	\item Access to bluetooth receiver
+	\item SMS send
+	\item Data stored or read from persistent storage
+	\end{itemize}
+
+    \note{
+    We have distinguished several types of assertions, as shown on the slide. 
+    We can determine and track elements of the graphical
+    user interface present on the screen. We can also check the status of network communication (open connections)
+    and local transfers to and from a persistent memory (record store).
+    
+    These assertions allow to define the expected behavior
+    of the application under test pretty closely.
+    }
+\end{frame}
+
+
+\subsection[Prototype]{Proof-of-concept prototype} % -----------------------------------------------
+
+\begin{frame}[plain]
+	\frametitle{Screenshots from test recording session.}
+
+    \lbcaption{Server console.}
+    \rbcaption{Emulator window.}
+
+    \fxygraphics{12.4}{0.1}{right}{bottom}{height=8.5cm}{figures/1b}
+    \fxygraphics{0.2}{8.4}{left}{top}{width=12.4cm}{figures/2}
+    
+    \note{
+    At the end as kind of proof that our idea is working in reality
+    I would like to present you simple live demonstration of the
+    created tool. Demonstrating application is a questionnaire with a few questions, some
+    with textual answers, with date, level and checkbox answers.
+    
+    I have prepared recorded script, so I will demonstrate you only replaying phase
+    of our tool. First lets run a remote console application. And then lets run
+    a simulator. As you can see...
+    }
+\end{frame}b
+
+
+\section*{Summary} % -------------------------------------------------------------------------------
+
+\begin{frame}[plain]
+    \frametitle{Summary}
+    
+    \begin{itemize}
+        \item Useful testing framework for J2ME environment \emph{does not exist}.
+        \item Solution: \emph{dynamic code injection}.
+        \item For \emph{developers} and \emph{clients}.
+    \end{itemize}
+    
+    \note{
+    Summarizing: I presented you testing framework for J2ME platform that in our opinion
+    could be very useful for mobile business applications vendors, and the framework
+    that has no real competitors on the market till now. Which is also very important it
+    could be used by both technical users (developers) and business users (clients).
+    }
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{center}
+	Thank you for your attention.
+	\end{center}
+\end{frame}
+
+\end{document}
+

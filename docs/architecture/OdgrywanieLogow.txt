@@ -1,0 +1,32 @@
+Mamy dwa rodzaje logow
+- replayable 
+- non-replayable
+
+Te pierwsze informuja o zajsciu zdarzenia zainicjowanego przez uzytkownika, ktore musimy w trybie odgrywania
+zasymulowac (np. wcisniecie przycisku i zajscie powiazanego z nim zdarzenia Command).
+
+Te drugie mowia o zdarzeniach jakie zaszly wewnatrz aplikacji. Czasami beda to zdarzenia ktore z punktu widzenia
+odgrywania nagranej aplikacji beda asercjami (np. zmiana ekranu, odgranie dzwieku). 
+
+UWAGA: Jest jednak problem, zakladamy ze np. w TextBoxie user wpisuje jakis tekst i jest to zdarzenie od uzytkownika.
+A co gdy to aplikacja programowo zmienia tekst w TextBoxie ? Musimy oprogramowac rowniez przechwytywanie
+takich programowych zmian tresci i zrzucac je do logow jako zderzenie/asercje a nie jako zdarzenie
+do odegrania.
+
+Na poczatku zalozmy dla prostoty ze aplikacja MIDletowa jest napisana w oparciu o jeden watek i kolejnosc zrzucanych 
+do logu komunikatow jest deterministyczna.
+
+Na poczatku zalozmy takze ze wszystkie komunikaty ktore sa typu non-replayable to sa logi w oparciu o ktore tworzymy
+asercje. Tzn. w aplikacji odgrywajacej zapisany scenariusz powinnismy weryfikowac wystapienie kazdego z logow
+typu non-replayable.
+
+Szkielet algorytmu odgrywania:
+1. Bierzemy pierwszy log z kolejki logow.
+2. Jesli jest typu replayable to symulujemy jego akcje, a jesli jest non-replaylable
+   to czekamy az w kolejce z logami na nowo rejestrowanymi podczas procesu odtwarzania scenariusza pojawi sie identyczny
+   log.
+3. Zapisujemy aktualny czas w jakim zasymulowalismy zdarzenie lub rozpoczelismy oczekiwanie na przyjscie logu.
+4. Jezeli czekamy na log i nie pojawia sie on w czasie jaki by wynikal z offsetow czasowych zapisanych w logu
+   + kilka sekund (3 ?) to uznajemy ze asercja nie przeszla i
+   [KONCZMY TEST czy PRZECHODZIMY DO KOLEJNEGO logu scenariusza ???]
+4. Symulacja sie powiodla lub log nadszedl. Bierzemy wiec nastepny log i przechodzimy do pkt. 2.

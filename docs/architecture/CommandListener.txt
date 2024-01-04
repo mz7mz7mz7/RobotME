@@ -1,0 +1,6 @@
+Sposob przechwytywanie CommandListenerow:
+
+1. Musimy przechwycic wszystkie wywolania Displayable.addCommand(Command) i je zbierac. W tym celu musimy przegladac
+   tresc wszystkich metod we wszystkich klasach (nie widze innego wyjscia).
+2. Musimy przechwycic wszystkie implementacje interfejsu CommandListener i w ich metodzie 
+   commandAction(Command, Displayable) dodac delegacje do naszego Core'a.

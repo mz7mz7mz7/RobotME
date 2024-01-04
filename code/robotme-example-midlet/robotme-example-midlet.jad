@@ -1,0 +1,11 @@
+MIDlet-5: LiveDemo,,org.example.midlet.formlivedemo.FormLiveDemoMIDlet
+MIDlet-4: TestBox,,org.example.midlet.testbox.TestBoxMIDlet
+MIDlet-3: FormMidlet,,org.example.midlet.form.FormMIDlet
+MIDlet-2: CanvasMIDlet1,,org.example.midlet.canvas.CanvasMIDlet
+MIDlet-1: TestListMidlet,,org.example.midlet.list.TestListMidlet
+MIDlet-Jar-URL: robotme-example-midlet.jar
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Name: robotme-example
+MicroEdition-Profile: MIDP-2.0

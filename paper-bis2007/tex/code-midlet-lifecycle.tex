@@ -1,0 +1,37 @@
+\begin{figure}[t]
+\begin{minipage}[t]{.49\linewidth}
+\begin{codeblock}
+public final class MyMidlet extends MIDlet {
+    protected void startApp() 
+        throws MIDletStateChangeException {
+        // original code
+    }
+...
+\end{codeblock}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.49\linewidth}
+\begin{codeblock}
+public final class MyMidlet extends MIDlet {
+    protected void startApp() 
+        throws MIDletStateChangeException {
+        // record: before-start-event
+        try {
+            this.orig$startApp();
+            // record: after-start-event
+        } catch (Throwable t) {
+            // record: start-exception-event
+        }
+    }
+
+    private void orig$startApp()
+        throws MIDletStateChangeException {
+        // original code
+    }
+...
+\end{codeblock}
+\end{minipage}
+\caption{Rewriting \texttt{MIDlet} classes to intercept lifecycle events. Original code on the
+left, modified (instructed) code on the right. We denote event recording blocks with
+comments for brevity.}\label{fig:midlet-proxy}
+\end{figure}

@@ -1,0 +1,59 @@
+\chapter{Summary and Conclusions}
+
+\section{Summary}
+
+% Remind the reader what was planned. Sum up what's been achieved and what hasn't (and why)?
+
+This thesis is a proof of concept demonstrating that fully-fledged capture-replay
+testing framework is feasible in Java 2 Micro Edition environment. The
+prototype implementation has been written for it and showed usable in practice. 
+The framework may be used both in fully automated testing environments
+exploiting mobile device simulators and in real environments with real
+mobile devices.
+
+Parts of this thesis have been published at the 10th International Conference on 
+Business Information Systems, Poznan, Poland~\cite{zduniak-weiss-2007}.
+
+
+\section{Future Directions}
+
+Our biggest challenge at the moment is to provide some objective means to
+assess the value gained from using the framework. What common sense states
+as obvious is quite difficult to express with hard numbers. We considered a controlled
+user experiment where participants would be given the same application
+and a set of tasks to implement (refactorings and new features). Half of the
+group would have access to the results of integration tests, the other half would
+just work with the code. We hoped this could demonstrate certain gains (number
+of early detected bugs, for example) that eventually translate into economic
+value for a company. Unfortunately, this kind of experiment is quite difficult to
+perform and its results are always disputable (i.e., due to ranging skills between
+programmers), so we decided to temporarily postpone it. Other possible research
+and technical directions are:
+\begin{itemize}
+    \item Design a flexible architecture adding support for events that are outside
+the scope of the J2ME specification, but are commonly used in mobile development.
+These events include, for example, vendor-specific APIs such as
+vibration or backlight provided by Nokia.
+    \item Implement alternative event serialization channels –- through serial cables or
+Bluetooth connections.
+    \item Consider evaluation schemes for the presented solution. A real feedback from
+developers translates into a proof of utilitarian value of the concept -– does
+the testing framework help? How much time/ work does it save? What is
+the ratio of time spent on recording/ correcting test scripts compared to
+running them manually? We should emphasize that these questions are just
+as important as they are difficult to answer in a real production environment.
+    \item Integrate the framework with popular integrated development environments.
+This goal is very important because developers must be comfortable with the
+tool to use it and must feel the benefits it provides. Instant hands-on testing
+toolkit would certainly assimilate faster in the community than an obscure
+tool (such as Sony’s).
+    \item We also think about extending the concepts presented in this paper to other
+Java-based platforms for building mobile applications, such as NTT DoCoMo
+Java, BlackBerry RIM API or Qualcomm Brew. They may not be as popular
+as J2ME, but the concepts we have presented should be applicable in their
+case as well.
+    \item Based upon the experience and feedback from the initial prototype, we asses there is a real demand
+    and market need for such a testing tool. Writing a production-quality utility from
+    scratch (that developers and testers could use with little knowledge of the internal mechanisms) 
+    is a promising direction  for future work.
+\end{itemize}

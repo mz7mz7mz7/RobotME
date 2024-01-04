@@ -1,0 +1,46 @@
+
+\begin{table}[t]%
+\caption{Differences between development and testing of mobile and traditional (desktop and server) applications.}%
+\label{tab:environments}
+\scriptsize
+\begin{tabularx}{\linewidth}{>{\raggedright}p{2cm} @{\hspace{3mm}} X @{\hspace{3mm}} X}
+\toprule
+\tabcaption{Element} & \tabcaption{Mobile} & \tabcaption{Traditional} \\ \midrule
+
+Test recording
+    &
+    Lack of programmatic access to recording GUI events.
+    Emulation of user interaction impossible.
+    &
+    Standard \texttt{java.awt.Robot} class
+    for recording GUI events. \\ \addlinespace[1mm]
+
+Deployment automation
+    &
+    Tedious (manual) routine of on-device deployment and
+    testing.
+    & 
+    Deployment usually fully automatic. Testing and harvesting
+    test results automatic and relatively easy. 
+    \\ \addlinespace[1mm]
+
+Test environment differences
+    &
+    Differences across devices (different JVMs, varying memory and resource availability).
+    Requirement to run tests on all possible configurations.
+    &
+    Virtually identical development and deployment/ testing
+    environment. In very rare cases operating-system specific. \\ \addlinespace[1mm]
+
+Programming interfaces 
+    &
+    A number of non-standard APIs and proprietary
+    solutions (playing sounds, access to external ports, access to 
+    the current display). 
+    &
+    More mature and standard APIs, portable across JVMs
+    from different vendors. \\
+
+\bottomrule
+\end{tabularx}
+\end{table}

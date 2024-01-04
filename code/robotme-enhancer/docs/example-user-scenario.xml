@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    
+    <!-- 
+    Attributes to entry node are exactly corresponding to fields in 
+    org.robotme.core.log.LogEntry class.
+    
+    level - see class org.robotme.core.log.LogHandler for all possible values, by default in xml
+    there is ALL value assumed.
+    message - empty by default
+    exception - empty by default
+    
+    -->
+    <event level="ALL" timestamp="1234" message="some verbose comment">
+        <!--
+        replayable - false by default for displayable-changed node. If set to true this event can be simulated.
+        assertion - true by default for displayable-changed node. If set to true this event must be verified by simulator (and could not
+        be simulated when this attribute is set to true).
+        
+        !! Most often QA should not set replayable and assert attributes by themselves and default values
+        are most accurate. Below we set it only as an example !!
+        -->
+        <displayable-changed title="Text box name 1" type="TEXTBOX" replayable="false" assertion="true"/>
+    </event>
+    
+    <!-- 
+        Event with only log-event node - possibly from System.out or indicator of some exception throwed
+    -->
+    <event level="ALL" timestamp="1236" message="some other verbose comment"
+        exception="[java.lang.RuntimeException] : error message">
+        <log-event />
+    </event>
+    
+    <event level="ALL" timestamp="1238">
+        <!--
+            This event is replayable by default.
+         -->
+        <command cmdLabel="Start!" displayableTitle="Text box name 1"/>
+    </event>
+    
+    <event level="ALL" timestamp="1238">
+        <!--
+        This event is replayable by default, but could be also switched to
+        assertion mode manualy (if QA expectation is to verify whether current displayable object
+        is of TextBox type and whether its string property has given content).
+        
+        eg:
+        <text-box-modification string="New text on the Text Box diplayable" assertion="true"/>
+        -->
+        <text-box-modification string="New text on the Text Box diplayable"/>
+    </event>
+</scenario>

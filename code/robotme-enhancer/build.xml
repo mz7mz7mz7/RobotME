@@ -1,0 +1,162 @@
+<project name="robotme-enhancer" default="compile">
+
+	<property file="local.properties" />
+	<property file="default.properties" />
+
+	<import file="ant/build-j2me.xml" />
+
+	<property name="classes.dir" location="tmp/ant/classes" />
+
+	<property name="j2me.classes.dir" location="tmp/ant/classes-j2me" />
+	<property name="j2me.example.src" value="../robotme-example-midlet/src" />
+	<property name="j2me.classes" value="${j2me.classes.dir}" />
+	<property name="j2me.preverified" value="tmp/ant/classes-j2me-preverified" />
+	<property name="j2me.obfuscated" value="tmp/ant/classes-j2me-obfuscated" />
+
+	<property name="jad.location" location="tmp/ant/robotme-example-midlet.jad" />
+
+	<property name="j2me.core.src" value="../robotme-core/src" />
+
+	<property name="j2me.all.src" value="tmp/ant/src-j2me" />
+
+	<path id="j2me.classpath" />
+
+	<path id="robotme.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="tmp/ant" failonerror="false" />
+		<delete failonerror="false">
+			<fileset dir="tmp">
+				<include name="*.txt" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="prepare">
+		<mkdir dir="${classes.dir}" />
+		<mkdir dir="${logserver.classes}" />
+
+		<!-- Make sure the j2me project is compiled. -->
+		<antcall target="compile.j2me" />
+	</target>
+
+	<target name="compile" depends="prepare,copyTemplates" description="Compiles the required source code.">
+		<javac destdir="${classes.dir}" encoding="UTF-8" includeantruntime="true" debug="true">
+			<classpath refid="robotme.classpath" />
+			<src>
+				<pathelement location="src" />
+			</src>
+		</javac>
+	</target>
+
+	<target name="compileLogServer" depends="compile" description="Compiles logserver source code.">
+		<javac destdir="${logserver.classes}" encoding="UTF-8" includeantruntime="true" debug="true">
+			<classpath location="${j2me.classes}" />
+			<classpath refid="j2me.bootclasspath" />
+			<src>
+				<pathelement location="${logserver.src}" />
+			</src>
+		</javac>
+	</target>
+
+	<target name="taskdefs" depends="compile">
+		<taskdef classname="org.robotme.ant.RobotizeTask" name="robotize">
+			<classpath refid="robotme.classpath" />
+			<classpath location="${classes.dir}" />
+
+			<!-- Below classpath is necessary in order to overcome limitation of ASM in finding common
+			super class for two different classes (RuntimeException is thrown from method: org.objectweb.asm.ClassWriter.getCommonSuperClass
+			if below claspath is missing)
+			-->
+			<classpath refid="j2me.bootclasspath" />
+		</taskdef>
+
+		<!-- TODO: below task is not used -->
+		<taskdef classname="org.robotme.ant.JustIceVerifierTask" name="justIceVerifier">
+			<classpath refid="robotme.classpath" />
+			<classpath location="${classes.dir}" />
+			<classpath location="${j2me.classes}" />
+			<classpath refid="j2me.bootclasspath" />
+		</taskdef>
+	</target>
+
+	<!-- Runs socket log listener server  -->
+	<target name="run.socketloglistener" depends="compileLogServer" description="Runs socket log listening server">
+		<mkdir dir="${socketlog.dir}" />
+		<java classname="org.robotme.logserver.socket.LogServerListener">
+			<arg value="${socketlog.dir}" />
+			<classpath>
+				<pathelement location="${logserver.classes}" />
+				<pathelement location="${j2me.classes}" />
+			</classpath>
+			<classpath refid="j2me.bootclasspath" />
+		</java>
+	</target>
+
+	<target name="copyTemplates" description="Copies the template classes from j2me project.">
+		<copy todir="${classes.dir}">
+			<fileset dir="${j2me.classes.dir}">
+				<include name="**/*.class" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!--	<target name="justIceVerifier">
+		<fail unless="j2me.classes.dir" />
+
+		<echo>BCEL's JustIce verifier working...</echo>
+		<justIceVerifier logFile="${verification.log.file}">
+			<fileset dir="${j2me.classes.dir}">
+				<include name="**/*.class" />
+				<exclude name="org/robotme/**" />
+			</fileset>
+		</justIceVerifier>
+	</target>
+-->
+
+	<target name="record" description="Robotizes the examples in record state.">
+		<property name="tmp.record" value="true" />
+		<antcall target="robotize-internal" />
+	</target>
+
+	<target name="replay" description="Robotizes the examples in replay state.">
+		<property name="tmp.record" value="false" />
+		<antcall target="robotize-internal" />
+	</target>
+
+	<target name="robotize-internal" depends="taskdefs" description="Robotizes the examples.">
+		<robotize targetExtension=".class" record="${tmp.record}">
+			<fileset dir="${j2me.classes.dir}">
+				<include name="**/*.class" />
+				<exclude name="org/robotme/**" />
+			</fileset>
+		</robotize>
+
+		<!-- JustIce verifier -->
+		<!--		<antcall target="justIceVerifier" /> -->
+
+		<antcall target="obfuscate" />
+
+		<!-- preverify -->
+		<antcall target="preverify" />
+
+		<!-- build a jar and run -->
+		<copy file="../robotme-example-midlet/robotme-example-midlet.jad" todir="tmp/ant" />
+		<jar jarfile="tmp/ant/robotme-example-midlet.jar" update="false" manifest="tmp/ant/robotme-example-midlet.jad">
+			<fileset dir="${j2me.preverified}" />
+		</jar>
+
+		<taskdef classname="com.mpilot.ant.FileSizeTask" name="filesize">
+			<classpath location="ant/filesizetask.jar" />
+		</taskdef>
+
+		<filesize property="tmp.jar.size" file="tmp/ant/robotme-example-midlet.jar" />
+		<manifest file="tmp/ant/robotme-example-midlet.jad" mode="update">
+			<attribute name="MIDlet-Jar-Size" value="${tmp.jar.size}" />
+		</manifest>
+	</target>
+</project>

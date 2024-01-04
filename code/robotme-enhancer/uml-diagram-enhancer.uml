@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaProfile_1="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2" xmlns:Omondo_1="http:///_zrN_0SUoEdmNXYQzyImvfA.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw http:///_zrN_0SUoEdmNXYQzyImvfA.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA">
+  <uml:Package xmi:id="_b219I01uEdydqcr6jljqYw" name="visitors">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cAPJsE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_cAYTok1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cAYTpE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_P6NoAFhvEdyhGL9HDuG63g"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b219JE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Package" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vZy_YE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2QysYU1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_b219JE1uEdydqcr6jljqYw" name="BaseVisitor" isAbstract="true">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b9_uAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-JfAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-TQAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-cZ8k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-cZ9U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-mK8k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-v78k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b-5F4U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_C24k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_MA0k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_Vx0U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_fi0k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_oswk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_osxE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b_ydwk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b_8Owk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_P5KfIFhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_P5UQIVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_P5eBIVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_P5nLEVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_P5w8EVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_P5w8E1hvEdyhGL9HDuG63g"/>
+    <generalization xmi:id="_b8NlU01uEdydqcr6jljqYw" general="_b8NlUk1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_b8ggQE1uEdydqcr6jljqYw" name="mETHOD_NAME_CONSTRUCTOR" visibility="protected" isLeaf="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9G9M01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9G9Mk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8ggRU1uEdydqcr6jljqYw" name="dISPLAY_CLASS_NAME" visibility="protected" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHIU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHIE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8ggRk1uEdydqcr6jljqYw" name="cOMMANDLISTENER_INTERFACE_NAME" visibility="protected" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHI01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHIk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8ggR01uEdydqcr6jljqYw" name="dISPLAYABLE_CLASS_NAME" visibility="protected" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHJU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHJE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8ggSE1uEdydqcr6jljqYw" name="processing" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHJ01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHJk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8qRQE1uEdydqcr6jljqYw" name="cw" visibility="protected" isLeaf="true" type="_b8qRQU1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHKU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHKE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8qRQk1uEdydqcr6jljqYw" name="mETHOD_NAME_CLASS_INIT" visibility="protected" isLeaf="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHK01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHKk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b8qRQ01uEdydqcr6jljqYw" name="mIDDLET_CLASS_NAME" visibility="protected" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b9QHLU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b9QHLE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_b8qRRE1uEdydqcr6jljqYw" name="isProcessing" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P4RuUVhvEdyhGL9HDuG63g" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_b8qRRk1uEdydqcr6jljqYw" name="getInternalRobotMeClassName" visibility="protected" isAbstract="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_P4a4Q1hvEdyhGL9HDuG63g" type="_b8qRR01uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_b8qRSU1uEdydqcr6jljqYw" name="BaseVisitor" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_P4a4RFhvEdyhGL9HDuG63g" name="cv" type="_b8zbME1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P4a4RVhvEdyhGL9HDuG63g" name="cw" type="_b8qRQU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_b8zbM01uEdydqcr6jljqYw" name="getFactoryMethodName" visibility="protected" isAbstract="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_P4a4RlhvEdyhGL9HDuG63g" type="_b8ggRE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_b8zbNU1uEdydqcr6jljqYw" name="setProcessing" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P4RuUFhvEdyhGL9HDuG63g" name="processing">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_b8zbN01uEdydqcr6jljqYw" name="getClassBytecode" visibility="protected" isStatic="true" concurrency="concurrent" raisedException="_b9G9MU1uEdydqcr6jljqYw">
+      <ownedParameter xmi:id="_P4RuUlhvEdyhGL9HDuG63g" name="className" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P4a4QVhvEdyhGL9HDuG63g" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Package xmi:id="_b8NlUU1uEdydqcr6jljqYw" name="asm">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b8NlUk1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b8qRQU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Interface" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b8zbME1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Interface" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cI4IUE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cI4IWk1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Interface" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cJB5VU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Interface" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cJLDTU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_h0BGPE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Package" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vcLlAE1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_b8NlUk1uEdydqcr6jljqYw" name="ClassAdapter">
+    <generalization xmi:id="_cIbcYU1uEdydqcr6jljqYw" general="_cIbcYE1uEdydqcr6jljqYw"/>
+    <generalization xmi:id="_cIbcYk1uEdydqcr6jljqYw" general="_b8zbME1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_cIuXUE1uEdydqcr6jljqYw" name="cv" visibility="protected" type="_b8zbME1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_cIuXUU1uEdydqcr6jljqYw" name="visitAnnotation" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cIuXUk1uEdydqcr6jljqYw" name="arg0" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cIuXU01uEdydqcr6jljqYw" name="arg1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_cI4IUU1uEdydqcr6jljqYw" type="_cI4IUE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cI4IUk1uEdydqcr6jljqYw" name="visitInnerClass" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cI4IU01uEdydqcr6jljqYw" name="arg0" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cI4IVE1uEdydqcr6jljqYw" name="arg1" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cI4IVU1uEdydqcr6jljqYw" name="arg2" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cI4IVk1uEdydqcr6jljqYw" name="arg3">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cI4IV01uEdydqcr6jljqYw" name="ClassAdapter" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cI4IWE1uEdydqcr6jljqYw" name="arg0" type="_b8zbME1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cI4IWU1uEdydqcr6jljqYw" name="visitAttribute" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cI4IW01uEdydqcr6jljqYw" name="arg0" type="_cI4IWk1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cI4IXE1uEdydqcr6jljqYw" name="visitMethod" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cI4IXU1uEdydqcr6jljqYw" name="arg0">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_cJB5UE1uEdydqcr6jljqYw" name="arg1" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5UU1uEdydqcr6jljqYw" name="arg2" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5Uk1uEdydqcr6jljqYw" name="arg3" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5U01uEdydqcr6jljqYw" name="arg4" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5Vk1uEdydqcr6jljqYw" type="_cJB5VU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cJB5V01uEdydqcr6jljqYw" name="visitSource" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cJB5WE1uEdydqcr6jljqYw" name="arg0" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5WU1uEdydqcr6jljqYw" name="arg1" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cJB5Wk1uEdydqcr6jljqYw" name="visitOuterClass" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cJB5W01uEdydqcr6jljqYw" name="arg0" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5XE1uEdydqcr6jljqYw" name="arg1" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJB5XU1uEdydqcr6jljqYw" name="arg2" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cJB5Xk1uEdydqcr6jljqYw" name="visitEnd" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_cJB5X01uEdydqcr6jljqYw" name="visit" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cJLDQE1uEdydqcr6jljqYw" name="arg0">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_cJLDQU1uEdydqcr6jljqYw" name="arg1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_cJLDQk1uEdydqcr6jljqYw" name="arg2" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJLDQ01uEdydqcr6jljqYw" name="arg3" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJLDRE1uEdydqcr6jljqYw" name="arg4" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJLDRU1uEdydqcr6jljqYw" name="arg5" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cJLDR01uEdydqcr6jljqYw" name="visitField" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_cJLDSE1uEdydqcr6jljqYw" name="arg0">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_cJLDSU1uEdydqcr6jljqYw" name="arg1" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJLDSk1uEdydqcr6jljqYw" name="arg2" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJLDS01uEdydqcr6jljqYw" name="arg3" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJLDTE1uEdydqcr6jljqYw" name="arg4" type="_cIbcYE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_cJU0QE1uEdydqcr6jljqYw" type="_cJLDTU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Class xmi:id="_b8ggRE1uEdydqcr6jljqYw" name="String" isLeaf="true"/>
+  <uml:Class xmi:id="_b8qRQU1uEdydqcr6jljqYw" name="ClassWriter"/>
+  <uml:Class xmi:id="_b8qRR01uEdydqcr6jljqYw" name="Class" isLeaf="true"/>
+  <uml:Interface xmi:id="_b8zbME1uEdydqcr6jljqYw" name="ClassVisitor" isAbstract="true"/>
+  <uml:Class xmi:id="_b9G9MU1uEdydqcr6jljqYw" name="IOException"/>
+  <uml:Class xmi:id="_b9QHLk1uEdydqcr6jljqYw" name="InputStream" isAbstract="true"/>
+  <uml:Class xmi:id="_b92kEE1uEdydqcr6jljqYw" name="StringBuilder" isLeaf="true"/>
+  <uml:Package xmi:id="_b92kEU1uEdydqcr6jljqYw" name="util">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b92kEk1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_b92kEk1uEdydqcr6jljqYw" name="StreamUtils" clientDependency="_eLtiw01uEdydqcr6jljqYw _eL2ssU1uEdydqcr6jljqYw _eMAdsk1uEdydqcr6jljqYw _eMAdtE1uEdydqcr6jljqYw _eMKOsU1uEdydqcr6jljqYw _eMdJok1uEdydqcr6jljqYw _eMdJpE1uEdydqcr6jljqYw _eMm6ok1uEdydqcr6jljqYw _eMwEkU1uEdydqcr6jljqYw _eM51kk1uEdydqcr6jljqYw _eNC_gU1uEdydqcr6jljqYw _eNMwgk1uEdydqcr6jljqYw _eNWhgU1uEdydqcr6jljqYw _eO1vQE1uEdydqcr6jljqYw _eO_gQU1uEdydqcr6jljqYw _ePIqMU1uEdydqcr6jljqYw _ePSbMU1uEdydqcr6jljqYw _ePblIU1uEdydqcr6jljqYw _ePblI01uEdydqcr6jljqYw _ePlWIU1uEdydqcr6jljqYw _ehK1Z01uEdydqcr6jljqYw _ehT_UU1uEdydqcr6jljqYw _ehdwUU1uEdydqcr6jljqYw _ehnhUU1uEdydqcr6jljqYw _ehnhU01uEdydqcr6jljqYw _ehwrQU1uEdydqcr6jljqYw _eh6cQU1uEdydqcr6jljqYw" isLeaf="true">
+    <ownedOperation xmi:id="_eLHF0E1uEdydqcr6jljqYw" name="readAndCloseInput" visibility="public" isStatic="true" concurrency="concurrent" raisedException="_b9G9MU1uEdydqcr6jljqYw">
+      <ownedParameter xmi:id="_ehBEYE1uEdydqcr6jljqYw" name="is" type="_b9QHLk1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_ehBEYk1uEdydqcr6jljqYw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_eLjxw01uEdydqcr6jljqYw" name="readFile" visibility="public" isLeaf="true" isStatic="true" concurrency="concurrent" raisedException="_b9G9MU1uEdydqcr6jljqYw">
+      <ownedParameter xmi:id="_ehK1YE1uEdydqcr6jljqYw" name="file" type="_eLjxxE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_ehK1Yk1uEdydqcr6jljqYw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_eLjxyU1uEdydqcr6jljqYw" name="StreamUtils" visibility="private" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_eLjxyk1uEdydqcr6jljqYw" name="writeFile" visibility="public" isStatic="true" concurrency="concurrent" raisedException="_b9G9MU1uEdydqcr6jljqYw">
+      <ownedParameter xmi:id="_ehK1ZE1uEdydqcr6jljqYw" name="file" type="_eLjxxE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_ehK1ZU1uEdydqcr6jljqYw" name="content">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Class xmi:id="_b9_uAE1uEdydqcr6jljqYw" name="ClassLoader" isAbstract="true"/>
+  <uml:Class xmi:id="_cIbcYE1uEdydqcr6jljqYw" name="Object"/>
+  <uml:Interface xmi:id="_cI4IUE1uEdydqcr6jljqYw" name="AnnotationVisitor" isAbstract="true"/>
+  <uml:Class xmi:id="_cI4IWk1uEdydqcr6jljqYw" name="Attribute"/>
+  <uml:Interface xmi:id="_cJB5VU1uEdydqcr6jljqYw" name="MethodVisitor" isAbstract="true"/>
+  <uml:Interface xmi:id="_cJLDTU1uEdydqcr6jljqYw" name="FieldVisitor" isAbstract="true"/>
+  <uml:Class xmi:id="_eLjxxE1uEdydqcr6jljqYw" name="File"/>
+  <uml:Class xmi:id="_eLtiwE1uEdydqcr6jljqYw" name="FileOutputStream"/>
+  <uml:Class xmi:id="_eLtiwU1uEdydqcr6jljqYw" name="FileInputStream"/>
+  <uml:Class xmi:id="_eLtiwk1uEdydqcr6jljqYw" name="ByteArrayOutputStream"/>
+  <uml:Class xmi:id="_hzRfUE1uEdydqcr6jljqYw" name="RobotizeClass" clientDependency="_h0BGPU1uEdydqcr6jljqYw _h0K3MU1uEdydqcr6jljqYw _h0UBIk1uEdydqcr6jljqYw _h0dyIU1uEdydqcr6jljqYw _h0njIk1uEdydqcr6jljqYw _h0wtEk1uEdydqcr6jljqYw _h06eEU1uEdydqcr6jljqYw _h1EPEk1uEdydqcr6jljqYw _h1NZAU1uEdydqcr6jljqYw _h1XKAk1uEdydqcr6jljqYw _h1XKBU1uEdydqcr6jljqYw _h1gT8U1uEdydqcr6jljqYw _h1qE8k1uEdydqcr6jljqYw _h1z18k1uEdydqcr6jljqYw _P-PMYFhvEdyhGL9HDuG63g _P-YWUVhvEdyhGL9HDuG63g _P-iHUVhvEdyhGL9HDuG63g _P-r4UVhvEdyhGL9HDuG63g _P-1CQVhvEdyhGL9HDuG63g _P--zQVhvEdyhGL9HDuG63g">
+    <ownedAttribute xmi:id="_hzuLQE1uEdydqcr6jljqYw" name="record" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hz38UE1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hz38T01uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hzuLQU1uEdydqcr6jljqYw" name="replayVisitors" visibility="private" type="_b219JE1uEdydqcr6jljqYw" association="_hz38V01uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzuLQ01uEdydqcr6jljqYw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hz38UU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hzuLRE1uEdydqcr6jljqYw" name="recordVisitors" visibility="private" type="_b219JE1uEdydqcr6jljqYw" association="_h0BGNE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzuLRk1uEdydqcr6jljqYw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hz38U01uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hzuLR01uEdydqcr6jljqYw" name="logger" visibility="private" isLeaf="true" isStatic="true" type="_hzuLSk1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hz38Vk1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hz38VU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_hzuLS01uEdydqcr6jljqYw" name="setRecord" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P97qYFhvEdyhGL9HDuG63g" name="record">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_hz38QE1uEdydqcr6jljqYw" name="isRecord" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P97qYVhvEdyhGL9HDuG63g" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_hz38Qk1uEdydqcr6jljqYw" name="process" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P97qYlhvEdyhGL9HDuG63g" name="bytecode">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_P97qZFhvEdyhGL9HDuG63g" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_hz38SU1uEdydqcr6jljqYw" name="process" visibility="private" concurrency="concurrent">
+      <ownedParameter xmi:id="_P-FbYFhvEdyhGL9HDuG63g" name="bytecode">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_P-FbYlhvEdyhGL9HDuG63g" name="visitorClass" type="_b8qRR01uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P-FbZFhvEdyhGL9HDuG63g" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Class xmi:id="_hzuLSk1uEdydqcr6jljqYw" name="Logger"/>
+  <uml:Association xmi:id="_hz38V01uEdydqcr6jljqYw" memberEnd="_hzuLQU1uEdydqcr6jljqYw _h0BGME1uEdydqcr6jljqYw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_h0BGME1uEdydqcr6jljqYw" name="" type="_hzRfUE1uEdydqcr6jljqYw" association="_hz38V01uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h0BGMU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h0BGMk1uEdydqcr6jljqYw"/>
+    </ownedEnd>
+  </uml:Association>
+  <uml:Association xmi:id="_h0BGNE1uEdydqcr6jljqYw" memberEnd="_hzuLRE1uEdydqcr6jljqYw _h0BGNU1uEdydqcr6jljqYw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_h0BGNU1uEdydqcr6jljqYw" name="" type="_hzRfUE1uEdydqcr6jljqYw" association="_h0BGNE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h0BGNk1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h0BGN01uEdydqcr6jljqYw"/>
+    </ownedEnd>
+  </uml:Association>
+  <uml:Class xmi:id="_h0BGOk1uEdydqcr6jljqYw" name="Constructor" isLeaf="true"/>
+  <uml:Class xmi:id="_h0BGO01uEdydqcr6jljqYw" name="Exception"/>
+  <uml:Class xmi:id="_h0BGPE1uEdydqcr6jljqYw" name="ClassReader"/>
+  <uml:Package xmi:id="_if-0UE1uEdydqcr6jljqYw" name="ant">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ik5Jg01uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilC6gU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilMEck1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilV1ck1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilfmcU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilowYk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilyhYk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ilyhZE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_il8SYk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_imFcUk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_imPNUU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_imYXQU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_imiIQU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_imr5Qk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_im1DMU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_im1DM01uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_inIlMk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_inRvIU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_inRvJE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QNSVAFhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QNbe8VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QNlP8VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QNvA8VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QN4K4VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QOB74VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QOB741hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QOLs4VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QOU20VhvEdyhGL9HDuG63g"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_if-0UU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Association" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihLHIk1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_if-0UU1uEdydqcr6jljqYw" name="RobotizeTask">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iheCEE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iheCEk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihnMAk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihw9AU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ih6uAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iiD38k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iiNo8U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iiXZ8U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iigj4k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iigj5E1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iiqU4k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_iize0U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ii9P0U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ijHA0k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ijQKwU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ijZ7wk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ijZ7xE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ijjswk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ijs2sk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ij2nsk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_ij_xoU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ikJioU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ikTToU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ikTTpE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ikcdkU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ikmOkk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QKm0cFhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QK5vYVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLC5UVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLMqUVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLMqU1hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLWbUVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLpWQVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLzHQVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QLzHQ1hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QL8RMVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QMGCMVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QMY9IVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QMY9I1hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QMiuIVhvEdyhGL9HDuG63g"/>
+    <generalization xmi:id="_igRvQU1uEdydqcr6jljqYw" general="_igRvQE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_igubME1uEdydqcr6jljqYw" name="record" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ig3lKU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ig3lKE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_igubMU1uEdydqcr6jljqYw" name="targetExtension" visibility="private" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ig3lK01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ig3lKk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_igubMk1uEdydqcr6jljqYw" name="filesets" visibility="private" type="_ig3lIU1uEdydqcr6jljqYw" association="_ihLHIk1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ihBWIU1uEdydqcr6jljqYw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ihBWIE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_igubNE1uEdydqcr6jljqYw" name="validateArguments" visibility="private" concurrency="concurrent" raisedException="_igubNU1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_igubNk1uEdydqcr6jljqYw" name="isRecord" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QJtckFhvEdyhGL9HDuG63g" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_igubOE1uEdydqcr6jljqYw" name="setRecord" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QJjrklhvEdyhGL9HDuG63g" name="record">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_igubOk1uEdydqcr6jljqYw" name="execute" visibility="public" concurrency="concurrent" raisedException="_igubNU1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_igubO01uEdydqcr6jljqYw" name="addConfigured" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QJjrkVhvEdyhGL9HDuG63g" name="fileset" type="_ig3lIU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ig3lI01uEdydqcr6jljqYw" name="setTargetExtension" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QJjrkFhvEdyhGL9HDuG63g" name="extension" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ig3lJU1uEdydqcr6jljqYw" name="process" visibility="private" concurrency="concurrent" raisedException="_b9G9MU1uEdydqcr6jljqYw">
+      <ownedParameter xmi:id="_QJtckVhvEdyhGL9HDuG63g" name="files" type="_eLjxxE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Package xmi:id="_igH-Qk1uEdydqcr6jljqYw" name="ant">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_igRvQE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_igubNU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Package" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ig3lIE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihLHKE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Package" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihUREU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_inubEE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ioBWAU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ioBWBE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ioLHAU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ioLHBU1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_igRvQE1uEdydqcr6jljqYw" name="Task" isAbstract="true">
+    <generalization xmi:id="_inubEU1uEdydqcr6jljqYw" general="_inubEE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioBWAE1uEdydqcr6jljqYw" name="replacement" visibility="private" type="_ioBWAU1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioBWAk1uEdydqcr6jljqYw" name="invalid" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ioBWA01uEdydqcr6jljqYw" name="wrapper" visibility="protected" type="_ioBWBE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioLHAE1uEdydqcr6jljqYw" name="location" visibility="protected" type="_ioLHAU1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioLHAk1uEdydqcr6jljqYw" name="description" visibility="protected" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioLHA01uEdydqcr6jljqYw" name="taskType" visibility="protected" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioLHBE1uEdydqcr6jljqYw" name="target" visibility="protected" type="_ioLHBU1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_ioLHBk1uEdydqcr6jljqYw" name="taskName" visibility="protected" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_ioLHB01uEdydqcr6jljqYw" name="handleErrorFlush" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioLHCE1uEdydqcr6jljqYw" name="output" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioLHCU1uEdydqcr6jljqYw" name="getTaskType" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioLHCk1uEdydqcr6jljqYw" type="_b8ggRE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioLHC01uEdydqcr6jljqYw" name="handleErrorOutput" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioU4AE1uEdydqcr6jljqYw" name="output" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioU4AU1uEdydqcr6jljqYw" name="perform" visibility="public" isLeaf="true" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_ioU4Ak1uEdydqcr6jljqYw" name="setRuntimeConfigurableWrapper" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioU4A01uEdydqcr6jljqYw" name="wrapper" type="_ioBWBE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioU4BE1uEdydqcr6jljqYw" name="log" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioU4BU1uEdydqcr6jljqYw" name="msg" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_ioU4Bk1uEdydqcr6jljqYw" name="msgLevel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioU4B01uEdydqcr6jljqYw" name="Task" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_ioeB8E1uEdydqcr6jljqYw" name="markInvalid" visibility="package" isLeaf="true" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_ioeB8U1uEdydqcr6jljqYw" name="handleFlush" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioeB8k1uEdydqcr6jljqYw" name="output" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioeB801uEdydqcr6jljqYw" name="getLocation" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioeB9E1uEdydqcr6jljqYw" type="_ioLHAU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioeB9U1uEdydqcr6jljqYw" name="execute" visibility="public" concurrency="concurrent" raisedException="_igubNU1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_ioeB9k1uEdydqcr6jljqYw" name="getDescription" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioeB901uEdydqcr6jljqYw" type="_b8ggRE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioeB-E1uEdydqcr6jljqYw" name="setOwningTarget" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_ioeB-U1uEdydqcr6jljqYw" name="target" type="_ioLHBU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ioeB-k1uEdydqcr6jljqYw" name="setDescription" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_iony8E1uEdydqcr6jljqYw" name="desc" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iony8U1uEdydqcr6jljqYw" name="getTaskName" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_iony8k1uEdydqcr6jljqYw" type="_b8ggRE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iony801uEdydqcr6jljqYw" name="getRuntimeConfigurableWrapper" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_iony9E1uEdydqcr6jljqYw" type="_ioBWBE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iony9U1uEdydqcr6jljqYw" name="handleInput" visibility="protected" concurrency="concurrent" raisedException="_b9G9MU1uEdydqcr6jljqYw">
+      <ownedParameter xmi:id="_iony9k1uEdydqcr6jljqYw" name="buffer">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iony-E1uEdydqcr6jljqYw" name="offset">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iony-U1uEdydqcr6jljqYw" name="length">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_iony-k1uEdydqcr6jljqYw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iony-01uEdydqcr6jljqYw" name="maybeConfigure" visibility="public" concurrency="concurrent" raisedException="_igubNU1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_iony_E1uEdydqcr6jljqYw" name="setLocation" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_iony_U1uEdydqcr6jljqYw" name="location" type="_ioLHAU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iony_k1uEdydqcr6jljqYw" name="replaceChildren" visibility="private" concurrency="concurrent">
+      <ownedParameter xmi:id="_iow84E1uEdydqcr6jljqYw" name="wrapper" type="_ioBWBE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_iow84U1uEdydqcr6jljqYw" name="parentElement" type="_ioBWAU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iow84k1uEdydqcr6jljqYw" name="reconfigure" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_iow8401uEdydqcr6jljqYw" name="getOwningTarget" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_iow85E1uEdydqcr6jljqYw" type="_ioLHBU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iow85U1uEdydqcr6jljqYw" name="init" visibility="public" concurrency="concurrent" raisedException="_igubNU1uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_iow85k1uEdydqcr6jljqYw" name="setTaskType" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_iow8501uEdydqcr6jljqYw" name="type" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iow86E1uEdydqcr6jljqYw" name="getReplacement" visibility="private" concurrency="concurrent">
+      <ownedParameter xmi:id="_iow86U1uEdydqcr6jljqYw" type="_ioBWAU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iow86k1uEdydqcr6jljqYw" name="handleOutput" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_io6t4E1uEdydqcr6jljqYw" name="output" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_io6t4U1uEdydqcr6jljqYw" name="getWrapper" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_io6t4k1uEdydqcr6jljqYw" type="_ioBWBE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_io6t401uEdydqcr6jljqYw" name="log" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_io6t5E1uEdydqcr6jljqYw" name="msg" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_io6t5U1uEdydqcr6jljqYw" name="isInvalid" visibility="protected" isLeaf="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_io6t5k1uEdydqcr6jljqYw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_io6t501uEdydqcr6jljqYw" name="setTaskName" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_io6t6E1uEdydqcr6jljqYw" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Interface xmi:id="_igubM01uEdydqcr6jljqYw" name="List" isAbstract="true"/>
+  <uml:Class xmi:id="_igubNU1uEdydqcr6jljqYw" name="BuildException"/>
+  <uml:Package xmi:id="_ig3lIE1uEdydqcr6jljqYw" name="types">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ig3lIU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihBWI01uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_ig3lIU1uEdydqcr6jljqYw" name="FileSet">
+    <generalization xmi:id="_ihBWJE1uEdydqcr6jljqYw" general="_ihBWI01uEdydqcr6jljqYw"/>
+    <ownedOperation xmi:id="_ihBWJU1uEdydqcr6jljqYw" name="clone" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QKTScVhvEdyhGL9HDuG63g" type="_cIbcYE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ihBWJ01uEdydqcr6jljqYw" name="FileSet" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_QKTScFhvEdyhGL9HDuG63g" name="fileset" type="_ig3lIU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ihLHIU1uEdydqcr6jljqYw" name="FileSet" visibility="public" concurrency="concurrent"/>
+  </uml:Class>
+  <uml:Class xmi:id="_ihBWI01uEdydqcr6jljqYw" name="AbstractFileSet" isAbstract="true"/>
+  <uml:Association xmi:id="_ihLHIk1uEdydqcr6jljqYw" memberEnd="_igubMk1uEdydqcr6jljqYw _ihLHI01uEdydqcr6jljqYw">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_ihLHI01uEdydqcr6jljqYw" name="" type="_if-0UU1uEdydqcr6jljqYw" association="_ihLHIk1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ihLHJE1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ihLHJU1uEdydqcr6jljqYw"/>
+    </ownedEnd>
+  </uml:Association>
+  <uml:Class xmi:id="_ihLHJ01uEdydqcr6jljqYw" name="ArrayList"/>
+  <uml:Class xmi:id="_ihLHKE1uEdydqcr6jljqYw" name="DirectoryScanner"/>
+  <uml:Interface xmi:id="_ihUREE1uEdydqcr6jljqYw" name="Iterator" isAbstract="true"/>
+  <uml:Package xmi:id="_ihUREU1uEdydqcr6jljqYw" name="util">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_ihUREk1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_ihUREk1uEdydqcr6jljqYw" name="FileUtils"/>
+  <uml:Package xmi:id="_ik5JgU1uEdydqcr6jljqYw" name="classfile"/>
+  <uml:Package xmi:id="_ik5Jgk1uEdydqcr6jljqYw" name="verifier"/>
+  <uml:Class xmi:id="_inubEE1uEdydqcr6jljqYw" name="ProjectComponent" isAbstract="true"/>
+  <uml:Class xmi:id="_ioBWAU1uEdydqcr6jljqYw" name="UnknownElement"/>
+  <uml:Class xmi:id="_ioBWBE1uEdydqcr6jljqYw" name="RuntimeConfigurable"/>
+  <uml:Class xmi:id="_ioLHAU1uEdydqcr6jljqYw" name="Location"/>
+  <uml:Class xmi:id="_ioLHBU1uEdydqcr6jljqYw" name="Target"/>
+  <uml:Package xmi:id="_vZy_YE1uEdydqcr6jljqYw" name="common">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vcLlAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_vcVWAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vcfHAE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vcoQ8k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vcoQ9E1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vcyB8k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vc7L4U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vdE84k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vdOt4U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2VHLsE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_2VQVoU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2VQVo01uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2VaGoU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2Vj3oU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7wdaEE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_7wdaEk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7wmkAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7wwVAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7w5e8U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QBNn4FhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QBXY4VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QBgi0VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QBqT0VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QB0E0VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QFFbQFhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QFPMQVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QFPMQ1hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QFY9QVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QFiHMVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QHU28VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QHeA4VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QHnx4VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QHxi4VhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QH6s0VhvEdyhGL9HDuG63g"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vZy_YU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2PvjgE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7toIgE1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_vZy_YU1uEdydqcr6jljqYw" name="DisplayableVisitor" isAbstract="true">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vaPrWU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vaZcUU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vaimQU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vasXQk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_va2IQk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_va_SMk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vbJDMU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vbJDNE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vbS0Mk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vbb-Ik1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_vblvIU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vbu5EU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vb4qEk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QALGEFhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QAUQAVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QAeBAVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QAeBA1hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QAw78FhvEdyhGL9HDuG63g"/>
+    <generalization xmi:id="_vZ8wYE1uEdydqcr6jljqYw" general="_b219JE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_vaGhYE1uEdydqcr6jljqYw" name="logger" visibility="private" isLeaf="true" isStatic="true" type="_hzuLSk1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vaPrV01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vaPrVk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_vaGhYU1uEdydqcr6jljqYw" name="DisplayableVisitor" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P_uaIFhvEdyhGL9HDuG63g" name="cv" type="_b8zbME1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_uaIVhvEdyhGL9HDuG63g" name="cw" type="_b8qRQU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_vaGhZE1uEdydqcr6jljqYw" name="visit" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P_4LJlhvEdyhGL9HDuG63g" name="version">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_P_4LJ1hvEdyhGL9HDuG63g" name="access">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_P_4LKFhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LKVhvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LKlhvEdyhGL9HDuG63g" name="superName" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LK1hvEdyhGL9HDuG63g" name="interfaces" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_vaGhbE1uEdydqcr6jljqYw" name="visitMethod" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_P_uaIlhvEdyhGL9HDuG63g" name="access">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_P_4LIFhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LIVhvEdyhGL9HDuG63g" name="desc" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LIlhvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LI1hvEdyhGL9HDuG63g" name="exceptions" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_P_4LJVhvEdyhGL9HDuG63g" type="_cJB5VU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Class xmi:id="_vaPrWE1uEdydqcr6jljqYw" name="Level"/>
+  <uml:Package xmi:id="_vcLlAE1uEdydqcr6jljqYw" name="tree">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2Qo7b01uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2Qo7cE1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Class xmi:id="_2PvjgE1uEdydqcr6jljqYw" name="CanvasVisitor" isAbstract="true">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2QysY01uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2Q72UU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2RFnUk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2ROxQk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2RYiQU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2RYiRE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2RiTQk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2RrdMU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2R1OMk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2R-_MU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2SIJIU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2SR6Ik1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2SbEEU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2SbEFE1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_2Sk1EU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2SumEU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2S3wAk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TBhAU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TLSAk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TUb8U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TeM8U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TeM9E1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TnW4k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2TxH4U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2T644k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2UEC0U1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2UNz0k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2UXk0k1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2Uguwk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2UguxU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2UqfwU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2Uzpsk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QDJhkFhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QDJhklhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QDTSkVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QDdDkVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QDmNgVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QDv-gVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QD5IcVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QEC5cVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QEMqcVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QEMqc1hvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QEV0YVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QEflYVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QEpWYVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QEygUVhvEdyhGL9HDuG63g"/>
+    <generalization xmi:id="_2QCecE1uEdydqcr6jljqYw" general="_b219JE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_2QMPcE1uEdydqcr6jljqYw" name="robotizedCanvasClass" visibility="private" isLeaf="true" isStatic="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QWAcU1uEdydqcr6jljqYw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QfKbU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAck1uEdydqcr6jljqYw" name="targetClassName" visibility="private" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7YE1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QfKb01uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAc01uEdydqcr6jljqYw" name="templateMethods" visibility="private" isLeaf="true" type="_2QWAdE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7Yk1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7YU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAdU1uEdydqcr6jljqYw" name="iROBOTIZED_NAKED_CANVAS_CLASS_NAME" visibility="private" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7ZE1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7Y01uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAdk1uEdydqcr6jljqYw" name="rOBOTIZED_CANVAS_CLASS_NAME" visibility="private" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7Zk1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7ZU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAd01uEdydqcr6jljqYw" name="logger" visibility="private" isLeaf="true" isStatic="true" type="_hzuLSk1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7aE1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7Z01uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAeE1uEdydqcr6jljqYw" name="iROBOTIZED_NAKED_CANVAS_CLASS_INT_NAME" visibility="private" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7ak1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7aU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAeU1uEdydqcr6jljqYw" name="cANVAS_CLASS_NAME" visibility="private" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7bE1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7a01uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2QWAek1uEdydqcr6jljqYw" name="rOBOTIZED_CANVAS_CLASS_INT_NAME" visibility="private" isLeaf="true" isStatic="true" type="_b8ggRE1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Qo7bk1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Qo7bU1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_2QWAe01uEdydqcr6jljqYw" name="readTemplateMethods" visibility="private" concurrency="concurrent">
+      <ownedParameter xmi:id="_QCs1pVhvEdyhGL9HDuG63g" type="_2QWAdE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2QWAfU1uEdydqcr6jljqYw" name="visit" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QC2mp1hvEdyhGL9HDuG63g" name="version">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_QC2mqFhvEdyhGL9HDuG63g" name="access">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_QC2mqVhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2mqlhvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2mq1hvEdyhGL9HDuG63g" name="superName" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2mrFhvEdyhGL9HDuG63g" name="interfaces" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2QWAhU1uEdydqcr6jljqYw" name="createMethodKey" visibility="private" concurrency="concurrent">
+      <ownedParameter xmi:id="_QCs1olhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QCs1o1hvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QCs1pFhvEdyhGL9HDuG63g" type="_b8ggRE1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2QfKYU1uEdydqcr6jljqYw" name="visitEnd" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_2QfKYk1uEdydqcr6jljqYw" name="CanvasVisitor" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QCs1oFhvEdyhGL9HDuG63g" name="cv" type="_b8zbME1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QCs1oVhvEdyhGL9HDuG63g" name="cw" type="_b8qRQU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2QfKZU1uEdydqcr6jljqYw" name="visitMethod" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QC2moFhvEdyhGL9HDuG63g" name="access">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_QC2moVhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2molhvEdyhGL9HDuG63g" name="desc" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2mo1hvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2mpFhvEdyhGL9HDuG63g" name="exceptions" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QC2mplhvEdyhGL9HDuG63g" type="_cJB5VU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Class xmi:id="_2QWAdE1uEdydqcr6jljqYw" name="HashMap"/>
+  <uml:Class xmi:id="_2Qo7b01uEdydqcr6jljqYw" name="MethodNode"/>
+  <uml:Class xmi:id="_2Qo7cE1uEdydqcr6jljqYw" name="ClassNode"/>
+  <uml:Class xmi:id="_2QysYE1uEdydqcr6jljqYw" name="System" isLeaf="true"/>
+  <uml:Class xmi:id="_2QysYU1uEdydqcr6jljqYw" name="MethodCopierVisitor"/>
+  <uml:Interface xmi:id="_2QysYk1uEdydqcr6jljqYw" name="Collection" isAbstract="true"/>
+  <uml:Class xmi:id="_7toIgE1uEdydqcr6jljqYw" name="CommandListenerActionsInvokingInterceptorVisitor" isAbstract="true">
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7uN-YU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7uXvYU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7uXvY01uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7ug5UU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7uqqUk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7u0bUk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7u9lQk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7vHWQU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7vRHQk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7vRHRU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7vkCMk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_7vtMIU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7vtMI01uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7v29Ik1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7wAuIk1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_7wJ4EU1uEdydqcr6jljqYw"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QGRuFVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QGbfEVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QGlQEVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QGuaAVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QG4LAVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Abstraction" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_QHB8AVhvEdyhGL9HDuG63g"/>
+    <clientDependency xmi:type="uml:Usage" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_QHLF8VhvEdyhGL9HDuG63g"/>
+    <generalization xmi:id="_7txScE1uEdydqcr6jljqYw" general="_b219JE1uEdydqcr6jljqYw"/>
+    <ownedAttribute xmi:id="_7t7DcE1uEdydqcr6jljqYw" name="implementsCommandListener" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7uE0gU1uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7uE0gE1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7t7DcU1uEdydqcr6jljqYw" name="logger" visibility="private" isLeaf="true" isStatic="true" type="_hzuLSk1uEdydqcr6jljqYw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7uE0g01uEdydqcr6jljqYw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7uE0gk1uEdydqcr6jljqYw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_7t7Dck1uEdydqcr6jljqYw" name="CommandListenerActionsInvokingInterceptorVisitor" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QGIkIFhvEdyhGL9HDuG63g" name="cv" type="_b8zbME1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGIkIVhvEdyhGL9HDuG63g" name="cw" type="_b8qRQU1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7uE0cE1uEdydqcr6jljqYw" name="visitMethod" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QGIkKVhvEdyhGL9HDuG63g" name="access">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_QGIkKlhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGRuEFhvEdyhGL9HDuG63g" name="desc" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGRuEVhvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGRuElhvEdyhGL9HDuG63g" name="exceptions" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGRuFFhvEdyhGL9HDuG63g" type="_cJB5VU1uEdydqcr6jljqYw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7uE0eE1uEdydqcr6jljqYw" name="visit" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_QGIkIlhvEdyhGL9HDuG63g" name="version">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_QGIkI1hvEdyhGL9HDuG63g" name="access">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_QGIkJFhvEdyhGL9HDuG63g" name="name" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGIkJVhvEdyhGL9HDuG63g" name="signature" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGIkJlhvEdyhGL9HDuG63g" name="superName" type="_b8ggRE1uEdydqcr6jljqYw"/>
+      <ownedParameter xmi:id="_QGIkJ1hvEdyhGL9HDuG63g" name="interfaces" type="_b8ggRE1uEdydqcr6jljqYw"/>
+    </ownedOperation>
+  </uml:Class>
+  <uml:Class xmi:id="_7uN-YE1uEdydqcr6jljqYw" name="Arrays"/>
+  <uml:Package xmi:id="_b8ggQk1uEdydqcr6jljqYw" name="lang">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b8ggRE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b8qRR01uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b92kEE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b9_uAE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_cIbcYE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Package" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_h0BGOU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_h0BGO01uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_2QysYE1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Package xmi:id="_b9G9ME1uEdydqcr6jljqYw" name="io">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b9G9MU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_b9QHLk1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_eLjxxE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_eLtiwE1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_eLtiwU1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_eLtiwk1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Package xmi:id="_hzuLSU1uEdydqcr6jljqYw" name="logging">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_hzuLSk1uEdydqcr6jljqYw"/>
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_vaPrWE1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Package xmi:id="_h0BGOU1uEdydqcr6jljqYw" name="reflect">
+    <packagedElement xmi:type="uml:Class" href="file:/C:/WORK/RobotME/dev2/trunk/code/robotme-enhancer/uml-diagram-enhancer.uml#_h0BGOk1uEdydqcr6jljqYw"/>
+  </uml:Package>
+  <uml:Usage xmi:id="_b9_uAU1uEdydqcr6jljqYw" supplier="_b92kEE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-JfAU1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-TQAU1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-cZ8k1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-cZ9U1uEdydqcr6jljqYw" supplier="_b92kEk1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-mK8k1uEdydqcr6jljqYw" supplier="_b9QHLk1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-v78k1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b-5F4U1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_C24k1uEdydqcr6jljqYw" supplier="_b8zbME1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_MA0k1uEdydqcr6jljqYw" supplier="_b9_uAE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_Vx0U1uEdydqcr6jljqYw" supplier="_b9_uAE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_fi0k1uEdydqcr6jljqYw" supplier="_b9_uAE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_oswk1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_osxE1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_b_ydwk1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_cAPJsE1uEdydqcr6jljqYw" supplier="_b92kEU1uEdydqcr6jljqYw" client="_b219I01uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_cAYTpE1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_b219I01uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eLtiw01uEdydqcr6jljqYw" supplier="_b9QHLk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eL2ssU1uEdydqcr6jljqYw" supplier="_b9QHLk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMAdsk1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMAdtE1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMKOsU1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMdJok1uEdydqcr6jljqYw" supplier="_eLtiwU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMdJpE1uEdydqcr6jljqYw" supplier="_eLtiwU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMm6ok1uEdydqcr6jljqYw" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eMwEkU1uEdydqcr6jljqYw" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eM51kk1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eNC_gU1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eNMwgk1uEdydqcr6jljqYw" supplier="_eLtiwE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eNWhgU1uEdydqcr6jljqYw" supplier="_eLtiwE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eO1vQE1uEdydqcr6jljqYw" supplier="_b9QHLk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eO_gQU1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ePIqMU1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ePSbMU1uEdydqcr6jljqYw" supplier="_eLtiwU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ePblIU1uEdydqcr6jljqYw" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ePblI01uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ePlWIU1uEdydqcr6jljqYw" supplier="_eLtiwE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ehK1Z01uEdydqcr6jljqYw" supplier="_b9QHLk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ehT_UU1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ehdwUU1uEdydqcr6jljqYw" supplier="_eLtiwk1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ehnhUU1uEdydqcr6jljqYw" supplier="_eLtiwU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ehnhU01uEdydqcr6jljqYw" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ehwrQU1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_eh6cQU1uEdydqcr6jljqYw" supplier="_eLtiwE1uEdydqcr6jljqYw" client="_b92kEk1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h0BGPU1uEdydqcr6jljqYw" supplier="_b219JE1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h0K3MU1uEdydqcr6jljqYw" supplier="_b219JE1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h0UBIk1uEdydqcr6jljqYw" supplier="_h0BGPE1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h0dyIU1uEdydqcr6jljqYw" supplier="_h0BGPE1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h0njIk1uEdydqcr6jljqYw" supplier="_b8zbME1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h0wtEk1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h06eEU1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1EPEk1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1NZAU1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1XKAk1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1XKBU1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1gT8U1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1qE8k1uEdydqcr6jljqYw" supplier="_h0BGO01uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h1z18k1uEdydqcr6jljqYw" supplier="_h0BGOk1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_h18_4U1uEdydqcr6jljqYw" supplier="_b219I01uEdydqcr6jljqYw">
+    <client xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_h2Gw4U1uEdydqcr6jljqYw" supplier="_b219I01uEdydqcr6jljqYw">
+    <client xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_h2Qh4k1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw">
+    <client xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_h2Zr0U1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw">
+    <client xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_iheCEE1uEdydqcr6jljqYw" supplier="_igubNU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iheCEk1uEdydqcr6jljqYw" supplier="_igubNU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ihnMAk1uEdydqcr6jljqYw" supplier="_b92kEE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ihw9AU1uEdydqcr6jljqYw" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ih6uAU1uEdydqcr6jljqYw" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iiD38k1uEdydqcr6jljqYw" supplier="_hzRfUE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iiNo8U1uEdydqcr6jljqYw" supplier="_hzRfUE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iiXZ8U1uEdydqcr6jljqYw" supplier="_hzRfUE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iigj4k1uEdydqcr6jljqYw" supplier="_igubM01uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iigj5E1uEdydqcr6jljqYw" supplier="_igubM01uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iiqU4k1uEdydqcr6jljqYw" supplier="_ihLHJ01uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_iize0U1uEdydqcr6jljqYw" supplier="_ig3lIU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ii9P0U1uEdydqcr6jljqYw" supplier="_ig3lIU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ijHA0k1uEdydqcr6jljqYw" supplier="_ihLHKE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ijQKwU1uEdydqcr6jljqYw" supplier="_ihLHKE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ijZ7wk1uEdydqcr6jljqYw" supplier="_ihUREk1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ijZ7xE1uEdydqcr6jljqYw" supplier="_ihUREk1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ijjswk1uEdydqcr6jljqYw" supplier="_ihUREk1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ijs2sk1uEdydqcr6jljqYw" supplier="_b92kEk1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ij2nsk1uEdydqcr6jljqYw" supplier="_ihUREE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ikJioU1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ikTToU1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ikTTpE1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ikcdkU1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ikmOkk1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ik5Jg01uEdydqcr6jljqYw" supplier="_ik5Jgk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilC6gU1uEdydqcr6jljqYw" supplier="_ik5Jgk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilMEck1uEdydqcr6jljqYw" supplier="_ik5Jgk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilV1ck1uEdydqcr6jljqYw" supplier="_ihUREU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilfmcU1uEdydqcr6jljqYw" supplier="_ihUREU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilowYk1uEdydqcr6jljqYw" supplier="_ihUREU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilyhYk1uEdydqcr6jljqYw" supplier="_ig3lIE1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_ilyhZE1uEdydqcr6jljqYw" supplier="_ig3lIE1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_il8SYk1uEdydqcr6jljqYw" supplier="_b92kEU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_imFcUk1uEdydqcr6jljqYw" supplier="_igH-Qk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_imYXQU1uEdydqcr6jljqYw" supplier="_igH-Qk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_imiIQU1uEdydqcr6jljqYw" supplier="_igH-Qk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_imr5Qk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw">
+    <supplier xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_im1DMU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw">
+    <supplier xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_im1DM01uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw">
+    <supplier xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_inIlMk1uEdydqcr6jljqYw" supplier="_ik5JgU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_inRvIU1uEdydqcr6jljqYw" supplier="_ik5JgU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_inRvJE1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw">
+    <supplier xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_ik5JgE1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_vaPrWU1uEdydqcr6jljqYw" supplier="_b92kEE1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vaZcUU1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vaimQU1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vasXQk1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_va2IQk1uEdydqcr6jljqYw" supplier="_vaPrWE1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_va_SMk1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vbJDMU1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vbJDNE1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vbS0Mk1uEdydqcr6jljqYw" supplier="_b8zbME1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vbb-Ik1uEdydqcr6jljqYw" supplier="_b219JE1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vbu5EU1uEdydqcr6jljqYw" supplier="_cJB5VU1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vb4qEk1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vcLlAU1uEdydqcr6jljqYw" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vcfHAE1uEdydqcr6jljqYw" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vcoQ8k1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vcoQ9E1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vcyB8k1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vc7L4U1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vdE84k1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_vdOt4U1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2QysY01uEdydqcr6jljqYw" supplier="_b92kEE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2Q72UU1uEdydqcr6jljqYw" supplier="_2QysYU1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2RFnUk1uEdydqcr6jljqYw" supplier="_2QysYE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2ROxQk1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2RYiQU1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2RYiRE1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2RiTQk1uEdydqcr6jljqYw" supplier="_h0BGPE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2RrdMU1uEdydqcr6jljqYw" supplier="_h0BGPE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2R1OMk1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2R-_MU1uEdydqcr6jljqYw" supplier="_igubM01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2SIJIU1uEdydqcr6jljqYw" supplier="_igubM01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2SR6Ik1uEdydqcr6jljqYw" supplier="_2QysYk1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2SbEEU1uEdydqcr6jljqYw" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2SbEFE1uEdydqcr6jljqYw" supplier="_ihUREE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2SumEU1uEdydqcr6jljqYw" supplier="_2Qo7cE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2S3wAk1uEdydqcr6jljqYw" supplier="_2Qo7cE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TBhAU1uEdydqcr6jljqYw" supplier="_2Qo7cE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TLSAk1uEdydqcr6jljqYw" supplier="_2QWAdE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TUb8U1uEdydqcr6jljqYw" supplier="_2QWAdE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TeM8U1uEdydqcr6jljqYw" supplier="_2QWAdE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TeM9E1uEdydqcr6jljqYw" supplier="_cJB5VU1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TnW4k1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2TxH4U1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2T644k1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2UEC0U1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2UNz0k1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2UXk0k1uEdydqcr6jljqYw" supplier="_b8zbME1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2Uguwk1uEdydqcr6jljqYw" supplier="_vaPrWE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2UguxU1uEdydqcr6jljqYw" supplier="_2Qo7b01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2UqfwU1uEdydqcr6jljqYw" supplier="_2Qo7b01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2Uzpsk1uEdydqcr6jljqYw" supplier="_2Qo7b01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2VHLsE1uEdydqcr6jljqYw" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2VQVo01uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2VaGoU1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_2Vj3oU1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7uN-YU1uEdydqcr6jljqYw" supplier="_b92kEE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7uXvYU1uEdydqcr6jljqYw" supplier="_igubM01uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7uXvY01uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7ug5UU1uEdydqcr6jljqYw" supplier="_b8qRR01uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7uqqUk1uEdydqcr6jljqYw" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7u0bUk1uEdydqcr6jljqYw" supplier="_vaPrWE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7u9lQk1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7vHWQU1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7vRHQk1uEdydqcr6jljqYw" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7vRHRU1uEdydqcr6jljqYw" supplier="_b8zbME1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7vkCMk1uEdydqcr6jljqYw" supplier="_b219JE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7vtMI01uEdydqcr6jljqYw" supplier="_cJB5VU1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7v29Ik1uEdydqcr6jljqYw" supplier="_7uN-YE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7wAuIk1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7wJ4EU1uEdydqcr6jljqYw" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7wdaEE1uEdydqcr6jljqYw" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7wmkAU1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7wwVAU1uEdydqcr6jljqYw" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_7w5e8U1uEdydqcr6jljqYw" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P5KfIFhvEdyhGL9HDuG63g" supplier="_b92kEE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P5UQIVhvEdyhGL9HDuG63g" supplier="_b8qRR01uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P5eBIVhvEdyhGL9HDuG63g" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P5nLEVhvEdyhGL9HDuG63g" supplier="_b9_uAE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P5w8EVhvEdyhGL9HDuG63g" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_b219JE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P-PMYFhvEdyhGL9HDuG63g" supplier="_b219JE1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P-YWUVhvEdyhGL9HDuG63g" supplier="_h0BGPE1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P-iHUVhvEdyhGL9HDuG63g" supplier="_b8qRR01uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P-r4UVhvEdyhGL9HDuG63g" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P-1CQVhvEdyhGL9HDuG63g" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P--zQVhvEdyhGL9HDuG63g" supplier="_h0BGOk1uEdydqcr6jljqYw" client="_hzRfUE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_P_H9MVhvEdyhGL9HDuG63g" supplier="_b219I01uEdydqcr6jljqYw">
+    <client xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_P_RuMVhvEdyhGL9HDuG63g" supplier="_b8NlUU1uEdydqcr6jljqYw">
+    <client xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_QALGEFhvEdyhGL9HDuG63g" supplier="_b92kEE1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QAUQAVhvEdyhGL9HDuG63g" supplier="_b8qRR01uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QAeBAVhvEdyhGL9HDuG63g" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QAeBA1hvEdyhGL9HDuG63g" supplier="_b219JE1uEdydqcr6jljqYw" client="_vZy_YU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QBNn4FhvEdyhGL9HDuG63g" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QBgi0VhvEdyhGL9HDuG63g" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QBqT0VhvEdyhGL9HDuG63g" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QB0E0VhvEdyhGL9HDuG63g" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QDJhkFhvEdyhGL9HDuG63g" supplier="_b92kEE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QDJhklhvEdyhGL9HDuG63g" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QDTSkVhvEdyhGL9HDuG63g" supplier="_h0BGPE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QDdDkVhvEdyhGL9HDuG63g" supplier="_b8qRR01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QDmNgVhvEdyhGL9HDuG63g" supplier="_igubM01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QDv-gVhvEdyhGL9HDuG63g" supplier="_2QysYk1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QD5IcVhvEdyhGL9HDuG63g" supplier="_ihUREE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QEMqcVhvEdyhGL9HDuG63g" supplier="_2Qo7cE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QEMqc1hvEdyhGL9HDuG63g" supplier="_2QWAdE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QEV0YVhvEdyhGL9HDuG63g" supplier="_2QWAdE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QEflYVhvEdyhGL9HDuG63g" supplier="_b8qRQU1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QEpWYVhvEdyhGL9HDuG63g" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QEygUVhvEdyhGL9HDuG63g" supplier="_2Qo7b01uEdydqcr6jljqYw" client="_2PvjgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QFFbQFhvEdyhGL9HDuG63g" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QFPMQ1hvEdyhGL9HDuG63g" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QFY9QVhvEdyhGL9HDuG63g" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QFiHMVhvEdyhGL9HDuG63g" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QGRuFVhvEdyhGL9HDuG63g" supplier="_b92kEE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QGbfEVhvEdyhGL9HDuG63g" supplier="_igubM01uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QGlQEVhvEdyhGL9HDuG63g" supplier="_b8qRR01uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QGuaAVhvEdyhGL9HDuG63g" supplier="_hzuLSk1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QG4LAVhvEdyhGL9HDuG63g" supplier="_b219JE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QHLF8VhvEdyhGL9HDuG63g" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_7toIgE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QHU28VhvEdyhGL9HDuG63g" supplier="_b219I01uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QHnx4VhvEdyhGL9HDuG63g" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QHxi4VhvEdyhGL9HDuG63g" supplier="_vcLlAE1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QH6s0VhvEdyhGL9HDuG63g" supplier="_b8NlUU1uEdydqcr6jljqYw" client="_vZy_YE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QKm0cFhvEdyhGL9HDuG63g" supplier="_igubNU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QK5vYVhvEdyhGL9HDuG63g" supplier="_b92kEE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLC5UVhvEdyhGL9HDuG63g" supplier="_eLjxxE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLMqUVhvEdyhGL9HDuG63g" supplier="_hzRfUE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLMqU1hvEdyhGL9HDuG63g" supplier="_hzRfUE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLWbUVhvEdyhGL9HDuG63g" supplier="_igubM01uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLpWQVhvEdyhGL9HDuG63g" supplier="_ihLHJ01uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLzHQVhvEdyhGL9HDuG63g" supplier="_ig3lIU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QLzHQ1hvEdyhGL9HDuG63g" supplier="_ihLHKE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QL8RMVhvEdyhGL9HDuG63g" supplier="_ihUREk1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QMGCMVhvEdyhGL9HDuG63g" supplier="_ihUREE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QMY9I1hvEdyhGL9HDuG63g" supplier="_b9G9MU1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QMiuIVhvEdyhGL9HDuG63g" supplier="_b8ggRE1uEdydqcr6jljqYw" client="_if-0UU1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QNSVAFhvEdyhGL9HDuG63g" supplier="_ik5Jgk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QNbe8VhvEdyhGL9HDuG63g" supplier="_ihUREU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QNlP8VhvEdyhGL9HDuG63g" supplier="_ig3lIE1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QNvA8VhvEdyhGL9HDuG63g" supplier="_igH-Qk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QOB74VhvEdyhGL9HDuG63g" supplier="_igH-Qk1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <uml:Usage xmi:id="_QOB741hvEdyhGL9HDuG63g" client="_if-0UE1uEdydqcr6jljqYw">
+    <supplier xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_QOLs4VhvEdyhGL9HDuG63g" client="_if-0UE1uEdydqcr6jljqYw">
+    <supplier xmi:type="uml:Package" href="platform:/resource/robotme-enhancer/robotme-enhancer.uml#_b219Ik1uEdydqcr6jljqYw"/>
+  </uml:Usage>
+  <uml:Usage xmi:id="_QOU20VhvEdyhGL9HDuG63g" supplier="_ik5JgU1uEdydqcr6jljqYw" client="_if-0UE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q74FhwEdyhGL9HDuG63g" base_Element="_b9_uAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q74VhwEdyhGL9HDuG63g" base_Element="_b-JfAU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q74lhwEdyhGL9HDuG63g" base_Usage="_b-TQAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q741hwEdyhGL9HDuG63g" base_Element="_b-TQAU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q75FhwEdyhGL9HDuG63g" base_Usage="_b-cZ8k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q75VhwEdyhGL9HDuG63g" base_Element="_b-cZ8k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q75lhwEdyhGL9HDuG63g" base_Usage="_b-cZ9U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q751hwEdyhGL9HDuG63g" base_Element="_b-cZ9U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q76FhwEdyhGL9HDuG63g" base_Usage="_b-mK8k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q76VhwEdyhGL9HDuG63g" base_Element="_b-mK8k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q76lhwEdyhGL9HDuG63g" base_Element="_b-v78k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q761hwEdyhGL9HDuG63g" base_Usage="_b-5F4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q77FhwEdyhGL9HDuG63g" base_Element="_b-5F4U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q77VhwEdyhGL9HDuG63g" base_Usage="_b_C24k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q77lhwEdyhGL9HDuG63g" base_Element="_b_C24k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q771hwEdyhGL9HDuG63g" base_Element="_b_MA0k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q78FhwEdyhGL9HDuG63g" base_Usage="_b_Vx0U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q78VhwEdyhGL9HDuG63g" base_Element="_b_Vx0U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q78lhwEdyhGL9HDuG63g" base_Usage="_b_fi0k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q781hwEdyhGL9HDuG63g" base_Element="_b_fi0k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q79FhwEdyhGL9HDuG63g" base_Element="_b_oswk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q79VhwEdyhGL9HDuG63g" base_Usage="_b_osxE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q79lhwEdyhGL9HDuG63g" base_Element="_b_osxE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q791hwEdyhGL9HDuG63g" base_Usage="_b_ydwk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q7-FhwEdyhGL9HDuG63g" base_Element="_b_ydwk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q7-VhwEdyhGL9HDuG63g" base_Usage="_cAPJsE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q7-lhwEdyhGL9HDuG63g" base_Element="_cAPJsE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q7-1hwEdyhGL9HDuG63g" base_Usage="_cAYTpE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q7_FhwEdyhGL9HDuG63g" base_Element="_cAYTpE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q7_VhwEdyhGL9HDuG63g" base_Element="_eLtiw01uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q7_lhwEdyhGL9HDuG63g" base_Usage="_eL2ssU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q7_1hwEdyhGL9HDuG63g" base_Element="_eL2ssU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8AFhwEdyhGL9HDuG63g" base_Element="_eMAdsk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8AVhwEdyhGL9HDuG63g" base_Element="_eMAdtE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8AlhwEdyhGL9HDuG63g" base_Usage="_eMKOsU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8A1hwEdyhGL9HDuG63g" base_Element="_eMKOsU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8BFhwEdyhGL9HDuG63g" base_Element="_eMdJok1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8BVhwEdyhGL9HDuG63g" base_Usage="_eMdJpE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8BlhwEdyhGL9HDuG63g" base_Element="_eMdJpE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8B1hwEdyhGL9HDuG63g" base_Element="_eMm6ok1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8CFhwEdyhGL9HDuG63g" base_Usage="_eMwEkU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8CVhwEdyhGL9HDuG63g" base_Element="_eMwEkU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8ClhwEdyhGL9HDuG63g" base_Element="_eM51kk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8C1hwEdyhGL9HDuG63g" base_Usage="_eNC_gU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8DFhwEdyhGL9HDuG63g" base_Element="_eNC_gU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8DVhwEdyhGL9HDuG63g" base_Element="_eNMwgk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8DlhwEdyhGL9HDuG63g" base_Usage="_eNWhgU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8D1hwEdyhGL9HDuG63g" base_Element="_eNWhgU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8EFhwEdyhGL9HDuG63g" base_Element="_eO1vQE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8EVhwEdyhGL9HDuG63g" base_Element="_eO_gQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8ElhwEdyhGL9HDuG63g" base_Element="_ePIqMU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8E1hwEdyhGL9HDuG63g" base_Element="_ePSbMU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8FFhwEdyhGL9HDuG63g" base_Element="_ePblIU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8FVhwEdyhGL9HDuG63g" base_Element="_ePblI01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8FlhwEdyhGL9HDuG63g" base_Element="_ePlWIU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8F1hwEdyhGL9HDuG63g" base_Element="_ehK1Z01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8GFhwEdyhGL9HDuG63g" base_Element="_ehT_UU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8GVhwEdyhGL9HDuG63g" base_Element="_ehdwUU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8GlhwEdyhGL9HDuG63g" base_Element="_ehnhUU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8G1hwEdyhGL9HDuG63g" base_Element="_ehnhU01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8HFhwEdyhGL9HDuG63g" base_Element="_ehwrQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8HVhwEdyhGL9HDuG63g" base_Element="_eh6cQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8HlhwEdyhGL9HDuG63g" base_Element="_h0BGPU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8H1hwEdyhGL9HDuG63g" base_Usage="_h0K3MU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8IFhwEdyhGL9HDuG63g" base_Element="_h0K3MU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8IVhwEdyhGL9HDuG63g" base_Element="_h0UBIk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8IlhwEdyhGL9HDuG63g" base_Usage="_h0dyIU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8I1hwEdyhGL9HDuG63g" base_Element="_h0dyIU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8JFhwEdyhGL9HDuG63g" base_Usage="_h0njIk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8JVhwEdyhGL9HDuG63g" base_Element="_h0njIk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8JlhwEdyhGL9HDuG63g" base_Element="_h0wtEk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8J1hwEdyhGL9HDuG63g" base_Usage="_h06eEU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8KFhwEdyhGL9HDuG63g" base_Element="_h06eEU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8KVhwEdyhGL9HDuG63g" base_Element="_h1EPEk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8KlhwEdyhGL9HDuG63g" base_Usage="_h1NZAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8K1hwEdyhGL9HDuG63g" base_Element="_h1NZAU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8LFhwEdyhGL9HDuG63g" base_Usage="_h1XKAk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8LVhwEdyhGL9HDuG63g" base_Element="_h1XKAk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8LlhwEdyhGL9HDuG63g" base_Element="_h1XKBU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8L1hwEdyhGL9HDuG63g" base_Usage="_h1gT8U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8MFhwEdyhGL9HDuG63g" base_Element="_h1gT8U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8MVhwEdyhGL9HDuG63g" base_Usage="_h1qE8k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8MlhwEdyhGL9HDuG63g" base_Element="_h1qE8k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8M1hwEdyhGL9HDuG63g" base_Element="_h1z18k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8NFhwEdyhGL9HDuG63g" base_Element="_h18_4U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8NVhwEdyhGL9HDuG63g" base_Usage="_h2Gw4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8NlhwEdyhGL9HDuG63g" base_Element="_h2Gw4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8N1hwEdyhGL9HDuG63g" base_Element="_h2Qh4k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8OFhwEdyhGL9HDuG63g" base_Usage="_h2Zr0U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8OVhwEdyhGL9HDuG63g" base_Element="_h2Zr0U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8OlhwEdyhGL9HDuG63g" base_Element="_iheCEE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8O1hwEdyhGL9HDuG63g" base_Usage="_iheCEk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8PFhwEdyhGL9HDuG63g" base_Element="_iheCEk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8PVhwEdyhGL9HDuG63g" base_Element="_ihnMAk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8PlhwEdyhGL9HDuG63g" base_Element="_ihw9AU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8P1hwEdyhGL9HDuG63g" base_Usage="_ih6uAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8QFhwEdyhGL9HDuG63g" base_Element="_ih6uAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8QVhwEdyhGL9HDuG63g" base_Element="_iiD38k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8QlhwEdyhGL9HDuG63g" base_Element="_iiNo8U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8Q1hwEdyhGL9HDuG63g" base_Usage="_iiXZ8U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8RFhwEdyhGL9HDuG63g" base_Element="_iiXZ8U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8RVhwEdyhGL9HDuG63g" base_Element="_iigj4k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8RlhwEdyhGL9HDuG63g" base_Usage="_iigj5E1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8R1hwEdyhGL9HDuG63g" base_Element="_iigj5E1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8SFhwEdyhGL9HDuG63g" base_Element="_iiqU4k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8SVhwEdyhGL9HDuG63g" base_Element="_iize0U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8SlhwEdyhGL9HDuG63g" base_Usage="_ii9P0U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8S1hwEdyhGL9HDuG63g" base_Element="_ii9P0U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8TFhwEdyhGL9HDuG63g" base_Element="_ijHA0k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8TVhwEdyhGL9HDuG63g" base_Usage="_ijQKwU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8TlhwEdyhGL9HDuG63g" base_Element="_ijQKwU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8T1hwEdyhGL9HDuG63g" base_Element="_ijZ7wk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8UFhwEdyhGL9HDuG63g" base_Usage="_ijZ7xE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8UVhwEdyhGL9HDuG63g" base_Element="_ijZ7xE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8UlhwEdyhGL9HDuG63g" base_Usage="_ijjswk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8U1hwEdyhGL9HDuG63g" base_Element="_ijjswk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8VFhwEdyhGL9HDuG63g" base_Usage="_ijs2sk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8VVhwEdyhGL9HDuG63g" base_Element="_ijs2sk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8VlhwEdyhGL9HDuG63g" base_Element="_ij2nsk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8V1hwEdyhGL9HDuG63g" base_Element="_ikJioU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8WFhwEdyhGL9HDuG63g" base_Usage="_ikTToU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8WVhwEdyhGL9HDuG63g" base_Element="_ikTToU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8WlhwEdyhGL9HDuG63g" base_Element="_ikTTpE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8W1hwEdyhGL9HDuG63g" base_Usage="_ikcdkU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8XFhwEdyhGL9HDuG63g" base_Element="_ikcdkU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8XVhwEdyhGL9HDuG63g" base_Usage="_ikmOkk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8XlhwEdyhGL9HDuG63g" base_Element="_ikmOkk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8X1hwEdyhGL9HDuG63g" base_Element="_ik5Jg01uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8YFhwEdyhGL9HDuG63g" base_Usage="_ilC6gU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8YVhwEdyhGL9HDuG63g" base_Element="_ilC6gU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8YlhwEdyhGL9HDuG63g" base_Usage="_ilMEck1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8Y1hwEdyhGL9HDuG63g" base_Element="_ilMEck1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8ZFhwEdyhGL9HDuG63g" base_Element="_ilV1ck1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8ZVhwEdyhGL9HDuG63g" base_Usage="_ilfmcU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8ZlhwEdyhGL9HDuG63g" base_Element="_ilfmcU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8Z1hwEdyhGL9HDuG63g" base_Usage="_ilowYk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8aFhwEdyhGL9HDuG63g" base_Element="_ilowYk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8aVhwEdyhGL9HDuG63g" base_Element="_ilyhYk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8alhwEdyhGL9HDuG63g" base_Usage="_ilyhZE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8a1hwEdyhGL9HDuG63g" base_Element="_ilyhZE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8bFhwEdyhGL9HDuG63g" base_Usage="_il8SYk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8bVhwEdyhGL9HDuG63g" base_Element="_il8SYk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8blhwEdyhGL9HDuG63g" base_Element="_imFcUk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8b1hwEdyhGL9HDuG63g" base_Element="_imYXQU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8cFhwEdyhGL9HDuG63g" base_Usage="_imiIQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8cVhwEdyhGL9HDuG63g" base_Element="_imiIQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8clhwEdyhGL9HDuG63g" base_Element="_imr5Qk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8c1hwEdyhGL9HDuG63g" base_Element="_im1DMU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8dFhwEdyhGL9HDuG63g" base_Usage="_im1DM01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8dVhwEdyhGL9HDuG63g" base_Element="_im1DM01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8dlhwEdyhGL9HDuG63g" base_Element="_inIlMk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8d1hwEdyhGL9HDuG63g" base_Usage="_inRvIU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8eFhwEdyhGL9HDuG63g" base_Element="_inRvIU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8eVhwEdyhGL9HDuG63g" base_Usage="_inRvJE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8elhwEdyhGL9HDuG63g" base_Element="_inRvJE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8e1hwEdyhGL9HDuG63g" base_Element="_vaPrWU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8fFhwEdyhGL9HDuG63g" base_Element="_vaZcUU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8fVhwEdyhGL9HDuG63g" base_Usage="_vaimQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8flhwEdyhGL9HDuG63g" base_Element="_vaimQU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8f1hwEdyhGL9HDuG63g" base_Usage="_vasXQk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8gFhwEdyhGL9HDuG63g" base_Element="_vasXQk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8gVhwEdyhGL9HDuG63g" base_Usage="_va2IQk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8glhwEdyhGL9HDuG63g" base_Element="_va2IQk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8g1hwEdyhGL9HDuG63g" base_Element="_va_SMk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8hFhwEdyhGL9HDuG63g" base_Usage="_vbJDMU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8hVhwEdyhGL9HDuG63g" base_Element="_vbJDMU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8hlhwEdyhGL9HDuG63g" base_Usage="_vbJDNE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8h1hwEdyhGL9HDuG63g" base_Element="_vbJDNE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8iFhwEdyhGL9HDuG63g" base_Usage="_vbS0Mk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8iVhwEdyhGL9HDuG63g" base_Element="_vbS0Mk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8ilhwEdyhGL9HDuG63g" base_Element="_vbb-Ik1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8i1hwEdyhGL9HDuG63g" base_Usage="_vbu5EU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8jFhwEdyhGL9HDuG63g" base_Element="_vbu5EU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8jVhwEdyhGL9HDuG63g" base_Usage="_vb4qEk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8jlhwEdyhGL9HDuG63g" base_Element="_vb4qEk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8j1hwEdyhGL9HDuG63g" base_Element="_vcLlAU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8kFhwEdyhGL9HDuG63g" base_Usage="_vcfHAE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8kVhwEdyhGL9HDuG63g" base_Element="_vcfHAE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8klhwEdyhGL9HDuG63g" base_Element="_vcoQ8k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8k1hwEdyhGL9HDuG63g" base_Usage="_vcoQ9E1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8lFhwEdyhGL9HDuG63g" base_Element="_vcoQ9E1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8lVhwEdyhGL9HDuG63g" base_Element="_vcyB8k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8llhwEdyhGL9HDuG63g" base_Usage="_vc7L4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8l1hwEdyhGL9HDuG63g" base_Element="_vc7L4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8mFhwEdyhGL9HDuG63g" base_Element="_vdE84k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8mVhwEdyhGL9HDuG63g" base_Usage="_vdOt4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8mlhwEdyhGL9HDuG63g" base_Element="_vdOt4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8m1hwEdyhGL9HDuG63g" base_Element="_2QysY01uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8nFhwEdyhGL9HDuG63g" base_Usage="_2Q72UU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8nVhwEdyhGL9HDuG63g" base_Element="_2Q72UU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8nlhwEdyhGL9HDuG63g" base_Usage="_2RFnUk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8n1hwEdyhGL9HDuG63g" base_Element="_2RFnUk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8oFhwEdyhGL9HDuG63g" base_Element="_2ROxQk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8oVhwEdyhGL9HDuG63g" base_Usage="_2RYiQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8olhwEdyhGL9HDuG63g" base_Element="_2RYiQU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8o1hwEdyhGL9HDuG63g" base_Usage="_2RYiRE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8pFhwEdyhGL9HDuG63g" base_Element="_2RYiRE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8pVhwEdyhGL9HDuG63g" base_Element="_2RiTQk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8plhwEdyhGL9HDuG63g" base_Usage="_2RrdMU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8p1hwEdyhGL9HDuG63g" base_Element="_2RrdMU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8qFhwEdyhGL9HDuG63g" base_Element="_2R1OMk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8qVhwEdyhGL9HDuG63g" base_Element="_2R-_MU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8qlhwEdyhGL9HDuG63g" base_Usage="_2SIJIU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8q1hwEdyhGL9HDuG63g" base_Element="_2SIJIU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8rFhwEdyhGL9HDuG63g" base_Element="_2SR6Ik1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8rVhwEdyhGL9HDuG63g" base_Usage="_2SbEEU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8rlhwEdyhGL9HDuG63g" base_Element="_2SbEEU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8r1hwEdyhGL9HDuG63g" base_Element="_2SbEFE1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8sFhwEdyhGL9HDuG63g" base_Usage="_2SumEU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8sVhwEdyhGL9HDuG63g" base_Element="_2SumEU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8slhwEdyhGL9HDuG63g" base_Element="_2S3wAk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8s1hwEdyhGL9HDuG63g" base_Usage="_2TBhAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8tFhwEdyhGL9HDuG63g" base_Element="_2TBhAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8tVhwEdyhGL9HDuG63g" base_Element="_2TLSAk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8tlhwEdyhGL9HDuG63g" base_Element="_2TUb8U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8t1hwEdyhGL9HDuG63g" base_Usage="_2TeM8U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8uFhwEdyhGL9HDuG63g" base_Element="_2TeM8U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8uVhwEdyhGL9HDuG63g" base_Usage="_2TeM9E1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8ulhwEdyhGL9HDuG63g" base_Element="_2TeM9E1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8u1hwEdyhGL9HDuG63g" base_Element="_2TnW4k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8vFhwEdyhGL9HDuG63g" base_Usage="_2TxH4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8vVhwEdyhGL9HDuG63g" base_Element="_2TxH4U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8vlhwEdyhGL9HDuG63g" base_Element="_2T644k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8v1hwEdyhGL9HDuG63g" base_Usage="_2UEC0U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8wFhwEdyhGL9HDuG63g" base_Element="_2UEC0U1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8wVhwEdyhGL9HDuG63g" base_Usage="_2UNz0k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8wlhwEdyhGL9HDuG63g" base_Element="_2UNz0k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8w1hwEdyhGL9HDuG63g" base_Usage="_2UXk0k1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8xFhwEdyhGL9HDuG63g" base_Element="_2UXk0k1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8xVhwEdyhGL9HDuG63g" base_Usage="_2Uguwk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8xlhwEdyhGL9HDuG63g" base_Element="_2Uguwk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8x1hwEdyhGL9HDuG63g" base_Element="_2UguxU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q8yFhwEdyhGL9HDuG63g" base_Usage="_2UqfwU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8yVhwEdyhGL9HDuG63g" base_Element="_2UqfwU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q8ylhwEdyhGL9HDuG63g" base_Usage="_2Uzpsk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8y1hwEdyhGL9HDuG63g" base_Element="_2Uzpsk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8zFhwEdyhGL9HDuG63g" base_Element="_2VHLsE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8zVhwEdyhGL9HDuG63g" base_Element="_2VQVo01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8zlhwEdyhGL9HDuG63g" base_Element="_2VaGoU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8z1hwEdyhGL9HDuG63g" base_Element="_2Vj3oU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q80FhwEdyhGL9HDuG63g" base_Element="_7uN-YU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q80VhwEdyhGL9HDuG63g" base_Element="_7uXvYU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q80lhwEdyhGL9HDuG63g" base_Element="_7uXvY01uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q801hwEdyhGL9HDuG63g" base_Usage="_7ug5UU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q81FhwEdyhGL9HDuG63g" base_Element="_7ug5UU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q81VhwEdyhGL9HDuG63g" base_Usage="_7uqqUk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q81lhwEdyhGL9HDuG63g" base_Element="_7uqqUk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q811hwEdyhGL9HDuG63g" base_Usage="_7u0bUk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q82FhwEdyhGL9HDuG63g" base_Element="_7u0bUk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q82VhwEdyhGL9HDuG63g" base_Element="_7u9lQk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q82lhwEdyhGL9HDuG63g" base_Usage="_7vHWQU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q821hwEdyhGL9HDuG63g" base_Element="_7vHWQU1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q83FhwEdyhGL9HDuG63g" base_Usage="_7vRHQk1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q83VhwEdyhGL9HDuG63g" base_Element="_7vRHQk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q83lhwEdyhGL9HDuG63g" base_Usage="_7vRHRU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q831hwEdyhGL9HDuG63g" base_Element="_7vRHRU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q84FhwEdyhGL9HDuG63g" base_Element="_7vkCMk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q84VhwEdyhGL9HDuG63g" base_Usage="_7vtMI01uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q84lhwEdyhGL9HDuG63g" base_Element="_7vtMI01uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Access xmi:id="_A5Q841hwEdyhGL9HDuG63g" base_Usage="_7v29Ik1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q85FhwEdyhGL9HDuG63g" base_Element="_7v29Ik1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q85VhwEdyhGL9HDuG63g" base_Element="_7wAuIk1uEdydqcr6jljqYw"/>
+  <Omondo_1:Omondo__Import xmi:id="_A5Q85lhwEdyhGL9HDuG63g" base_Usage="_7wJ4EU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q851hwEdyhGL9HDuG63g" base_Element="_7wJ4EU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q86FhwEdyhGL9HDuG63g" base_Element="_7wdaEE1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q86VhwEdyhGL9HDuG63g" base_Element="_7wmkAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q86lhwEdyhGL9HDuG63g" base_Element="_7wwVAU1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q861hwEdyhGL9HDuG63g" base_Element="_7w5e8U1uEdydqcr6jljqYw"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q87FhwEdyhGL9HDuG63g" base_Element="_P5KfIFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q87VhwEdyhGL9HDuG63g" base_Element="_P5UQIVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q87lhwEdyhGL9HDuG63g" base_Element="_P5eBIVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q871hwEdyhGL9HDuG63g" base_Element="_P5nLEVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q88FhwEdyhGL9HDuG63g" base_Element="_P5w8EVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__MultidimensionalArray xmi:id="_A5Q88VhwEdyhGL9HDuG63g" base_Operation="_hz38SU1uEdydqcr6jljqYw" dimension="1"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q88lhwEdyhGL9HDuG63g" base_Element="_P-PMYFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q881hwEdyhGL9HDuG63g" base_Element="_P-YWUVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q89FhwEdyhGL9HDuG63g" base_Element="_P-iHUVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q89VhwEdyhGL9HDuG63g" base_Element="_P-r4UVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q89lhwEdyhGL9HDuG63g" base_Element="_P-1CQVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q891hwEdyhGL9HDuG63g" base_Element="_P--zQVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8-FhwEdyhGL9HDuG63g" base_Element="_P_H9MVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8-VhwEdyhGL9HDuG63g" base_Element="_P_RuMVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8-lhwEdyhGL9HDuG63g" base_Element="_QALGEFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8-1hwEdyhGL9HDuG63g" base_Element="_QAUQAVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8_FhwEdyhGL9HDuG63g" base_Element="_QAeBAVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8_VhwEdyhGL9HDuG63g" base_Element="_QAeBA1hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8_lhwEdyhGL9HDuG63g" base_Element="_QBNn4FhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q8_1hwEdyhGL9HDuG63g" base_Element="_QBgi0VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9AFhwEdyhGL9HDuG63g" base_Element="_QBqT0VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9AVhwEdyhGL9HDuG63g" base_Element="_QB0E0VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9AlhwEdyhGL9HDuG63g" base_Element="_QDJhkFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9A1hwEdyhGL9HDuG63g" base_Element="_QDJhklhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9BFhwEdyhGL9HDuG63g" base_Element="_QDTSkVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9BVhwEdyhGL9HDuG63g" base_Element="_QDdDkVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9BlhwEdyhGL9HDuG63g" base_Element="_QDmNgVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9B1hwEdyhGL9HDuG63g" base_Element="_QDv-gVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9CFhwEdyhGL9HDuG63g" base_Element="_QD5IcVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9CVhwEdyhGL9HDuG63g" base_Element="_QEMqcVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9ClhwEdyhGL9HDuG63g" base_Element="_QEMqc1hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9C1hwEdyhGL9HDuG63g" base_Element="_QEV0YVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9DFhwEdyhGL9HDuG63g" base_Element="_QEflYVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9DVhwEdyhGL9HDuG63g" base_Element="_QEpWYVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9DlhwEdyhGL9HDuG63g" base_Element="_QEygUVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9D1hwEdyhGL9HDuG63g" base_Element="_QFFbQFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9EFhwEdyhGL9HDuG63g" base_Element="_QFPMQ1hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9EVhwEdyhGL9HDuG63g" base_Element="_QFY9QVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9ElhwEdyhGL9HDuG63g" base_Element="_QFiHMVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9E1hwEdyhGL9HDuG63g" base_Element="_QGRuFVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9FFhwEdyhGL9HDuG63g" base_Element="_QGbfEVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9FVhwEdyhGL9HDuG63g" base_Element="_QGlQEVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9FlhwEdyhGL9HDuG63g" base_Element="_QGuaAVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9F1hwEdyhGL9HDuG63g" base_Element="_QG4LAVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9GFhwEdyhGL9HDuG63g" base_Element="_QHLF8VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9GVhwEdyhGL9HDuG63g" base_Element="_QHU28VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9GlhwEdyhGL9HDuG63g" base_Element="_QHnx4VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9G1hwEdyhGL9HDuG63g" base_Element="_QHxi4VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9HFhwEdyhGL9HDuG63g" base_Element="_QH6s0VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9HVhwEdyhGL9HDuG63g" base_Element="_QKm0cFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9HlhwEdyhGL9HDuG63g" base_Element="_QK5vYVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9H1hwEdyhGL9HDuG63g" base_Element="_QLC5UVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9IFhwEdyhGL9HDuG63g" base_Element="_QLMqUVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9IVhwEdyhGL9HDuG63g" base_Element="_QLMqU1hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9IlhwEdyhGL9HDuG63g" base_Element="_QLWbUVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9I1hwEdyhGL9HDuG63g" base_Element="_QLpWQVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9JFhwEdyhGL9HDuG63g" base_Element="_QLzHQVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9JVhwEdyhGL9HDuG63g" base_Element="_QLzHQ1hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9JlhwEdyhGL9HDuG63g" base_Element="_QL8RMVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9J1hwEdyhGL9HDuG63g" base_Element="_QMGCMVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9KFhwEdyhGL9HDuG63g" base_Element="_QMY9I1hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9KVhwEdyhGL9HDuG63g" base_Element="_QMiuIVhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9KlhwEdyhGL9HDuG63g" base_Element="_QNSVAFhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9K1hwEdyhGL9HDuG63g" base_Element="_QNbe8VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9LFhwEdyhGL9HDuG63g" base_Element="_QNlP8VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9LVhwEdyhGL9HDuG63g" base_Element="_QNvA8VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9LlhwEdyhGL9HDuG63g" base_Element="_QOB74VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9L1hwEdyhGL9HDuG63g" base_Element="_QOB741hvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9MFhwEdyhGL9HDuG63g" base_Element="_QOLs4VhvEdyhGL9HDuG63g"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_A5Q9MVhwEdyhGL9HDuG63g" base_Element="_QOU20VhvEdyhGL9HDuG63g"/>
+  <uml:Package xmi:id="_A5Q9MlhwEdyhGL9HDuG63g" name="MyProfiles">
+    <profileApplication xmi:id="_XrORQE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrORQU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_6jgWRSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_RgVmWCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrYCQE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrYCQU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_dhEUENSUEdqN9tnr0j3PAQ"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrYCQk1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrYCQ01uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_f6v3QOROEduiB7qvAtFfTA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_j-cLoORNEduiB7qvAtFfTA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrYCRE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrYCRU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_4Um1wCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_RgVcjiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrhMME1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrhMMU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrhMMk1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrhMM01uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_AevloCK6EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_RgVfdiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrhMNE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrhMNU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_kycnUIE4EduiecUdqhZMrw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_EJn30IE0EduiecUdqhZMrw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrhMNk1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrhMN01uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_7D2DMCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_RgfOnSK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_XrhMOE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_XrhMOU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_7hMtlSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_RgfPHCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Xrq9ME1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_Xrq9MU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_7JNEVSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_RgVfXCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Xrq9Mk1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_Xrq9M01uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_6VpgcCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_RgMRQCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Xrq9NE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_Xrq9NU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_0iUoEdmNXYQzyImvfA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Xrq9Nk1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_Xrq9N01uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLkH6MEdmbwasWWc4yvw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Xrq9OE1uEdydqcr6jljqYw">
+      <eAnnotations xmi:id="_Xrq9OU1uEdydqcr6jljqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_7sFH4CK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_RgVcYiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+  </uml:Package>
+</xmi:XMI>

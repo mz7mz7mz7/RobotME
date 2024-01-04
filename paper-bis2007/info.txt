@@ -1,0 +1,24 @@
+    * papers should be submitted via BIS Reviewer System 
+    https://zeus.kie.ae.poznan.pl/reviewer in PDF file format and formatted 
+    according to LNCS guidelines; before the submission you will be required to 
+    register yourself in the system and also add your co-authors to the system 
+    and then attach them to the paper; you may submit many papers using one 
+    account
+    
+    * language of publication: English
+    
+    * please include a 100-word abstract at the beginning of the paper, which 
+    clearly presents the achievement or contribution of the paper
+    
+    * please include 4-7 keywords best describing your paper
+    
+    * we understand that you submit your original work that has not been 
+    published or submitted elsewhere, and that you agree to publish your work 
+    when it is accepted by the Program Committee; you will be required to send a 
+    signed copyright form as required by Springer at a later stage
+    
+    * at least one author should register for the conference and present the 
+    paper; only registered authors' papers will be included in the proceedings
+
+    * the authors will prepare the final manuscript in time for its inclusion in 
+    conference proceedings 

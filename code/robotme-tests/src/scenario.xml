@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+
+	<event level="DEBUG" timestamp="1166970712775"
+		message="MIDlet set to: org.example.midlet.TestTextBoxMIDlet@d590dbc"
+		exception="" replayable="false" assertion="false">
+		<log-event />
+	</event>
+
+	<event level="DEBUG" timestamp="1166970712838"
+		message="Command added to displayable: javax.microedition.lcdui.Command@1a4cfaaa"
+		exception="" replayable="false" assertion="false">
+		<log-event />
+	</event>
+
+	<event level="DEBUG" timestamp="1166970712853"
+		message="Command added to displayable: javax.microedition.lcdui.Command@1cb37664"
+		exception="" replayable="false" assertion="false">
+		<log-event />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970712900"
+		message="Displayable set to: javax.microedition.lcdui.TextBox@f828ed68"
+		exception="" replayable="false" assertion="true">
+		<displayable-changed title="LabelXXXXX" type="TEXTBOX" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970715088" message=""
+		exception="" replayable="true" assertion="false">
+		<textbox-modification string="Text123" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970715103"
+		message="Command invoked: COMMAND" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="COMMAND" displayableTitle="Label" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970720338" message=""
+		exception="" replayable="true" assertion="false">
+		<textbox-modification string="Text123456" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970720353"
+		message="Command invoked: COMMAND" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="COMMAND" displayableTitle="Label" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970722244" message=""
+		exception="" replayable="true" assertion="false">
+		<textbox-modification string="Text123456789" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970722260"
+		message="Command invoked: COMMAND" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="COMMAND" displayableTitle="Label" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970725260" message=""
+		exception="" replayable="true" assertion="false">
+		<textbox-modification string="Text123456789abc" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970725275"
+		message="Command invoked: COMMAND" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="COMMAND" displayableTitle="Label" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970727010" message=""
+		exception="" replayable="true" assertion="false">
+		<textbox-modification string="Text123456789abcsdf" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970727041"
+		message="Command invoked: COMMAND" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="COMMAND" displayableTitle="Label" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970730510" message=""
+		exception="" replayable="true" assertion="false">
+		<textbox-modification string="marcin" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970730525"
+		message="Command invoked: COMMAND" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="COMMAND" displayableTitle="Label" />
+	</event>
+
+	<event timestamp="1166970730526" message="" exception=""
+		replayable="false" assertion="false">
+		<failure failureMessage="Faiure msg"
+			assertionClassName="org.robotme.core.log.assertion.AssertionDisplayableChangedLogEntry" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970731525"
+		message="Command invoked: EXIT" exception="" replayable="true"
+		assertion="false">
+		<command cmdLabel="EXIT" displayableTitle="Label" />
+	</event>
+
+	<!-- TODO: Test if canvas-modification is supported -->
+	<event level="INTERNAL" timestamp="1166970731526" message=""
+		exception="" replayable="false" assertion="true">
+		<canvas-modification title="Canvas Title 1"
+			tickerString="Canvas Ticker String 1" />
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970731527" message=""
+		exception="" replayable="false" assertion="true">
+		<canvas-modification title="Canvas Title 2" />
+	</event>
+
+	<!-- TODO: Test if canvas-modification is supported -->
+	<event level="INTERNAL" timestamp="1166970731528" message=""
+		exception="" replayable="false" assertion="true">
+		<list-modification title="List Title 1"
+			tickerString="List Ticker String 1">
+			<selectedFlags>
+				<value>true</value>
+				<value>false</value>
+				<value>true</value>
+			</selectedFlags>
+			<strings>
+				<value>Item A</value>
+				<value>Item B</value>
+				<value>Item C</value>
+			</strings>
+		</list-modification>
+	</event>
+
+	<event level="INTERNAL" timestamp="1166970731529" message=""
+		exception="" replayable="false" assertion="true">
+		<list-modification title="List Title 2">
+			<selectedFlags>
+				<value>true</value>
+				<value>false</value>
+				<value>false</value>
+			</selectedFlags>
+			<strings>
+				<value>Item 1</value>
+				<value>Item 2</value>
+				<value>Item 3</value>
+			</strings>
+		</list-modification>
+	</event>
+
+	<!--  Form (only proposition at the moment): -->
+	<event level="INTERNAL" timestamp="1166970731531" message=""
+		exception="" replayable="false" assertion="true">
+		<form-modification title="Form Title 1">
+			<items>
+				<choice-group label="Choice group label">
+					<selectedFlags>
+						<value>true</value>
+						<value>false</value>
+						<value>true</value>
+					</selectedFlags>
+					<strings>
+						<value>CG 1</value>
+						<value>CG 2</value>
+						<value>CG 3</value>
+					</strings>
+				</choice-group>
+				
+				<!--  Currently only timestamp is supported, but other formats will be supported soon -->
+				<date-field label="Date 1" date="1166970731529"/>
+				
+				<gauge label="Gauge 1" value="6" />
+				
+				<image label="Img 1" altText="Alternative text 1" />
+				
+				<!--  Spacer hasn't values ! -->
+				<spacer />
+				
+				<string-item label="String item 1" text="Text 1" />
+				
+				<text-field label="Text field 1" string="String 1" />
+			</items>
+		</form-modification>
+	</event>
+
+</scenario>

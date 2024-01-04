@@ -1,0 +1,1 @@
+jad -ff -o -s java *.clazz

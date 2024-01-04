@@ -1,0 +1,86 @@
+podejscie do asercji:
+
+- asercje (niby) nalezy weryfikowac po kazdej akcji uzytkownika (takze emulacji
+  takiej akcji; jak twierdzi dokument FSE2000.pdf ). Problem tylko w tym ze na
+  komorkach taka czesta weryfikacja moze sie okazac bardzo kosztowna (a moze i nie ???)
+  
+  [Kosztem bym sie nie przejmowal. Moim zdaniem asercje sa na tyle trudne, ze i tak
+  beda wymagaly wprowadzenia/ edycji przez designera testu. Natomiast w sytuacji record-replay
+  naszymi asercjami sa te, ktore wymieniami -- zmiany ekranu i zdarzenia odebrane
+  od systemu; te powinny sie (domyslnie) odtworzyc w takiej samej kolejnosci).
+  
+  Asercje moim zdaniem NIE powinny byc nastawione na czas; raczej na jakas abstrakcyjna
+  jednostke uplywu czasu. Urzadzenia roznia sie na tyle szybkoscia, ze nie mozna przywiazywac
+  wagi do konkretnego jego uplywu.]
+
+  <MZ: Masz racje co do abstrakcyjnych jednostek czasu, o tym nie pomyslalem>
+  
+- nalezy w jakis sposob zamodelowac oczekiwane zachowanie gui i na tej podstawie
+  wygenerowac oczekiwany stan aplikacji. Nastepnie musimy opracowac metode
+  generowania aktualnego stanu aplikacji z informacji o aktualnie dzialajacej
+  aplikacji. Ostatnim krokiem jest ustandaryzowany mechanizm porownywania tych dwoch
+  stanow.
+  
+  [Tak jak napisalem powyzej, moim zdaniem zmiana Displayable i zdarzenia otrzymywane od systemu
+  sa dobrymi wyznacznikami stanu. To, o czym mowilem na poczatku -- recznie wprowadzane do programu
+  okreslenia "stanu" powinny byc rowniez monitorowane i powinna byc ich mozliwosc uwzglednienia
+  w asercjach testowych. Przykladem takiej asercji moze byc np. weryfikacja pola tekstowego formularza,
+  po ktorym chcemy event braku jego akceptacji. Moze to byc explicite event kierowany do systemu
+  testujacego i oczekiwany w skrypcie. To jest troche jak log-driven test verification... ]
+
+W naszym podejsciu (mowiac bardziej konretnie) mozna by zastosowac:
+- po fazie Record QA przeglada plik ze scenariuszem (akcje + reakcje) i w specjanym
+  edytorze zaznacza te reakcje ktore chce aby byly weryfikowane w runtime'ie
+  podczas fazy Replay.
+  
+  [Specjalny edytor bym na razie sobie darowal na rzecz prostego pliku tekstowego lub XMLka. 
+  Jak wolisz. Pomysl oczywiscie jest sensowny i ma wsparcie w tej literaturze, o ktorej 
+  wspomnialem. Skrypt powinien byc domyslnie "pelen", tzn. oczekiwac na wszystkie akcje/ reakcje. 
+  QA moze sobie niektore z nich, ktore uzna za nadmiarowe, skasowac ]
+
+- w edytorze moze zaznaczyc takze dla kazdego odstepu czasu pomiedzy emulowaniem akcji z osobna
+  iz chce aby nie byly one od siebie oddalone wiecej jak o X jednostek czasu
+  
+  [Te jednostki "czasu" moga byc troche problematyczne (rozne telefony = rozna predkosc wykonania). 
+  Moze da sie cos wykombinowac lepiej...]
+
+  <MZ: Mysle ze moglyby zostac abstrakcyjne jednostki czasu, a jak sie one maja do rzeczywistych
+   to juz jakis wspolczynnik skalowalnosci ustawiny np. w pliku JAD odpowiedni dla kazdego modelu telefonu
+   by okreslal>
+  <MZ: Pomysle jednak czy i na czego korzysc moznaby bylo zrezygnowac z koncepcji jednostek czasu>
+
+- w edytorze pomiedzy grupami wpisow o _reakcjach_ aplikacji mozna zmieniac tryb weryfikacji
+  kolejnych _reakcji_. Dopuszczalne tryby to: "weryfikuj jako zbior" i "weryfikuj jako sekwencje"
+  zachodzenie kolejnych _reakcji_.
+  
+  [Trzeba bedzie wykombinowac skladnie dla takich klauzul, ale pomysl nie jest zly.]
+  
+- w edytorze mozemy takze zaznaczayc ze dopuszczamy (i tym samym ignorujemy) inne niz
+  wyspecyfikowane w scenariuszu _reakcje_ (tzn. inne niz pozyskane podczas fazy Record)
+  zachodzace pomiedzy dwiema _akcjami_. Mozemy takze zaznaczyc ze nie dopuszczamy
+  innych niz wyspecyfikowane _reakcje_.
+  
+  [Zgadza sie. To rowniez bedzie sprawa wykombinowania sladni tego skryptu... nie chcialbym zeby
+  to sie jakos strasznie rozrastalo, bo wtedy bedzie rosna koszty utrzymywania testow.]
+  
+- kolejna akcja na komorce bedzie emulowana gdy (i/lub, konfigurowalne w edytorze):
+  -- uplynie zadany czas
+  -- zostana przechwycone wszystkie wyspecyfikowane _reakcje_ (N _reakcji_) (w kolejnosci lub bez
+     w zaleznosci od konfiguracji)
+  -- zostanie przechwycone A _reakcji_, przy czym A < N
+  
+  [Wyglada sensownie. Mozna rowniez powiedziec odwrotnie: skrypt sie zatrzyma z wynikiem blednym
+  jesli wystapi ktoras z sytuacji powyzej.]
+
+- mozna tez poinstruowac w edytorze ze nie interesuje nas weryfikowane _reakcji_ on-line i ze
+  w fazie Record mamy tylko odgrywac _akcje_ w okreslonych odsteach czasu, natomiast
+  sama weryfikacja zajmie sie juz osobne narzedzie (czyt. jakies bardziej wymyslne
+  na zwyklem PC) -- to dla przypadku bardziej zawilych aplikacji duzo operujacych na watkach i tym
+  samym z duzo mniej determinitycznymi reakcjami.
+
+  [To moim zdaniem sprowadza sie do tego samego co powyzej, tylko log akcji/ reakcji jest zgrywany
+  powtornie i przekazywany do pozniejszej analizy. Chyba, ze nie do konca rozumiem o co Ci chodzi.]
+
+  <MZ: Nie do konca. Chodzilo mi o to ze w powyzszym przykladzie akcje sa odpalane przez automat bez weryfikacji
+   czy reakcje sa poprawne. Automat na sztywno leci po kolejnych badzcach, a weryfikacja reakcji zajmie sie 
+   juz w trybie off-line osobne narzedzia na komputerze typu desktop -- to mialem na mysli>

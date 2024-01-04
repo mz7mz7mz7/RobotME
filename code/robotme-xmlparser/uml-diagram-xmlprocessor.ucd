@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="uml-diagram-xmlprocessor" foregroundRGB="255,255,255" fontInfo="Omondo_Font_Default-10-0" id="" metadata="uml2-1.0" initialized="true" zoom="0.6167441860465116" tag="1000" key="323030373036323920726F626F746D652D786D6C7061727365722F636F6E73696C656F6E706C3134" LinkThickness="3">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2" name="DisplayableChangedPropertiesSetRule" location="240,859" size="342,68" id="org.robotme.xmlparser.rules/DisplayableChangedPropertiesSetRule" packageIndication="1" runTimeClassModel="begin(Ljava.lang.String;Ljava.lang.String;Lorg.xml.sax.Attributes;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="72,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="ScenarioFactory" location="209,569" size="169,86" id="org.robotme.xmlparser/ScenarioFactory" packageIndication="1" runTimeClassModel="org.robotme.xmlparser.ScenarioFactory.RobotMEXMLParserDigester,addRules(Lorg.robotme.xmlparser.ScenarioFactory.RobotMEXMLParserDigester;),createScenario(Ljava.io.InputStream;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="128,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="264,88"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/ScenarioFactory->org.robotme.xmlparser.model/Scenario" source="//@children.1" target="//@children.8" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="376,515" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="159,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,76"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/ScenarioFactory->org.robotme.xmlparser.rules/KeyEventPropertiesSetRule" source="//@children.1" target="//@children.5" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="251,684" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="34,86" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="223,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/ScenarioFactory->org.robotme.xmlparser.rules/DisplayableChangedPropertiesSetRule" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="316,739" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="99,86" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/ScenarioFactory->org.robotme.xmlparser.rules/PointerEventPropertiesSetRule" source="//@children.1" target="//@children.7" targetEnd="//@children.1/@sourceConnections.3/@children.2" label="//@children.1/@sourceConnections.3/@children.0" sourceEnd="//@children.1/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="376,684" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="159,86" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.8/@sourceConnections.0" name="LogEntry" location="838,284" size="172,518" id="org.robotme.core.log.entries/LogEntry" packageIndication="1" runTimeClassModel="getReplayerClass(Ljava.lang.String;),toByteArray(),getAssertionClass(),getReplayerClass(),setTimestamp(J),exception,setException(Ljava.lang.String;),lIST_MODIFICATION_LOG_ID,getTimestamp(),uSERDEFINED_LOGENTRY_MASK,cOMMAND_LOG_ID,toString(),fORM_MODIFICATION_LOG_ID,LogEntry(),timestamp,setReplayable(Z),level,getLevel(),initFromDIS(Ljava.io.DataInputStream;),isReplayable(),LogEntry(BLjava.lang.String;Ljava.lang.Throwable;),toXML(),cANVAS_MODIFICATION_LOG_ID,createReplayer(),LogEntry(BLjava.lang.String;),tEXTBOX_MODIFICATION_LOG_ID,fAILURE_LOG_ID,rOBOTME_LOGENTRY_MASK,aLERT_MODIFICATION_LOG_ID,assertion,setMessage(Ljava.lang.String;),getLogId(),message,appendLevelToXML(Ljava.lang.StringBuffer;),kEY_EVENT_ON_CANVAS_LOG_ID,isAssertion(),createAssertion(),setLevel(B),lOG_ID,setAssertion(Z),dISPLAYABLE_CHANGED_LOG_ID,getMessage(),replayable,pOINTER_EVENT_ON_CANVAS_LOG_ID,getException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="275,342"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,468"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Binary2XmlScenarioConverter" location="169,59" size="277,68" id="org.robotme.xmlparser/Binary2XmlScenarioConverter" packageIndication="1" runTimeClassModel="convert(Ljava.io.InputStream;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/Binary2XmlScenarioConverter->org.robotme.core.log.entries/LogEntry" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="444,193" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="267,68" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/Binary2XmlScenarioConverter->org.robotme.core.log/LogEntriesMapper" source="//@children.3" target="//@children.6" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="554,47" size="157,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="277,22" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,62"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Xml2BinaryScenarioConverter" location="99,219" size="277,68" id="org.robotme.xmlparser/Xml2BinaryScenarioConverter" packageIndication="1" runTimeClassModel="convert(Ljava.io.InputStream;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/Xml2BinaryScenarioConverter->org.robotme.xmlparser/ScenarioFactory" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="301,410" size="157,32" fontInfo="Arial-8-0" locationOnWireFromSource="14.000000000000002" distanceFromWire="122.00000000000001" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,68" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="83,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser/Xml2BinaryScenarioConverter->org.robotme.xmlparser.model/Scenario" source="//@children.4" target="//@children.8" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="374,341" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="267,68" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="KeyEventPropertiesSetRule" location="20,748" size="258,68" id="org.robotme.xmlparser.rules/KeyEventPropertiesSetRule" packageIndication="1" runTimeClassModel="begin(Ljava.lang.String;Ljava.lang.String;Lorg.xml.sax.Attributes;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="72,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1" name="LogEntriesMapper" location="813,19" size="224,86" id="org.robotme.core.log/LogEntriesMapper" packageIndication="1" runTimeClassModel="createNewLogEntryInstance(ILjava.io.DataInputStream;),LogEntriesMapper()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="203,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.core.log/LogEntriesMapper->org.robotme.core.log.entries/LogEntry" source="//@children.6" target="//@children.2" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="932,177" size="105,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,86" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.3" name="PointerEventPropertiesSetRule" location="460,738" size="285,68" id="org.robotme.xmlparser.rules/PointerEventPropertiesSetRule" packageIndication="1" runTimeClassModel="begin(Ljava.lang.String;Ljava.lang.String;Lorg.xml.sax.Attributes;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="72,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.4/@sourceConnections.1" name="Scenario" location="503,419" size="135,86" id="org.robotme.xmlparser.model/Scenario" packageIndication="1" runTimeClassModel="getEntries(),addLogEntry(Lorg.robotme.core.log.entries.LogEntry;),entries">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" size="3,1" autoLocated="true" id="org.robotme.xmlparser.model/Scenario->org.robotme.core.log.entries/LogEntry" source="//@children.8" target="//@children.2" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" foregroundRGB="255,255,255" location="666,428" size="149,32" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="135,43" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,178"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="1" Minimize="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=5" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true"/>
+</editmodel:ClassDiagramEditModel>

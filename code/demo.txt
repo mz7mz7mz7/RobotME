@@ -1,0 +1,14 @@
+ant clean
+
+# run socket listener
+start ant run.socketloglistener
+
+# prepare the 'record' version
+ant record
+C:\java\j2me\wtk25\bin\emulator.exe -Xdescriptor:tmp\ant\robotme-example-midlet.jad -Xdevice:DefaultColorPhone
+
+# => select 'live demo', type something in, save the form, exit.
+
+# => check the 'logs' folder, copy *.rme to robotme-example-midlet/src/...*.rme
+
+ant clean replay

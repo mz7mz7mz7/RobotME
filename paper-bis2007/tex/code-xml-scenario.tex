@@ -1,0 +1,18 @@
+\begin{figure}[t]
+\begin{codeblock}
+<scenario>
+  <event timestamp="1000">
+      <displayable-changed title="Hello screen" type="TEXTBOX" />
+  </event>
+    
+  <event timestamp="2000">
+      <command cmdLabel="Start app" displayableTitle="Hello screen" />
+  </event>
+    
+  <event timestamp="3000">        
+      <textbox-modification assertion="true" strongAssertion="true" string="I like testing" />
+  </event>
+</scenario>
+\end{codeblock}
+\caption{A sample fragment of a test script written in the XML language.}\label{fig:xmllanguage}
+\end{figure}

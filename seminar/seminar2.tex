@@ -1,0 +1,304 @@
+
+\documentclass[compress]{beamer}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{dwlecture}
+\usepackage{tikz}
+
+
+\subject{Testing Java ME applications}
+
+\title[Automated Integration Tests for Mobile~Applications in J2ME]%
+{Automated Integration Tests for Mobile~Applications in Java~2~Micro~Edition}
+
+\author{Marcin Zduniak}
+
+\institute{Institute of Computing Science\\Poznan University of Technology}
+
+\date{2007}
+
+% \AtBeginSection[] {
+%   \begin{frame}<beamer>
+%     \framesubtitle{\insertpart}
+%     \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide]
+%   \end{frame}
+% }
+% 
+% \AtBeginSubsection[] {
+%   \begin{frame}<beamer>
+%     \framesubtitle{\insertpart}
+%     \tableofcontents[sectionstyle=shaded,subsectionstyle=show/shaded/hide]
+%   \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+
+    % Place the logo and gradient box.
+    \xygraphics{11}{0.5}{right}{bottom}{width=1cm}{figures/template/logo-pp}
+    \begin{textblock}{1}(0,9.6)
+        \begin{tikzpicture}
+            \useasboundingbox (0,0) rectangle (12.8,-9.6);
+            \shade[bottom color=blue!20!white,top color=white,shading=axis,shading angle=90] 
+                (11,1.5) rectangle (12.8,0.5);
+        \end{tikzpicture}
+    \end{textblock}
+\end{frame}
+
+\section{Participants}  % --------------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Who is who}
+
+  \begin{itemize}
+      \item dr inż.~Bartosz Walter
+      \item dr inż.~Dawid Weiss
+      \item inż.~Marcin Zduniak
+  \end{itemize}
+\end{frame}
+
+\section{Motivation} % -----------------------------------------------------------------------------
+
+\subsection[Test types]{Types of Application Tests} % ----------------------------------------------
+
+\begin{frame}
+
+    \begin{center}\Large\bfseries
+    What are ``software tests''?
+    \end{center}
+
+    \pause\bigskip
+	\begin{block}{(Wikipedia)}
+        \emph{Software testing} is the process used to help identify the \emph{correctness}, 
+        \emph{completeness}, \emph{security}, and \emph{quality} of developed computer software.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \only<1>{
+        \begin{center}\Large\bfseries
+        How can we ``test software''?
+        \end{center}
+    }
+
+    \only<2->{
+        {\color{blue} Unit tests}\\
+        Correctness of individual units of source code
+
+        \medskip
+        {\color{blue} Module/ integration tests}\\
+        Chunks of functionality, sometimes the entire program.
+        testing in various target environments (O/S's, processors etc.).
+
+        \medskip
+        {\color{blue} Acceptance tests}\\
+        Compliance to customer's requirements; often manual work.
+
+        \medskip
+        {\color{blue} Regression tests}\\
+        System stability/ correctness in response to ongoing changes.
+    }
+\end{frame}
+
+
+\subsection[Scope]{Project scope} % ---------------------------------------------------------------- 
+
+\begin{frame}
+    \frametitle{Project scope}
+
+	\begin{itemize}
+        \item Tool for acceptance, integration and regression tests for Java ME business 
+            applications.
+        \item Automatic (capture-replay).
+        \item Works on both actual devices and emulators.
+        \item XML testing scripts compiled to binary intermediate language and vice versa.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Usage example}
+
+    \only<1>{
+        \hgraphics{figures/process1}
+        \lbcaption{Scenario with capture-replay process.}
+    }
+
+    \only<2>{
+        \hgraphics{figures/process2}
+        \lbcaption{Scenario with human-friendly test scripts.}
+    }
+\end{frame}
+
+\subsection[J2ME]{Writing and testing applications in J2ME} % --------------------------------------
+
+\begin{frame}
+    \frametitle{Constraints}
+
+	\begin{itemize}
+        \item Programming and testing are more difficult compared to desktop programs.
+        \item Each mobile has different hardware configuration
+        \item `Standard' APIs implemented by hardware vendors contain differences.
+        \item A number of non-standard APIs and proprietary solutions.
+        \item Lack of system-level support for handling events (GUI, sounds, SMS, \ldots{}).
+	\end{itemize}
+\end{frame}
+
+\subsection[Related]{Related works} % --------------------------------------------------------------
+
+\begin{frame}
+    \frametitle{Related projects}
+
+	\begin{itemize}
+        \item J2ME Unit
+        \item Sony-Ericsson Mobile JUnit
+        \item Motorola Gatling
+        \item CLDC Unit
+        \item IBM Rational Test RT
+        \item Research In Motion -- BlackBerry Fledge emulator
+	\end{itemize}
+\end{frame}
+
+
+\section{Implementation} % -------------------------------------------------------------------------
+
+\subsection[Code injection]{Dynamic code injection} % ----------------------------------------------
+
+\begin{frame}
+    \frametitle{Dynamic code injection}
+
+	\begin{itemize}
+        \item One possible solution for dealing with environment's constraints.
+        \item Intercepting \emph{events} and injecting our custom \emph{proxies}
+            at several \emph{injection points}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim,plain]
+    \rbcaption{Code injection example -- capturing \texttt{startApp} event.}
+
+\begin{javablock}
+public final class MyMidlet extends MIDlet {
+    protected void startApp() 
+        throws MIDletStateChangeException {
+        // original code
+    }
+...
+\end{javablock}
+
+\begin{javablock}
+public final class MyMidlet extends MIDlet {
+    protected void startApp() 
+        throws MIDletStateChangeException {
+        // record: before-start-event
+        try {
+            this.orig$startApp();
+            // record: after-start-event
+        } catch (Throwable t) {
+            // record: start-exception-event
+        }
+    }
+
+    private void orig$startApp()
+        throws MIDletStateChangeException {
+        // original code
+    }
+...
+\end{javablock}
+
+\end{frame}
+
+\subsection{Testing lifecycle} % -------------------------------------------------------------------
+
+\begin{frame}
+    \frametitle{Phase 1: Recording}
+
+	\begin{itemize}
+        \item Intercepting user events (key press, pointer events, text edit).
+        \item Intercepting environment events (sounds, screen changes, Internet access, SMS).
+        \item Transferring to remote console (through GPRS, bluetooth, IRDA or serial port).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Phase 2: Replaying}
+
+	\begin{itemize}
+        \item Simulating user events (key press, pointer events, text edit).
+        \item Assertions: Intercepting environment events (sounds, screen changes, Internet access, SMS).
+        \item Transferring to remote console (through GPRS, bluetooth, IRDA or serial port).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+    \frametitle{Phase 3: Test maintenance}
+
+    Maintenance through \emph{human-comprehensible test scripts}.
+
+    \bigskip
+\begin{xmlblock}
+<scenario>
+  <event timestamp="1000">
+      <displayable-changed title="Hello screen" type="TEXTBOX" />
+  </event>
+    
+  <event timestamp="2000">
+      <command cmdLabel="Start app" displayableTitle="Hello screen" />
+  </event>
+    
+  <event timestamp="3000">        
+      <textbox-modification assertion="true" strongAssertion="true" 
+                            string="I like testing" />
+  </event>
+</scenario>
+\end{xmlblock}
+
+\end{frame}
+
+
+\subsection[Prototype]{Proof-of-concept prototype} % -----------------------------------------------
+
+\begin{frame}[plain]
+	\frametitle{Screenshots from test recording session.}
+
+    \lbcaption{Server console.}
+    \rbcaption{Emulator window.}
+
+    \fxygraphics{12.4}{0.5}{right}{bottom}{width=5cm}{figures/1}
+    \fxygraphics{0.2}{8.4}{left}{top}{width=12.4cm}{figures/2}
+
+\end{frame}
+
+
+\section*{Summary} % -------------------------------------------------------------------------------
+
+\begin{frame}[plain]
+    \frametitle{Summary}
+    
+    \begin{itemize}
+        \item Useful testing framework for J2ME environment \emph{does not exist}.
+        \item Solution: \emph{dynamic code injection}.
+        \item For \emph{developers} and \emph{clients}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Little victories}
+    
+    \begin{itemize}
+        \item Poznan University of Economics -- `10th International Conference on Business Information Systems'
+        \item UAM Foundation -- `Pomysł na biznes' competition
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{center}
+	Thank you for your attention.
+	\end{center}
+\end{frame}
+
+\end{document}

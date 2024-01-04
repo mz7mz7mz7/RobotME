@@ -1,0 +1,835 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/JavaScript" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/cookie_get.js"></script><title>Testing Wireless Java Applications</title>
+
+<meta http-equiv="content-language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="wireless, mobile, J2ME, MIDlet, MIDP, test, testing, Java">
+<meta name="description" content="This article helps you test your wireless applications.">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="archive" content="FALSE">
+<meta name="date" content="2002-11-01">
+<link rel="stylesheet" href="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/default_developer.css">
+<script language="JavaScript" type="text/javascript" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/popUp.js"></script>
+<script language="javascript1.2" type="text/javascript" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/sniff.js"></script>
+<script language="javascript1.2" type="text/javascript" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/menucontent.js"></script>
+<script language="javascript1.2" type="text/javascript" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/menucode.js"></script><!--stopindex--></head><body leftmargin="0" topmargin="0" rightmargin="0" onload="prepmenus(); done=true" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<a name="top"></a>
+<!-- BEGIN GENERIC MASTHEAD -->
+<!-- BEGIN A1 COMPONENT V.0 -->
+<div class="a1">
+<div class="a1v0">
+<a href="#skip2content" class="skiplink">Skip to Content</a>
+<span class="toolbarlinks">
+<a href="http://developers.sun.com/global/mh/java/">Java</a>
+<a href="http://developers.sun.com/global/mh/solaris/" class="dividelink">Solaris</a>
+<a href="http://developers.sun.com/global/mh/communities/">Communities</a>
+<a href="http://developers.sun.com/global/mh/store/" class="lastlink">Sun Store</a>
+</span>
+<span class="siteid">
+<a href="http://developers.sun.com/global/join_sdn.html" class="firstlink"><b>Join SDN</b></a>
+<a href="http://developers.sun.com/global/my_profile.html">My Profile</a>
+<a href="http://developers.sun.com/global/why_join.html">Why Join?</a>
+</span>
+</div>
+</div>
+<!-- END A1 COMPONENT V.0 -->
+<!-- BEGIN A2 COMPONENT V.1 -->
+<div class="a2w0">
+<div class="a2" id="a2v1">
+<div class="a2w1"><div class="a2w2"><div class="a2w3"><div class="a2w4">
+<div class="a2topiclinks">
+<div class="a2search">
+<form action="http://developers.sun.com/search/onesearch/index.jsp" accept-charset="utf-8" method="get">
+<input name="charset" value="utf-8" type="hidden">
+<input name="col" value="developer-reference" type="hidden">
+<span class="rightarrowwhite">»</span>&nbsp;<a href="http://developers.sun.com/global/search_tips.html">search tips</a>&nbsp;
+<input name="qt" class="searchfield" size="7" onfocus="if( this.value==this.defaultValue ) this.value='';" value="Search">
+<input id="searchbttn" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a2_bttn_search.gif" alt="Submit Search" border="0" type="image">
+</form>
+</div>
+<a href="http://java.sun.com/" title="Home Page" id="sunlogo"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Home Page" border="0" height="58" width="98"></a>
+<a href="http://developers.sun.com/" title="Sun Developer Network"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" id="venuespacer" alt="Sun Developer Network" border="0" height="33" width="400"></a>
+<ul id="mtopics">
+<li id="mtopic1"><a id="glink1" class="tpclink a2menu" title="See All APIs" href="http://developers.sun.com/global/mh/api/index.html">APIs</a>			<div class="flymenus" style="width: 170px;" id="flymenu1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="APIs" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('1_1');" id="1_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java SE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/reference/api/'">					<a href="http://java.sun.com/reference/api/" class="menulink" onfocus="clrmenu('1_1');" id="mlink1_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java SE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java SE</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('1_2');" id="1_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java EE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javaee/reference/'">					<a href="http://java.sun.com/javaee/reference/" class="menulink" onfocus="clrmenu('1_2');" id="mlink1_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java EE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java EE</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('1_3');" id="1_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java ME';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javame/reference/apis.jsp'">					<a href="http://java.sun.com/javame/reference/apis.jsp" class="menulink" onfocus="clrmenu('1_3');" id="mlink1_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java ME';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java ME</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('1_4');" id="1_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java Card';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/products/javacard/reference/docs/'">					<a href="http://java.sun.com/products/javacard/reference/docs/" class="menulink" onfocus="clrmenu('1_4');" id="mlink1_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Java Card';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java Card</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('1_5');" id="1_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Web Services';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/webservices/reference/api/'">					<a href="http://java.sun.com/webservices/reference/api/" class="menulink" onfocus="clrmenu('1_5');" id="mlink1_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Web Services';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Web Services</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('1_6');" id="1_6" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Solaris';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/solaris/reference/docs/'">					<a href="http://developers.sun.com/solaris/reference/docs/" class="menulink" onfocus="clrmenu('1_6');" id="mlink1_6" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Solaris';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Solaris</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('1_7');" id="1_7" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Sun Studio Compilers';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/sunstudio/reference/docs/'">					<a href="http://developers.sun.com/sunstudio/reference/docs/" class="menulink" onfocus="clrmenu('1_7');" id="mlink1_7" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='Sun Studio Compilers';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Sun Studio Compilers</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('1_0');" id="1_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='APIs (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/reference/api/'">					<a href="http://java.sun.com/reference/api/" class="menulink" onfocus="clrmenu('1_0');" onblur="hideA2(0);" id="mlink1_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: APIs';s_prop15=s_pageName;s_prop16='APIs (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All APIs">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="APIs" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div>
+<div id="offdiv" class="offdivs" onmouseover="hideA2(0);">&nbsp;</div>
+<div id="offdivL" class="offdivs" onmouseover="hideA2(0);">&nbsp;</div>
+<div id="offdivT" class="offdivs" onmouseover="hideA2(0);">&nbsp;</div>
+<div id="offdivR" class="offdivs" onmouseover="hideA2(0);">&nbsp;</div>
+</li>
+<li id="mtopic2"><a id="glink2" class="tpclink a2menu" title="See All Downloads" href="http://developers.sun.com/global/mh/downloads/index.html">Downloads</a>			<div class="flymenus" style="width: 170px;" id="flymenu2">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Downloads" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('2_1');" id="2_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java SE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javase/downloads/'">					<a href="http://java.sun.com/javase/downloads/" class="menulink" onfocus="clrmenu('2_1');" id="mlink2_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java SE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java SE</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_2');" id="2_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java EE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javaee/downloads/'">					<a href="http://java.sun.com/javaee/downloads/" class="menulink" onfocus="clrmenu('2_2');" id="mlink2_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java EE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java EE</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_3');" id="2_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java ME';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javame/downloads/'">					<a href="http://java.sun.com/javame/downloads/" class="menulink" onfocus="clrmenu('2_3');" id="mlink2_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java ME';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java ME</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_4');" id="2_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Solaris';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/solaris/downloads/'">					<a href="http://developers.sun.com/solaris/downloads/" class="menulink" onfocus="clrmenu('2_4');" id="mlink2_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Solaris';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Solaris</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_5');" id="2_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='NetBeans';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.netbeans.org/downloads/index.html'">					<a href="http://www.netbeans.org/downloads/index.html" class="menulink" onfocus="clrmenu('2_5');" id="mlink2_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='NetBeans';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">NetBeans</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_6');" id="2_6" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java Studio Enterprise';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/prodtech/javatools/jsenterprise/downloads/'">					<a href="http://developers.sun.com/prodtech/javatools/jsenterprise/downloads/" class="menulink" onfocus="clrmenu('2_6');" id="mlink2_6" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java Studio Enterprise';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java Studio Enterprise</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_7');" id="2_7" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java Studio Creator';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/prodtech/javatools/jscreator/downloads/'">					<a href="http://developers.sun.com/prodtech/javatools/jscreator/downloads/" class="menulink" onfocus="clrmenu('2_7');" id="mlink2_7" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Java Studio Creator';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java Studio Creator</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_8');" id="2_8" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Sun Studio Compilers';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/sunstudio/downloads/'">					<a href="http://developers.sun.com/sunstudio/downloads/" class="menulink" onfocus="clrmenu('2_8');" id="mlink2_8" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Sun Studio Compilers';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Sun Studio Compilers</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('2_9');" id="2_9" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Early Access';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/downloads/ea/'">					<a href="http://java.sun.com/downloads/ea/" class="menulink" onfocus="clrmenu('2_9');" id="mlink2_9" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Early Access';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Early Access</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('2_0');" id="2_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Downloads (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/resources/downloads.html'">					<a href="http://developers.sun.com/resources/downloads.html" class="menulink" onfocus="clrmenu('2_0');" onblur="hideA2(0);" id="mlink2_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Downloads';s_prop15=s_pageName;s_prop16='Downloads (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All Downloads">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Downloads" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div></li>
+<li id="mtopic3"><a id="glink3" class="tpclink a2menu" title="See All Technologies &amp; Solutions" href="http://developers.sun.com/global/mh/tech/index.html">Technologies</a>			<div class="flymenus" style="width: 170px;" id="flymenu3">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Technologies" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('3_1');" id="3_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Java SE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javase/'">					<a href="http://java.sun.com/javase/" class="menulink" onfocus="clrmenu('3_1');" id="mlink3_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Java SE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java SE</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('3_2');" id="3_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Java EE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javaee/'">					<a href="http://java.sun.com/javaee/" class="menulink" onfocus="clrmenu('3_2');" id="mlink3_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Java EE';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java EE</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('3_3');" id="3_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Java ME';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://java.sun.com/javame/'">					<a href="http://java.sun.com/javame/" class="menulink" onfocus="clrmenu('3_3');" id="mlink3_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Java ME';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java ME</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('3_4');" id="3_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Solaris';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/solaris/'">					<a href="http://developers.sun.com/solaris/" class="menulink" onfocus="clrmenu('3_4');" id="mlink3_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Solaris';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Solaris</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('3_5');" id="3_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Mobility';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/techtopics/mobility/'">					<a href="http://developers.sun.com/techtopics/mobility/" class="menulink" onfocus="clrmenu('3_5');" id="mlink3_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Mobility';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Mobility</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('3_0');" id="3_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Technologies (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/global/mh/tech/index.html'">					<a href="http://developers.sun.com/global/mh/tech/index.html" class="menulink" onfocus="clrmenu('3_0');" onblur="hideA2(0);" id="mlink3_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Technologies';s_prop15=s_pageName;s_prop16='Technologies (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All Technologies">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Technologies" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div></li>
+<li id="mtopic4"><a id="glink4" class="tpclink a2menu" title="See All Products" href="http://developers.sun.com/global/mh/products/index.html">Products</a>			<div class="flymenus" style="width: 170px;" id="flymenu4">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Products" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('4_1');" id="4_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Java Studio Creator';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/prodtech/javatools/jscreator/'">					<a href="http://developers.sun.com/prodtech/javatools/jscreator/" class="menulink" onfocus="clrmenu('4_1');" id="mlink4_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Java Studio Creator';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java Studio Creator</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('4_2');" id="4_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Java Studio Enterprise';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/prodtech/javatools/jsenterprise/'">					<a href="http://developers.sun.com/prodtech/javatools/jsenterprise/" class="menulink" onfocus="clrmenu('4_2');" id="mlink4_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Java Studio Enterprise';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java Studio Enterprise</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('4_3');" id="4_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='NetBeans Mobility Packs';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/prodtech/javatools/mobility/'">					<a href="http://developers.sun.com/prodtech/javatools/mobility/" class="menulink" onfocus="clrmenu('4_3');" id="mlink4_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='NetBeans Mobility Packs';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">NetBeans Mobility Packs</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('4_4');" id="4_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Sun Studio Compilers';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/sunstudio/'">					<a href="http://developers.sun.com/sunstudio/" class="menulink" onfocus="clrmenu('4_4');" id="mlink4_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Sun Studio Compilers';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Sun Studio Compilers</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('4_5');" id="4_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Java Enterprise Systems';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/prodtech/devtools/javaes/'">					<a href="http://developers.sun.com/prodtech/devtools/javaes/" class="menulink" onfocus="clrmenu('4_5');" id="mlink4_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Java Enterprise Systems';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Java Enterprise Systems</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('4_0');" id="4_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Products (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/global/mh/products/index.html'">					<a href="http://developers.sun.com/global/mh/products/index.html" class="menulink" onfocus="clrmenu('4_0');" onblur="hideA2(0);" id="mlink4_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Products';s_prop15=s_pageName;s_prop16='Products (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All Products">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Products" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div></li>
+<li id="mtopic5"><a id="glink5" class="tpclink a2menu" title="See All Support" href="http://developers.sun.com/global/mh/support/index.html">Support</a>			<div class="flymenus" style="width: 170px;" id="flymenu5">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Support" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('5_1');" id="5_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Forums';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://forum.java.sun.com/index.jspa'">					<a href="http://forum.java.sun.com/index.jspa" class="menulink" onfocus="clrmenu('5_1');" id="mlink5_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Forums';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Forums</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('5_2');" id="5_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Developer Services';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/services/'">					<a href="http://developers.sun.com/services/" class="menulink" onfocus="clrmenu('5_2');" id="mlink5_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Developer Services';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Developer Services</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('5_3');" id="5_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Big Admin';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/bigadmin/home/'">					<a href="http://www.sun.com/bigadmin/home/" class="menulink" onfocus="clrmenu('5_3');" id="mlink5_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Big Admin';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Big Admin</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('5_0');" id="5_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Support (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://developers.sun.com/services/'">					<a href="http://developers.sun.com/services/" class="menulink" onfocus="clrmenu('5_0');" onblur="hideA2(0);" id="mlink5_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Support';s_prop15=s_pageName;s_prop16='Support (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All Support">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Support" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div></li>
+<li id="mtopic6"><a id="glink6" class="tpclink a2menu" title="See All Training" href="http://developers.sun.com/global/mh/training/index.html">Training</a>			<div class="flymenus" style="width: 170px;" id="flymenu6">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Training" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('6_1');" id="6_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Training';s_prop15=s_pageName;s_prop16='Certification';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/training/certification/index.xml'">					<a href="http://www.sun.com/training/certification/index.xml" class="menulink" onfocus="clrmenu('6_1');" id="mlink6_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Training';s_prop15=s_pageName;s_prop16='Certification';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Certification</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('6_2');" id="6_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Training';s_prop15=s_pageName;s_prop16='Developer Training';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/training/catalog/developer.xml'">					<a href="http://www.sun.com/training/catalog/developer.xml" class="menulink" onfocus="clrmenu('6_2');" id="mlink6_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Training';s_prop15=s_pageName;s_prop16='Developer Training';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Developer Training</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('6_0');" id="6_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Training';s_prop15=s_pageName;s_prop16='Training (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/training/'">					<a href="http://www.sun.com/training/" class="menulink" onfocus="clrmenu('6_0');" onblur="hideA2(0);" id="mlink6_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Training';s_prop15=s_pageName;s_prop16='Training (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All Training">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Training" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div></li>
+<li id="mtopic7"><a id="glink7" class="tpclink a2menu" title="See All Sun.com" href="http://developers.sun.com/global/mh/suncom/index.html">Sun.com</a>			<div class="flymenus" style="width: 170px;" id="flymenu7">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Sun.com" border="0" height="1" width="1">				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulink1" onmouseover="clrmenu('7_1');" id="7_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Products';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/products/'">					<a href="http://www.sun.com/products/" class="menulink" onfocus="clrmenu('7_1');" id="mlink7_1" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Products';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Products</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('7_2');" id="7_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Downloads';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/download/'">					<a href="http://www.sun.com/download/" class="menulink" onfocus="clrmenu('7_2');" id="mlink7_2" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Downloads';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Downloads</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('7_3');" id="7_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Services & Solutions';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/servicessolutions/'">					<a href="http://www.sun.com/servicessolutions/" class="menulink" onfocus="clrmenu('7_3');" id="mlink7_3" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Services & Solutions';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Services &amp; Solutions</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('7_4');" id="7_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Support';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://sunsolve.sun.com/pub-cgi/show.pl?target=tous'">					<a href="http://sunsolve.sun.com/pub-cgi/show.pl?target=tous" class="menulink" onfocus="clrmenu('7_4');" id="mlink7_4" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Support';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Support</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('7_5');" id="7_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Training';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/training/'">					<a href="http://www.sun.com/training/" class="menulink" onfocus="clrmenu('7_5');" id="mlink7_5" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Training';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">Training</a>				</div>
+				<div style="background: rgb(53, 85, 107) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" class="menulinks" onmouseover="clrmenu('7_6');" id="7_6" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='About Sun';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/aboutsun/'">					<a href="http://www.sun.com/aboutsun/" class="menulink" onfocus="clrmenu('7_6');" id="mlink7_6" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='About Sun';s_lnk=s_co(this);s_gs(s_account);clkd=true;}">About Sun</a>				</div>
+				<div style="width: 150px;" class="menulinks" onmouseover="clrmenu('7_0');" id="7_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Sun.com (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}document.location = 'http://www.sun.com/'">					<a href="http://www.sun.com/" class="menulink" onfocus="clrmenu('7_0');" onblur="hideA2(0);" id="mlink7_0" onclick="if(!clkd){s_linkType='o';s_linkName='Masthead Menu: Sun.com';s_prop15=s_pageName;s_prop16='Sun.com (bottom menu link)';s_lnk=s_co(this);s_gs(s_account);clkd=true;}" title="See All Sun.com">See All <img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="Sun.com" border="0" height="1" width="1"></a>»				</div>
+</div>				<table class="menucorners" border="0" cellpadding="0" cellspacing="0" width="170">
+				<tbody><tr>				<td class="cornerBL">&nbsp;</td>				<td class="cornerBR">&nbsp;</td>				</tr>				</tbody></table>			</div></li>
+</ul>
+</div>
+</div></div></div></div>
+</div></div>
+<!-- END A2 COMPONENT V.1 -->
+<!-- END GENERIC MASTHEAD -->
+<!-- BEGIN BREADCRUMB -->
+<table class="vatop" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td>      
+<div class="breadcrumb">
+<a href="http://developers.sun.com/index.html">Developers Home</a> &gt; <a href="http://developers.sun.com/techtopics/index.html">Technical Topics</a> &gt; <a href="http://developers.sun.com/techtopics/mobility/index.jsp">Mobility</a> &gt; <a href="http://developers.sun.com/techtopics/mobility/midp/index.html">MIDP</a> &gt; <a href="http://developers.sun.com/techtopics/mobility/midp/reference/index.html">Reference</a> &gt; <a href="http://developers.sun.com/techtopics/mobility/midp/reference/techart/index.html">Technical Articles and Tips</a> &gt;
+</div>
+</td>
+<td align="right" nowrap="nowrap"><div class="breadcrumb">
+</div></td></tr>
+<tr><td colspan="2"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="1" width="770"></td></tr>
+</tbody></table>
+<span class="sp5">&nbsp;</span><br>
+<!-- END BREADCRUMB -->
+<!-- BEGIN PAGETITLE -->
+<div class="pagetitle2">Article</div>
+<div class="pagetitle">Testing Wireless Java Applications</div>
+<!-- END PAGETITLE -->
+<!-- BEGIN WRAPPER TABLE, 2 COLUMN, MAIN/RIGHT -->
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr><td valign="top" width="100%">
+<!-- BEGIN CENTRAL COLUMN COMPONENTS -->
+<!--startindex-->
+<!-- ============ -->
+<!-- MAIN CONTENT -->
+<!-- ============ -->
+<a name="skip2content"></a>
+<!--  BEGIN VCD4 PFV  -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="smaller" valign="top"><em></em></td>
+<td width="10">&nbsp;</td>
+<td align="right" valign="bottom"><div class="sitelinks" style="padding: 0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td align="right" valign="bottom">&nbsp;</td>
+<td class="smaller" nowrap="nowrap" valign="bottom"><a href="http://developers.sun.com/jsp_utils/PrintPage.jsp" target="printFriendlyView" onclick="openPopup('','printFriendlyView',710,650,'no',1,1,0,0,0,0); return true;"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/ic_print.gif" alt="Print-friendly Version" border="0" height="12" hspace="4" width="14">Print-friendly Version</a><br></td>
+</tr></tbody></table></div>
+</td></tr>
+</tbody></table>
+<!--  END VCD4 PFV -->
+<div class="contentdivider"><table class="grey4" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="4" width="1"></td></tr></tbody></table></div>
+<!-- ================== -->
+<!-- BEGIN MAIN content -->
+<!-- ================== -->
+<!-- headline -->
+<br>
+<!-- byline -->
+<span class="byline">
+by Qusay H. Mahmoud
+<br>November 2002
+</span><br><br>
+<p>
+Wireless applications written in the Java programming language
+(wireless Java applications), like all other types of software, must be
+tested to ensure functionality and usability under all working
+conditions. Testing is even more important in the wireless world
+because working conditions vary a lot more than they do for most
+software. For example, wireless Java applications are developed on
+high-end desktop machines but deployed on handheld wireless devices
+with very different characteristics.
+</p>
+<p>
+The aim of this article is to help you test your wireless applications. The article:
+</p>
+<ul>
+<li>Provides an overview of software testing</li>
+<li>Describes the challenges in testing wireless applications</li>
+<li>Presents a tutorial on testing wireless applications</li>
+<li>Furnishes testing checklists for user interface, networking, and other areas</li>
+<li>Discusses certification programs for applications targeted at the Java 2 Platform, Micro Edition (J2ME applications)</li>
+</ul>
+<h4>Overview of Software Testing</h4>
+<p>Software testing is a systemic process to find differences between
+the expected behavior of the system specified in the software
+requirements document and its observed behavior. In other words, it is
+an activity for finding errors in the software system. There is no one
+agreed-upon goal of software testing. One school of thought describes
+the goal of testing as demonstrating that errors are not present. <a href="http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD249.PDF" target="_blank">Dijkstra (1930 - 2002)</a>
+describes the goal of testing as showing the presence of faults but not
+their absence. The ultimate goal, however, is to find errors and fix
+them so users can be confident that they can depend on the software.
+</p>
+<p>Errors (also known as bugs or glitches) in software are generally
+introduced by people involved in software development (including
+analysts, architects, designers, programmers, and the testers
+themselves). Examples of errors include:
+</p>
+<ul>
+<li>Interface specification: Mismatch between requirements and implementation.</li>
+<li>Algorithmic faults: Missing initialization, branching errors, or missing tests for <code>null</code>.</li>
+<li>Mechanical faults: The user manual doesn't match actual conditions or operating procedures.</li>
+<li>Omissions: Some of the features described in the requirements documents are not implemented.</li>
+</ul>
+<p>Many developers view the subject of software testing as "not
+fashionable," and as a result too few of them really understand the job
+software testers do. Testing is an iterative process and should start
+from the beginning of the project. Software developers need to get used
+to the idea of designing software with testing in mind. Some of the new
+software development methodologies such as <a href="http://www.xprogramming.com/" target="_blank">eXtreme Programming</a>
+stress incremental development and testing. eXtreme Programming is
+ideally suited for some types of applications, depending on their size,
+scope, and nature. User interface design, for example, benefits highly
+from rapid prototyping and testing usability with actual users.
+</p>
+<p>One way to make testing simple is to design applications with
+testing in mind. Organizing the system in a certain way can make it
+much easier to test. Another implication is that the system must have
+enough functionality and enough output information to distinguish among
+the system's different functional features. It is now common to
+describe a system's functional requirements (features that the system
+must provide) by using the Unified Modeling Language (UML) to create a
+use case diagram, then detailing the use cases in a consistent written
+form. Documenting the various uses of the system in this way simplifies
+the task of testing the system by allowing the tester to generate test
+scenarios from the use cases. The scenarios represent all expected
+paths users will traverse when they use the features that the system
+must provide. Developers distinguish these <i>functional</i> requirements from <i>system</i> requirements not related to particular functionality, constraints related to performance, configuration, and usability.
+</p>
+<p>
+<b>Testing Activities</b>
+</p>
+<p>
+The testing that needs to be performed can be split into two classes:
+functional (black-box) testing and structural (white-box) testing. In
+black-box
+testing, each of the components -- and ultimately the system as a whole
+-- is treated as a black box, and testers verify that it supports all
+the features identified (often as use cases) in the requirements
+documents. Black-box testing activities include:
+</p>
+<ul>
+<li><i>Unit (or Class) Testing</i>: In this testing activity,
+components are tested separately. Because some objects may depend on
+other objects that are not yet available, you may need to develop test
+drivers and test stubs. A test driver simulates the part of the system
+that calls the component under test. A test stub simulates a component
+called by the tested component.</li>
+<li><i>Integration Testing</i>: In this activity, objects are integrated in increasingly large and complex subsystems. This is an incremental testing process.</li>
+<li><i>System Testing</i>: In this activity, the system is tested as a
+whole. Testers employ various techniques at this stage, including
+functional testing (testing actual behavior against documented
+requirements), performance testing (testing nonfunctional
+requirements), and acceptance and installation testing (testing against
+the project agreement).</li>
+</ul>
+<p>
+Black-box testing concerns itself with externally visible behavior, and
+ignores the source code. &nbsp;In white-box testing, the focus is on the
+code that produces the behavior. &nbsp;One common white-box testing activity is <i>path testing</i>, also known as <i>code coverage</i>.
+Its goal is to identify faults in the implementation by exercising all
+possible paths through the code at least once. Testers check that every
+branch in the code has a test that exercises that branch.
+</p>
+<!--begin note -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td colspan="5" class="dkgray" height="1"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td></tr>
+<tr><td rowspan="3" class="dkgray" width="1"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td>
+<td colspan="3" class="gray" height="10"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td>
+<td rowspan="3" class="dkgray" width="1"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td></tr>
+<tr><td class="gray" width="10"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td>
+<td class="gray">
+<span class="body">
+<b>Note:</b> The starting point of path testing is a flow graph consisting of <i>nodes</i> representing executable blocks, and <i>associations</i> (or <i>edges</i>)
+representing flow of control. The minimum number of tests necessary to cover
+all edges is equal to the number of independent paths through the flow graph.
+This is known as the <i>cyclomatic complexity</i> (CC) of the flow graph, which has the formula:
+<blockquote>
+<code>CC = number of edges - number of nodes + 2</code>
+</blockquote>
+</span>
+</td>
+<td class="gray" width="10"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td></tr>
+<tr><td colspan="3" class="gray" height="10"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td></tr>
+<tr><td colspan="5" class="dkgray" height="1"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/spacer.gif" alt="." border="0" height="1" width="1"></td></tr>
+</tbody></table>
+<!-- end note -->
+<br>
+<p>
+Fortunately, you don't have to draw flow graphs for your code by hand, as several <a href="http://www.javaworld.com/javaworld/tools/jw-tools-testing.html" target="_blank">code coverage tools</a> are readily available.
+</p>
+<h4>Challenges of Testing Wireless Applications</h4>
+<p>The wide variety of Java technology-enabled devices such as wireless
+phones and PDAs results in each device running a different
+implementation of the CLDC and MIDP. Varying display sizes add to the
+complexity of the testing process. In addition, some vendors provide
+proprietary API extensions. As an example, some J2ME vendors may
+support only the HTTP protocol, which the MIDP 1.0 specification
+requires, while others support TCP sockets and UDP datagrams, which are
+optional.
+</p>
+<p>
+To make your application both portable and easy to test, design it using standardized APIs defined through the <a href="http://www.jcp.org/" target="_blank">Java Community Process (JCP)</a>,
+so it will run as-is on devices with different J2ME implementations. If
+you feel you must use vendor-specific extensions, design your
+application in such a way that it defaults to the standard APIs if it's
+deployed on a device that doesn't support the extensions.
+</p>
+<h4>Testing Wireless Java Applications</h4>
+<p>The testing activities described above are applicable to testing
+wireless Java applications. In other words, you perform unit or class
+testing, then you integrate components and test them together, and
+eventually you test the whole system. In this section I provide
+guidelines for testing wireless applications.
+</p>
+<p>
+<b>Validating the Implementation</b>
+</p>
+<p>Ensuring that the application does what it's supposed to is an
+iterative process that you must go through during the implementation
+phase of the project. Part of the validation process can be done in an
+emulation environment such as the J2ME Wireless Toolkit, which provides
+several phone skins and standard input mechanisms. The toolkit's
+emulation environment does not support all devices and platform
+extensions, but it allows you to make sure that the
+application looks appealing and offers a user-friendly interface on a
+wide range of devices. Once the application has been tested on an
+emulator, you can move on to the next step and test it on a real
+device, and in a live network.
+</p>
+<p>
+<b>Usability Testing</b>
+</p>
+<p>In usability testing (or GUI navigation), focus on the external
+interface and the relationships among the screens of the application.
+As an example, consider an email application that supports entry and
+validation of a user name and password, enables the user to read,
+compose, and send messages, and allows maintenance of related settings,
+using the screens shown in Figure 1, among others.
+</p>
+<table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center">
+<img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/test_fig1_scr1.gif" alt="Figure 1: Screen 1" border="0" height="112" width="109">&nbsp;&nbsp;&nbsp;
+<img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/test_fig1_scr2.gif" alt="Figure 1: Screen 2" border="0" height="111" width="110">&nbsp;&nbsp;&nbsp;
+<img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/test_fig1_scr3.gif" alt="Figure 1: Screen 3" border="0" height="111" width="111">
+<br><br>
+<span class="rtbtitle">Figure 1: Messaging Application</span>
+</td>
+</tr>
+</tbody></table>
+<!--
+<table border="0" cellspacing="0" cellpadding="10" width="109" align="center">
+<tr>
+<td align="center">
+<img src="/techtopics/mobility/midp/articles/test/test_fig1.gif" border="0" height="112" width="109" alt="Figure 1: Messaging Application">
+<br>
+<span class="rtbtitle">Figure 1: Messaging Application</span>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="10" width="110" align="center">
+<tr>
+<td align="center">
+<img src="/techtopics/mobility/midp/articles/test/test_fig2.gif" border="0" height="111" width="110" alt="Figure 2">
+<br>
+<span class="rtbtitle">Figure 2</span>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="10" width="111" align="center">
+<tr>
+<td align="center">
+<img src="/techtopics/mobility/midp/articles/test/test_fig3.gif" border="0" height="111" width="111" alt="Figure 3">
+<br>
+<span class="rtbtitle">Figure 3</span>
+</td>
+</tr>
+</table>
+-->
+<p>In this example, start the test at the Login window. Enter a user
+name and a password and press the soft button labeled Login. Enter a
+valid user name and password. &nbsp;The application should display the
+main menu. Does it? The main menu should display a SignOut button. Does
+it? Press the SignOut button. Does the application return to the Login
+screen? Write yourself a note to raise the question, "Why does the user
+'log' in but 'sign' out?" Now enter an invalid user name or incorrect
+password. The program should display a meaningful message box with an
+OK button. Does it? Press the OK button. Does the application return to
+the Login screen?
+</p>
+<p>You need to test the GUI navigation of the entire system, making
+notes about usability along the way. If, for example, the user must
+traverse several screens to perform a function that's likely to be very
+popular, you may wish to consider moving that particular function up
+the screen layers.
+</p>
+<p>
+Some of the questions you should ask during usability testing include:
+</p>
+<ul>
+<li>Is the navigation depth (the number of screens the user must go through) appropriate for each particular function?</li>
+<li>Does the application minimize text entry -- painful on a wireless phone -- or should it provide more selection menus?</li>
+<li>Can screens of all supported devices display the content without truncating it?</li>
+<li>If you expect to deploy the application on foreign devices, does it support international character sets?</li>
+</ul>
+<p>
+The <a href="http://java.sun.com/docs/books/midp/">MIDP Style Guide</a> provides helpful hints about user interface design.
+</p>
+<p>
+<b>Network Performance Testing</b>
+</p>
+<p>The goal of the next type of testing is to verify that the
+application performs well in the hardest of conditions (for example,
+when the battery is low or the phone is passing through a tunnel).
+Testing performance in an emulated wireless network is very important.
+The problem with testing in a live wireless network is that so many
+factors affect the performance of the network itself that you can't
+repeat the exact test scenarios. In an emulated network environment, it
+is easy to record the result of a test and repeat it later, after you
+have modified the application, to verify that the performance of the
+application has improved.
+</p>
+<p>
+<b>Server-Side Testing</b>
+</p>
+<p>It is very likely that your wireless Java applications will
+communicate with server-side applications. If your application
+communicates with servers you control, you have a free hand to test
+both ends of the application. If it communicates with servers beyond
+your control (such as <code>quotes.yahoo.com</code>), you just need to find the prerequisites of
+use and make the best of them. You can test server-side applications that communicate over HTTP connections using <a href="http://httpunit.sourceforge.net/" target="_blank">HttpUnit</a>
+(a Java API for accessing web sites without a browser. It is ideally
+suited for automated unit testing of web sites when combined with a
+Java unit test framework such as <a href="http://www.junit.org/" target="_blank">JUnit</a>, which I'll discuss in the next section. You can also measure a web site's performance using <a href="http://www.hpl.hp.com/personal/David_Mosberger/httperf.html" target="_blank">httperf,</a> a tool designed for measuring the performance of web servers).
+</p>
+<p>
+<b>Automating Unit Testing</b>
+</p>
+<p>
+One of the unit-testing tools most widely used by Java developers is
+the JUnit framework. A similar framework for J2ME unit testing is
+J2MEUnit. Here is a sample test:
+</p>
+<blockquote>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table class="grey4" border="0" cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr><td><pre>import j2meunit.framework.*;
+public class TestLoginWindow extends TestCase {
+  public TestLoginWindow() {
+    super("null");
+  }
+  public TestLoginWindow(String s) {
+    super(s);
+  }
+  protected void runTest() throws java.lang.Throwable {     
+    if(getTestMethodName().equals("testLoginWindow"))      
+      testLogindWindow();
+    }    
+    public Test suite() {
+      return new TestSuite(new TestLoginWindow().getClass(), 
+        new String[] {"testLoginWindow"});
+    }    
+    public void testLoginWindow(){
+      // test it
+      // use assert(String, boolean)
+    } 
+  }
+}
+</pre></td></tr></tbody></table>
+<span class="sp20"> </span><br>
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+</blockquote>
+<p>
+When using J2MEUnit in your testing, you need to:
+</p>
+<ul>
+<li>Create a subclass of <code>TestCase</code>, like <code>TestLoginWindow</code> in the example.</li>
+<li>Override the method <code>runTest()</code> as in the example. Because J2MEUnit doesn't use reflection, when you override <code>runTest()</code> you must call <code>getTestMethodName()</code> to check the name of the test method (<code>testLoginWindow()</code> in the example above).</li>
+<li>Override the method <code>suite()</code> so that it returns a <code>TestSuite</code> object containing the name of the class for the test case and the names of the test methods.</li>
+<li>To check a value, call the <code>assert()</code> method and pass a <code>boolean</code> that is <code>true</code> if the test succeeds.</li>
+</ul>
+<p>
+J2MEUnit provides two test runners that allow you to run your tests, collect results, and display them:
+</p>
+<ol>
+<li>Text-based: This test runner provides simple-text based output of the results. To use it, add the following <code>main</code> method to any subclass of <code>TestCase</code>:
+<blockquote>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table class="grey4" border="0" cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr><td><pre>public static void main(String argv[]) {
+    String[] {"j2meunit.examples.TestOne"};
+    j2meunit.textui.TestRunner.main(runnerArgs);
+}
+</pre></td></tr></tbody></table>
+<span class="sp20"> </span><br>
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+</blockquote>
+</li>
+<li>GUI-based: As the name implies, this test runner provides GUI
+output. To use it, you must compile and preverify the J2MEUnit
+framework, then:
+<ul>
+<li>Create a subclass of <code>j2meunit.midp.ui.TestRunner</code>.</li>
+<li>Override the <code>startApp()</code> method.</li>
+</ul>
+</li>
+</ol>
+<h4>Debugging Information</h4>
+<p>Adding debugging information in your code is very important. You can
+display trace points, values of variables, and other information during
+testing and debugging. One way to minimize the tedium of writing <code>System.out.println()</code> calls is to write a utility method such as the following:
+</p>
+<blockquote>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table class="grey4" border="0" cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr><td><pre>public void debug(String s) {
+    System.out.println("DEBUG: "+s);
+}
+</pre></td></tr></tbody></table>
+<span class="sp20"> </span><br>
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+</blockquote>
+<p>
+You can easily use the <code>debug()</code> method to display debugging information, then later remove the calls from production code.
+</p>
+<p>
+The J2ME Wireless Toolkit provides a debugger that's easy to use. If
+you use the Sun ONE Studio 4, Mobile Edition, see the article <a href="http://forte.sun.com/ffj/articles/WirelessApps2.html" target="_blank">Debugging Wireless Applications with Mobile Edition</a> for useful guidance.
+</p>
+<h4>Testing Checklists</h4>
+<p>
+This section provides checklists you will find useful when testing your
+application, in both emulation and live environments. These checklists
+include tests that are usually performed in the <a href="http://qpqa.com/motorola/iden/" target="_blank">Motorola Application Certification Program</a>, described a little later in the article.
+</p>
+<p>
+<b>Navigation Checklist</b>
+</p>
+<ul>
+<li><i>Application name</i>: Make sure your application displays a name in the title bar.</li>
+<li><i>Keep the user informed</i>: If your application doesn't start up
+within a few seconds, it should alert the user. For large applications,
+it is a good idea to have a progress bar.</li>
+<li><i>Readable text</i>: Ensure that all kinds of content are readable
+on both grayscale and color devices. Also make sure the text doesn't
+contain any misspelled words.</li>
+<li><i>Repainting screens</i>: Verify that screens are properly painted and that the application doesn't cause unnecessary screen repaints.</li>
+<li><i>Soft buttons</i>: Verify that the functionality of soft buttons
+is consistent throughout the application. Verify that the whole layout
+of screens and buttons is consistent.</li>
+<li><i>Screen Navigation</i>: Verify that the most commonly used screens are easily accessible.</li>
+<li><i>Portability</i>: Verify that the application will have the same friendly user interface on all devices it is likely to be deployed on.</li>
+</ul>
+<p>
+<b>Network Checklist</b>
+</p>
+<ul>
+<li><i>Sending/Receiving data</i>: For network-aware applications, verify that the application sends and receives data properly.</li>
+<li><i>Name resolution</i>: Ensure that the application resolves IP addresses correctly, and sends and receives data properly.</li>
+<li><i>Sensitive Data</i>: When transmitting sensitive data over the network, verify that the data is being masked or encrypted. Use the SSL protocol.</li>
+<li><i>Error handling</i>: Make sure that error messages concerning
+network error conditions (such as no network coverage) are displayed
+properly, and that when an error message box is dismissed the
+application regains control.</li>
+<li><i>Interruptions</i>: Verify that, when the device receives system
+alerts, SMS messages, and so on while the application is running,
+messages are properly displayed. Also make sure that when the message
+box is dismissed the application continues to function properly.</li>
+</ul>
+<p>
+<b>Other Important Issues</b>
+</p>
+<ul>
+<li><i>Successful startup and exit</i>: Verify that your application
+starts up properly and its entry point is consistent. Also make sure
+that the application exits properly.</li>
+<li><i>Classes outside the MIDP and CLDC specifications</i>: Unless you
+are willing to sacrifice portability and, in some environments,
+certification, ensure that the application does not use classes not
+included in the MIDP and CLDC specifications.</li>
+<li><i>User manual</i>: Verify that all product documentation is accurate, and consistent with the software's actual behavior.</li>
+</ul>
+<h4>Certification Programs</h4>
+<p>
+Several certification programs for J2ME applications are available. The
+two most widely known at this writing are those sponsored by Motorola
+and Nokia.
+</p>
+<p>
+<b>Motorola</b>
+</p>
+<p>The Motorola Application Certification Program is designed to
+promote consistent user interface and high standards of operation in
+J2ME wireless applications.
+</p>
+<p>
+The benefits of the certification program cited by Motorola are:
+</p>
+<ul>
+<li>Valuable testing and feedback results to the developer</li>
+<li>Higher application quality</li>
+<li>Improved customer experience</li>
+<li>Access to marketing and promotion programs</li>
+</ul>
+<p>
+Note that this certification program is not free (<a href="http://qpqa.com/motorola/iden" target="_blank">check the pricing information</a>); but it is a good way to form a partnership with an important vendor.
+</p>
+<p>To get Motorola to certify your J2ME application, you must schedule
+a test by submitting a package -- a MIDlet suite or a single MIDlet --
+online at <code>http://www.qpqa.com/motorola/iden</code>. To do so:
+</p>
+<ol>
+<li>Fill out an <a href="http://qpqa.com/motorola/iden/submission.html" target="_blank">online submission form</a></li>
+<li>FTP or email a pre-tested candidate of your application</li>
+<li>Supply a copy of your documentation in either <code>.pdf</code> or <code>.html</code></li>
+</ol>
+<p>
+For more detailed information on the certification process and the fees involved, check out the <a href="http://www.qpqa.com/motorola/iden" target="_blank">Motorola Certification Application Program</a>.
+</p>
+<p>
+If your J2ME application meets all the certification requirements,
+Motorola will provide you with the "Motorola Compatible" logo, and will
+place your application and user manual on Motorola's application
+distribution server. If your J2ME application does not achieve
+certification the first time you submit it, you can fix the problems
+and resubmit (for an extra charge).
+</p>
+<p>
+<b>Nokia</b>
+</p>
+<p>The Nokia OK Program is a testing and evaluation process for
+third-party
+applications that run on Nokia mobile devices. Once an application
+completes the process, it is granted the Nokia OK designation, meaning
+that the application has met the Nokia standards and can be used on
+Nokia products with confidence.
+</p>
+<p>
+The benefits of the program according to Nokia include:
+</p>
+<ul>
+<li>Allows end users to identify third-party applications available for Nokia mobile devices</li>
+<li>Raises your application's profile with the Nokia OK logo</li>
+<li>Provides easy access to <a href="http://www.forum.nokia.com/main/1,35452,00,00.html" target="_blank">Nokia sales channels</a></li>
+<li>Makes your application visible on <a href="http://www.nokia.com/mobilecity" target="_blank">Nokia Mobile City</a>, a source of information for operators and consumers that includes third-party
+solutions that Nokia sees as adding value to its products</li>
+</ul>
+<p>
+The certification process is similar to Motorola's. It is less expensive,
+but not free. For more detailed information, visit the <a href="http://www.forum.nokia.com/main/1,35452,00_25_10,00.html" target="_blank">Nokia OK Program</a>.
+</p>
+<h4>Conclusion</h4>
+<p>Testing is a systematic approach to finding errors in programs. It
+is a very challenging process in the wireless application market
+because an application is developed on one platform and deployed on
+ones that are vastly different. The process is complicated even further
+by the availability of a wide range of devices that implement different
+versions of the KVM, CLDC, and MIDP, and that provide extension APIs
+not available on all devices. To achieve the maximum portability,
+verify that your applications use the standard APIs.
+</p>
+<p>
+This article also provided guidelines and checklists to help you test your wireless Java applications.
+</p>
+<h4>For more information</h4>
+<ul>
+<li><a href="http://java.sun.com/products/j2mewtoolkit/" target="_blank">J2ME Wireless Toolkit</a></li>
+<li><a href="http://developers.sun.com/techtopics/mobility/midp/articles/uidesign" target="_blank">Wireless Software Design Techniques</a></li>
+<li><a href="http://java.sun.com/j2me/docs/alt-html/midp-style-guide7" target="_blank">MIDP Style Guide</a></li>
+<li><a href="http://www.mot.com/iden" target="_blank">iDEN Update</a></li>
+<li><a href="http://qpqa.com/motorola/iden" target="_blank">Motorola Application Certification Program</a></li>
+<li><a href="http://developer.nextel.com/" target="_blank">Nextel Developer Program</a></li>
+<li><a href="http://www.forum.nokia.com/main/1,35452,00_25_10,00.html" target="_blank">Nokia OK Program</a></li>
+<li><a href="http://www.junit.org/" target="_blank">JUnit</a></li>
+<li><a href="http://httpunit.sourceforge.net/" target="_blank">HttpUnit</a></li>
+<li><a href="http://www.hpl.hp.com/personal/David_Mosberger/httperf.html" target="_blank">httperf</a></li>
+<li><a href="http://xprogramming.com/ftp/TestingFramework/j2me/J2MEUnit1_0.zip" target="_blank">J2MEUnit</a></li>
+</ul>
+<h4>Acknowledgments</h4>
+<p>
+Special thanks to Gary Adams of Sun Microsystems for his contributions to this article.
+</p>
+<!-- double rule -->
+<!-- BEGIN FRAGMENT | HR TAG -->
+<div class="contentdivider"><table class="grey4" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="4" width="1"></td></tr></tbody></table></div>
+<!-- END FRAGMENT | HR TAG -->
+<!-- about --><span class="byline">
+<b>About the Author:</b> <a href="mailto:qmahmoud@javacourses.com">Qusay H. Mahmoud</a> provides Java consulting and training services. He has published dozens of articles on Java, and is the author of <i>Distributed Programming with Java</i> (Manning Publications, 1999) and <i>Learning Wireless Java</i> (O'Reilly &amp; Associates, 2002).
+</span>
+<br>
+<!-- BEGIN FRAGMENT | HR TAG -->
+<div class="contentdivider"><table class="grey4" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="4" width="1"></td></tr></tbody></table></div>
+<!-- END FRAGMENT | HR TAG -->
+<br>
+<!-- BEGIN RATE AND REVIEW -->
+<script type="text/javascript">
+<!-- Hide script from older browsers
+// Popup window function
+function onRateSubmitHandler()
+{
+var w = window.open("","rr","width=800,height=600,status=no,toolbar=no,scrollbars=yes");
+w.setTimeout("window.close();", 30000 );
+return true;
+}
+// End of javascript 
+-->
+</script>
+<br>
+<form name="article_rating" method="post" action="http://survey.sun.com/ViewsFlash/servlet/viewsflash" onsubmit="return onRateSubmitHandler()" target="rr">
+<table class="white" style="margin-top: 7px;" border="0" cellpadding="1" cellspacing="0" width="100%"><tbody><tr><td>
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+<tbody><tr><td class="dkgrey1"><b>Reader Feedback</b></td></tr>
+<tr><td class="ltgrey"><b>
+<a name="VFquality"></a>
+<input name="quality" value="Excellent" type="radio"> Excellent&nbsp;&nbsp;
+<input name="quality" value="Good" type="radio"> Good&nbsp;&nbsp;
+<input name="quality" value="Fair" type="radio"> Fair&nbsp;&nbsp;
+<input name="quality" value="Poor" type="radio"> Poor&nbsp;&nbsp;
+</b></td></tr>
+<tr><td class="ltgrey">
+<p>
+If you have other comments or ideas for future technical tips, please type them here: 
+</p>
+<a name="VFcomments"></a>
+<b>Comments:</b><br><textarea name="comments" cols="60" rows="3" wrap="virtual"></textarea></td></tr>
+<tr><td class="ltgrey">
+<a name="VFEmail"></a>
+<b>If you would like a reply to your comment, please submit your email address:</b><br>
+<input name="Email" value="" size="35" maxlength="60" type="text"> Note: We may not respond to all
+submitted comments.</td></tr>
+<tr><td class="ltgrey">
+<input value="&nbsp;Submit »&nbsp;" border="0" type="submit">
+<a name="VFURL"></a>
+<input name="URL" value="developers.sun.com/techtopics/mobility/midp/articles/test/" type="hidden">
+<a name="VFArticleTitle"></a>
+<input name="ArticleTitle" value="Testing Wireless Java Applications" type="hidden">
+<a name="VFArticleAuthor"></a>
+<input name="ArticleAuthor" value="Qusay H. Mahmoud" type="hidden">
+<input name="cmd" value="tally" type="hidden">
+<input name="pollid" value="CNP!tGreene" type="hidden">
+<input name="results" value="? http://developers.sun.com/contact/thankyou.jsp?dlink=javascript:window.close();&amp;lname=article&amp;mesg=%3Ca+href%3D%22http%3A%2F%2Fdeveloper.java.sun.com%2Fsubscription%22%3ESubscribe+to+a+newsletter%3C%2Fa%3E" type="hidden">
+<input name="charset" value="ISO-8859-1" type="hidden">
+<p> 
+Have a question about Java programming? Use <a href="http://java.sun.com/developer/support/">Java Online Support</a>. 
+</p>
+</td></tr></tbody></table></td></tr>
+</tbody></table></form>
+<!-- END RATE AND REVIEW -->
+<br>
+<!-- BEGIN FRAGMENT | HR TAG -->
+<div class="contentdivider"><table class="grey4" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="4" width="1"></td></tr></tbody></table></div>
+<!-- END FRAGMENT | HR TAG -->
+<br>
+<a href="#top">Back To Top</a><br>
+<!-- ================ -->
+<!-- END MAIN content -->
+<!-- ================ -->
+<!-- =================== -->
+<!-- END OF MAIN CONTENT -->
+<!-- =================== -->
+<!--stopindex-->
+<!-- END CENTRAL COLUMN COMPONENTS -->
+</td><td valign="top">
+<!-- BEGIN RIGHT COLUMN COMPONENTS -->
+<!-- END RIGHT COLUMN COMPONENTS -->
+</td></tr>
+<!-- BEGIN SPACER ROW -->
+<tr><td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="1" width="560"></td><td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt=" " border="0" height="1" width="170"></td></tr>
+<!-- END SPACER ROW -->
+</tbody></table>
+<!-- END WRAPPER TABLE, 2 COLUMN, MAIN/RIGHT -->
+<!-- BEGIN VNV5 FOOTER  -->
+<table border="0" cellpadding="0" cellspacing="10" width="100%">
+<tbody><tr>
+<td>
+<table class="vatop" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td colspan="4" class="grey3" valign="top"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="" border="0" height="2" width="1"></td></tr>
+<tr>
+<td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="" border="0" height="1" width="190"><br>
+<a href="http://www.sun.com/"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/logo_sun_small_sdn.gif" alt="" border="0" height="29" vspace="5" width="61"></a></td>
+<td valign="top" width="100%"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="" border="0" height="1" width="350"><br>
+<div class="footer">
+<a href="http://developers.sun.com/global/aboutsun.html">About Sun</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/aboutsdn.html">About This Site</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/newsletters.html">Newsletters</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/contact.html">Contact Us</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/employment.html">Employment</a><br>
+<a href="http://developers.sun.com/global/howtobuy.html">How to Buy</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/licensing.html">Licensing</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/privacy.html">Privacy</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/trademarks.html">Trademarks</a>
+<br><span class="sp10">&nbsp;</span><br>
+<br><span class="sp10">&nbsp;</span><br>
+Copyright 1994-2006 Sun Microsystems, Inc.
+</div></td>
+<td><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="" border="0" height="1" width="40"></td>
+<td valign="top"><div class="footer"><b><a href="http://developers.sun.com/global/aboutsdn.html">A Sun Developer Network Site</a></b></div>
+<div class="footer">
+<img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="" border="0" height="1" width="170"><br>
+Unless otherwise licensed, code in all technical manuals herein (including articles, FAQs, samples) is provided under this <a href="http://developers.sun.com/global/berkeley_license.html">License</a>.
+<br><span class="sp5">&nbsp;</span><br>
+<a href="http://developers.sun.com/global/rss_sdn.html"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/button_xml.gif" alt="XML" align="top" border="0" height="14" width="36"></a>&nbsp;<a href="http://developers.sun.com/global/content_feeds.html">Content Feeds</a>
+</div></td></tr>
+<tr><td colspan="4" class="grey3" valign="top"><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/a.gif" alt="" border="0" height="2" width="1"></td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+<!-- END VNV5 FOOTER -->
+<script language="JavaScript" src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/s_code_remote.js"></script><img src="Sun%20-%20Testing%20Wireless%20Java%20Applications_files/s64118194129198.gif" name="s_i_sunglobal" alt="" border="0" height="1" width="1"></body></html>

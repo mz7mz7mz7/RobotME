@@ -1,0 +1,59 @@
+Mobile competitors:
+- Ciekawy project OS Motoroli, z tego co zrozumialem sa to jedynie testy jednostkowe
+  operte o J2MEUnit, z tego narzedzia Motorola w swoich projektach chyba tez wewnetrznie
+  korzysta: https://opensource.motorola.com/sf/sfmain/do/viewProject/projects.gatling
+- Sony Ericsson: Mobile JUnit. Available on-line (2006): http://developer.sonyericsson.com/getDocument.do?docId=87520
+- IBM: Rational Test RealTime. Available on-line (2006): http://www.ibm.com/software/awdtools/test/realtime/
+- J2MEUnit. Available on-line (2006): http://j2meunit.sourceforge.net
+- Automate testing with the BlackBerry Simulator: http://www.blackberry.com/knowledgecenterpublic/livelink.exe/fetch/2000/348583/796557/800738/800792/801083/How_To_-_Automate_testing_with_the_BlackBerry_Simulator.html?nodeid=1261374&vernum=0
+- Testing j2me application with MicroEmulator: http://www.microemu.org/unittests.html
+
+
+----------------------------------------
+Other similar projects:
+
+Jacareto - http://jacareto.sourceforge.net
+
+Abbot - http://abbot.sourceforge.net
+
+GUIdancer - http://www.bredex.de/en/guidancer/index.html
+
+TestDrive-Gold - http://www.origsoft.com/Solutions/guitesting.htm
+
+OO TestTool - http://qa.openoffice.org/qatesttool/
+
+Byc moze ta ksiazka ma w sobie cos ciekawego - http://www.amazon.com/exec/obidos/ASIN/0201432870/sqatestercom-20/104-3313915-2061523
+
+Rational Robot - http://www-306.ibm.com/software/awdtools/tester/robot/
+
+Ksiazka z opisu wnioskuje ze mowi troche o aspektach implementacyjnych tworzenia narzedzi do zautomatyzowanych testow funkcjonalnych - http://www.amazon.com/gp/product/0782143512/104-3313915-2061523?v=glance&n=283155
+
+Jemmy - http://jemmy.netbeans.org
+
+Przejrzenie tych grup pewnie nie zaszkodzi:
+http://groups.google.com/group/comp.software.testing
+http://groups.google.com/group/software-testing
+
+
+jfcUnit - http://jfcunit.sourceforge.net
+Pounder - http://pounder.sourceforge.net
+UISpec4J - http://www.uispec4j.org
+
+
+Compuware TestPartner - http://www.compuware.com/products/qacenter/375_ENG_HTML.htm
+
+Marathon - http://marathonman.sourceforge.net
+
+Jameleon - http://jameleon.sourceforge.net
+
+AutoHotkey - http://www.autohotkey.com
+
+Mercury WinRunner - http://www.mercury.com/us/products/quality-center/functional-testing/winrunner/
+
+Lista wielu innych narzedzi z krotkim opisem -  http://www.testingfaqs.org/t-gui.html
+
+PGUIRobot - http://sourceforge.net/projects/pguirobot
+
+Zblizona koncepcja dla aplikacji Symbianowych: http://www.wirelessdevnet.com/symbian/rb_61.html
+
+Dostawca oprogramowania do testow - http://www.segue.com

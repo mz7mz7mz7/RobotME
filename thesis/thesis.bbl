@@ -1,0 +1,65 @@
+\begin{thebibliography}{{Jam}03}
+
+\bibitem[{Cyn}03]{midpstyle}
+{Cynthia Bloch, Annette Wagner}.
+\newblock {\em {MIDP Style Guide for the Java 2 Platform, Micro Edition}}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, 2003.
+
+\bibitem[{Dre}02]{j2mecrackingcode}
+{Dreamtech Software Team}.
+\newblock {\em {Wireless Programming with J2ME: Cracking the Code}}.
+\newblock {Hungry Minds, Inc.}, 2002.
+
+\bibitem[FF]{fowler}
+Martin Fowler and Matthew Foemmel.
+\newblock Continuous integration.
+\newblock Available on-line (2007):
+  \url{http://martinfowler.com/articles/continuousIntegration.html}.
+
+\bibitem[{Jam}03]{j2mereference}
+{James Keogh}.
+\newblock {\em {J2ME: The Complete Reference}}.
+\newblock {McGraw-Hill/Osborne}, 2003.
+
+\bibitem[{Jef}05]{softqualiteng}
+{Jeff Tian}.
+\newblock {\em {Software Quality Engineering. Testing, Quality Assurance, and
+  Quantifiable Improvement}}.
+\newblock John Wiley \& Sons, Inc., 2005.
+
+\bibitem[KFN99]{tcs}
+Cem Kaner, Jack~L. Falk, and Hung~Quoc Nguyen.
+\newblock {\em Testing Computer Software, Second Edition}.
+\newblock John Wiley \& Sons, Inc., New York, NY, USA, 1999.
+
+\bibitem[{Mar}99]{sta99}
+{Mark Fewster and Dorothy Graham}.
+\newblock {\em {Software Test Automation}}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, 1999.
+
+\bibitem[{Mic}03]{enterprisej2me}
+{Michael Juntao Yuan}.
+\newblock {\em {Enterprise J2ME: Developing Mobile Java Applications}}.
+\newblock {Prentice Hall PTR}, 2003.
+
+\bibitem[{SUN}]{midpspec}
+{SUN}.
+\newblock {Mobile Information Device Profile 2.0 Specification}.
+\newblock {Available on-line (2007):
+  \url{http://jcp.org/aboutJava/communityprocess/final/jsr118/}}.
+
+\bibitem[{Wil}99]{emost}
+{William E.~Perry}.
+\newblock {\em {Effective Methods of Software Testing (second edition)}}.
+\newblock John Wiley \& Sons, Inc., 1999.
+
+\bibitem[WZ07]{zduniak-weiss-2007}
+Dawid Weiss and Marcin Zduniak.
+\newblock {Automated Integration Tests for Mobile~Applications in Java 2 Micro
+  Edition}.
+\newblock In Witold Abrabowicz, editor, {\em Proceedings of the 10th
+  International Conference on Business Information Systems {BIS-2007},
+  Pozna{\'n}, Poland}, volume 4439 of {\em {Lecture Notes in Computer
+  Science}}, pages 478--487. Springer, 2007.
+
+\end{thebibliography}

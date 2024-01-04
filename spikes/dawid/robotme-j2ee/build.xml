@@ -1,0 +1,87 @@
+<project name="robotme-j2ee" default="compile">
+	
+	<property file="local.properties" />
+	
+    <import file="ant/build-j2me.xml" />
+	
+	<property name="classes.dir" location="tmp/ant/classes" />
+	<property name="j2me.classes.dir" location="tmp/ant/classes-j2me" />
+	
+	<property name="j2me.src" value="../robotme-j2me/src"/>
+	<property name="j2me.classes" value="${j2me.classes.dir}"/>
+	<property name="j2me.preverified" value="tmp/ant/classes-j2me-preverified"/>	
+	<path id="j2me.classpath" />
+
+	<path id="robotme.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="tmp/ant" failonerror="false" />
+	</target>
+	
+	<target name="prepare">
+		<mkdir dir="${classes.dir}" />
+		
+		<!-- Make sure the j2me project is compiled. -->
+		<antcall target="compile.j2me" />
+	</target>
+
+	<target name="compile" depends="prepare,copyTemplates" description="Compiles the required source code.">
+		<javac destdir="${classes.dir}" encoding="UTF-8"
+			includeantruntime="true">
+			<classpath refid="robotme.classpath" />
+			<src>
+				<pathelement location="src" />
+			</src>
+		</javac>
+	</target>
+
+	<target name="taskdefs" depends="compile">
+		<taskdef classname="com.robotme.ant.RobotizeTask" name="robotize">
+			<classpath refid="robotme.classpath" />
+			<classpath location="${classes.dir}" />
+		</taskdef>
+	</target>
+
+	<target name="copyTemplates" description="Copies the template classes from j2me project.">
+		<copy todir="${classes.dir}">
+			<fileset dir="${j2me.classes.dir}">
+				<include name="com/robotme/asmlib/**/*.class" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="robotize" depends="taskdefs" description="Robotizes the examples.">
+		<robotize targetExtension=".class">
+			<fileset dir="${j2me.classes.dir}">
+				<include name="**/*.class" />
+				<exclude name="com/robotme/asmlib/**" />
+			</fileset>
+		</robotize>
+
+		<!-- preverify -->
+		<mkdir dir="j2me.preverified" />
+		<antcall target="preverify" />
+		
+		<!-- build a jar and run -->
+		<copy file="../robotme-j2me/robotme-j2me.jad" todir="tmp/ant" />
+		<jar jarfile="tmp/ant/robotme-j2me.jar" update="false" manifest="tmp/ant/robotme-j2me.jad">
+			<fileset dir="${j2me.preverified}" />
+		</jar>
+
+        <taskdef classname="com.mpilot.ant.FileSizeTask" name="filesize">
+            <classpath location="ant/filesizetask.jar" />
+        </taskdef>
+
+        <filesize property="tmp.jar.size" file="tmp/ant/robotme-j2me.jar" />
+        <manifest file="tmp/ant/robotme-j2me.jad" mode="update">
+            <attribute name="MIDlet-Jar-Size" value="${tmp.jar.size}" />
+        </manifest> 
+
+		<property name="jad.location" location="tmp/ant/robotme-j2me.jad" />
+		<antcall target="run.wtk" />
+	</target>
+</project>

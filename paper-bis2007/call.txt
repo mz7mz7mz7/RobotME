@@ -1,0 +1,274 @@
+
+======================================================================
+10th International Conference on Business Information Systems BIS 2007
+              in co-operation with ACM SIGMIS
+
+                     Poznan, Poland
+                  April 25 - 27, 2007
+
+               http://bis.kie.ae.poznan.pl
+
+======================================================================
+
+       Deadline for submissions: December 20, 2006
+
+======================================================================
+
+
+Proceedings will be published by Springer in LNCS series.
+
+
+THEME OF THE CONFERENCE: Semantic integration of data and processes
+across enterprises and societies
+
+It is our pleasure to invite you to submit your work to BIS2007 jubilee
+conference. The BIS conference is by now a well-respected event joining
+international researchers to discuss the wide range of the development,
+implementation, application and improvement of business applications
+and systems. It is addressed to the scientific community, people
+involved in the development of business computer applications,
+consultants helping to properly implement computer technology and
+applications in the industry.
+
+======================================================================
+
+KEYNOTE SPEAKERS
+
+* John Domingue, Open University, UK
+
+Deputy Director of the Knowledge Media Institute. His work is focused
+on ontologies and web technologies facilitating knowledge sharing
+and learning, as well as WSMO compliant Internet Reasoning Service
+for creating semantic web services.
+
+* Alois Ferscha, Johannes Kepler University of Linz, Austria
+
+Full professor, head of the Department for Pervasive Computing. He
+has published on topics related to parallel and distributed
+computing. Currently focused on Pervasive Computing and Embedded
+Software Systems. Presentation: "Digital Artefacts."
+
+* Wei-Ying Ma, Microsoft Research Asia, China
+
+Principal Researcher at Microsoft Research Asia, leads the Web Search
+& Data Mining Group. He worked for HP Labs, UCSB. Editor for the
+ACM/Springer Multimedia Systems Journal and Associate Editor for ACM
+Transactions on Information System
+
+* Wasim Sadiq, SAP Research, Australia
+
+Research Program Manager of Business Process Management and Semantic
+Interoperability. Interested in advanced BPM technology and Database
+Systems, Information Systems Integration, Engineering, e-services,
+and Distributed Enterprise Computing.
+
+* A Min Tjoa, Vienna University of Technology, Austria
+
+Director of Institute of Software Technology and Interactive Systems.
+Presentation: "Security Issues for the Use of Semantic Web in
+e-Commerce."
+
+
+======================================================================
+
+TOPICS OF THE CONFERENCE
+
+* business process management
+- semantic business process management
+- adaptive and dynamic processes
+- supply chain processes
+- ERP implementations
+- applications and challenges of RFID technology
+
+* ontologies
+- ontologies for Enterprise Content Management
+- semantic web applications
+- natural language processing and cognitive science
+- semantic integration of heterogeneous semi-structured information
+ sources
+- business models for Web information integration and aggregation
+- interoperability of heterogeneous information systems
+
+* information retrieval and filtering
+- search over semi-structural Web sources
+- hidden Web search and crawling
+- data integration from Web information sources
+- modeling and describing evolving data sources
+- adaptive integration of evolving data sources
+- location-aware and geography-centric information retrieval and filtering
+- information gathering support for knowledge-intensive enterprises
+- social networks and social wikis
+- semantic web personalization
+
+* software engineering
+- ambient computing
+- grid technology and its innovative applications
+- semantic grid
+- P2P infrastructures
+- wireless and mobile applications
+- multi-agent distributed systems
+- information systems engineering
+- security in distributed systems
+
+* web services
+- service oriented computing
+- composition and orchestration
+- semantic web services
+- trust and QoS in systems
+- service level agreements
+- public sector services usability
+
+
+======================================================================
+
+SUBMISSION
+
+- Long papers:  max. 5000 words
+- Work-in-progress rep.: max. 2500 words
+
+Electronic submission system available at: http://bis.kie.ae.poznan.pl
+
+BIS 2007 proceedings will be published as a volume in Lecture Notes
+in Computer Science series by Springer Verlag. Best papers will be
+invited to submit revised versions for review and possible
+fast-track publication in the Journal of Information Science and
+Technology (JIST). Additionally, papers related to Internet
+banking and commerce will be selected for publication by editorial
+board of The Journal of Internet Banking and Commerce (JIBC).
+
+======================================================================
+
+IMPORTANT DATES
+
+December 20, 2006    submission deadline for papers
+January 22, 2007     notification about acceptance/rejection
+Fabruary 4, 2007     submission of final papers
+April 25-27, 2007    the conference
+
+======================================================================
+
+Organizer:
+- Poznan University of Economics
+
+Supporters:
+- ACM Special Interest Group on Management Information Systems
+- GI - Gesellschaft für Informatik, Austria, Germany, Switzerland
+- NTIE - Polish Society for Information Systems
+
+======================================================================
+
+PROGRAM COMMITTEE
+
+General Chair:
+Witold Abramowicz, Poznan University of Economics, Poland
+W.Abramowicz@kie.ae.poznan.pl
+
+Ajith Abraham, Chung-Ang University, Korea
+Nabil R. Adam, Rutgers University, USA
+Richard Bonner, Mälardalen University, Sweden
+Kalina Bontcheva, University of Sheffield, United Kingdom
+Laszlo Böszörmenyi, University of Klagenfurt, Austria
+Hans-Dieter Burkhard, Humboldt University, Germany
+Peter Buxmann, Technical University of Darmstadt, Germany
+Wojciech Cellary, Poznan University of Economics, Poland
+Peter Chamoni, University of Duisburg-Essen, Germany
+Peter Dadam, University of Ulm, Germany
+Stefan Decker, National University of Ireland, Ireland
+Tommaso Di Noia, Technical University of Bari, Italy
+Ying Ding, University of Innsbruck, Austria
+Klaus Dittrich, University of Zürich, Switzerland
+John Domingue, Open University, United Kingdom
+Dieter Fensel, University of Innsbruck, Austria
+Bogdan Franczyk, University of Leipzig, Germany
+Ulrich Frank, University of Duisburg-Essen, Germany
+Johann-Christoph Freytag, Humboldt University, Germany
+Jan Golinski, Warsaw School of Economics, Poland
+Manfred Grauer, University of Siegen, Germany
+Norbert Gronau, University of Potsdam, Germany
+Volker Gruhn, University of Leipzig, Germany
+Oliver Günther, Humboldt University, Germany
+Hele-Mai Haav, Tallinn University of Technology, Estonia
+Ulrich Hasenkamp, University of Marburg, Germany
+Manfred Hauswirth, National University of Ireland, Ireland
+Armin Heinzl, University of Mannheim, Germany
+Martin Hepp, University of Innsbruck, Austria
+Matthias Jarke, RWTH Aachen, Germany
+Pawel J. Kalczynski, University of Toledo, USA
+Dimitris Karagiannis, University of Vienna, Austria
+Uzay Kaymak, Erasmus University Rotterdam, The Netherlands
+Pradeep Khosla, Carnegie Mellon University, USA
+Jerzy Kisielnicki, Warsaw University, Poland
+Gary Klein, University Of Colorado At Colorado Springs, USA
+Gerhard F. Knolmayer, University of Bern, Switzerland
+Jacek Koronacki, Polish Academy of Sciences, Poland
+Ryszard Kowalczyk, Swinburne University of Technology, Australia
+Helmut Krcmar, TU München, Germany
+Sanjay Kumar, XLRI School of Management, India
+Dennis Kundisch, University of Freiburg, Germany
+Dominik Kuropka, University of Potsdam, Germany
+Henry Linger, Monash University, Australia
+Peter C. Lockemann, University of Karlsruhe, Germany
+Peter Loos, University of Saarbrücken, Germany
+Leszek Maciaszek, Macquarie University, Australia
+Heinrich C. Mayr, University of Klagenfurt, Austria
+Hao Min, Fudan University, China
+Marie-Francine Moens, Katholieke Universiteit Leuven, Belgium
+Günter Müller, University of Freiburg, Germany
+Ludwig Nastansky, University of Paderborn, Germany
+Adam Nowicki, Wroclaw University of Economics, Poland
+Markus Nüttgens, University of Hamburg, Germany
+Andreas Oberweis, University of Karlsruhe, Germany
+Mitsunori Ogihara, University of Rochester, USA
+Jozef Olenski, University of Warsaw, Poland
+Maria E. Orlowska, The University of Queensland, Australia
+Marcin Paprzycki, Polish Academy of Sciences, Poland
+Eric Paquet, National Research Council, Canada
+Witold Pedrycz, University of Alberta, Canada
+Euripides Petrakis, Technical University of Crete,
+Arnold Picot, University of Munich, Germany
+Jakub Piskorski, EU, JRC, Web and Language Technology, Italy
+Jaroslav Pokorný, Charles University, Czech Republic
+Maria Raffai, Szechenyi Istvan University, Hungary
+Václav Repa, VSE Praha, Czech Republic
+Narcyz Roztocki, State University of New York at New Paltz, USA
+Shazia Sadiq, The University of Queensland, Australia
+Alexander Schill, Dresden University of Technology, Germany
+Elmar J. Sinz, University of Bamberg, Germany
+Janice C. Sipior, Villanova University, USA
+Henk G. Sol, University of Groningen, The Netherlands
+Martin Spann, University of Passau, Germany
+Bogdan Stefanowicz, Warsaw School of Economics, Poland
+Kilian Stoffel, University of Neuchâtel, Switzerland
+York Sure, University of Karlsruhe, Germany
+Witold Suryn, École de technologie supérieure, Canada
+Vojtech Svatek, VSE Praha, Czech Republic
+Joseph Urban, Arizona State University, USA
+Susan Urban, Arizona State University, USA
+Thaddeus W. Usowicz, San Francisco State University, USA
+Zygmunt Vetulani, Adam Mickiewicz University, Poland
+Herna Viktor, University of Ottawa, Canada
+Christof Weinhardt, University of Karlsruhe, Germany
+Mathias Weske, Hasso Plattner Institute for It-Systems Engineering, Germany
+Krzysztof Wecel, Poznan University of Economics, Poland
+Maria Wimmer, University of Koblenz, Germany
+Viacheslav E. Wolfengagen, Institute JurInfoR-MSU, Russia
+Stanislaw Wrycza, University of Gdansk, Poland
+Slawomir Zadrozny, Polish Academy of Sciences, Poland
+Mohammed J. Zaki, Rensselaer Polytechnic Institute, USA
+Arkady Zaslavsky, Monash University, Australia
+Jozef Zurada, University of Louisville, USA
+
+
+======================================================================
+
+Poznan University of Economics
+Dept. of Information Systems
+Al. Niepodleglosci 10
+60-967 Poznan, POLAND
+Tel: +48(61)854-3381 Fax: +48(61)854-3633
+bis@kie.ae.poznan.pl
+http://bis.kie.ae.poznan.pl
+
+
+
+

@@ -1,0 +1,18 @@
+
+
+---------------------------
+
+
+class: org.robotme.core.log.entries.LogEntry; id: 1; level: 1; timestamp: 1166969956119; replayable: false; assertion: false; msg: MIDlet set to: org.example.midlet.TestTextBoxMIDlet@d590dbc; ex: 
+class: org.robotme.core.log.entries.LogEntry; id: 1; level: 1; timestamp: 1166969956150; replayable: false; assertion: false; msg: Command added to displayable: javax.microedition.lcdui.Command@1a4cfaaa; ex: 
+class: org.robotme.core.log.entries.LogEntry; id: 1; level: 1; timestamp: 1166969956166; replayable: false; assertion: false; msg: Command added to displayable: javax.microedition.lcdui.Command@1cb37664; ex: 
+class: org.robotme.core.log.entries.DisplayableChangedLogEntry; id: 3; level: 127; timestamp: 1166969956197; replayable: false; assertion: true; msg: Displayable set to: javax.microedition.lcdui.TextBox@f828ed68; ex: ; title: Label; type: 5
+class: org.robotme.core.log.entries.CommandLogEntry; id: 2; level: 127; timestamp: 1166969957525; replayable: true; assertion: false; msg: Command invoked: COMMAND; ex: ; displayableTitle: Label; cmdLabel: COMMAND
+class: org.robotme.core.log.entries.TextBoxModificationLogEntry; id: 4; level: 127; timestamp: 1166969959681; replayable: true; assertion: false; msg: ; ex: ; string: Text123
+class: org.robotme.core.log.entries.CommandLogEntry; id: 2; level: 127; timestamp: 1166969959697; replayable: true; assertion: false; msg: Command invoked: COMMAND; ex: ; displayableTitle: Label; cmdLabel: COMMAND
+class: org.robotme.core.log.entries.TextBoxModificationLogEntry; id: 4; level: 127; timestamp: 1166969964916; replayable: true; assertion: false; msg: ; ex: ; string: Text123456
+class: org.robotme.core.log.entries.CommandLogEntry; id: 2; level: 127; timestamp: 1166969964931; replayable: true; assertion: false; msg: Command invoked: COMMAND; ex: ; displayableTitle: Label; cmdLabel: COMMAND
+class: org.robotme.core.log.entries.TextBoxModificationLogEntry; id: 4; level: 127; timestamp: 1166969967963; replayable: true; assertion: false; msg: ; ex: ; string: Text123456789
+class: org.robotme.core.log.entries.CommandLogEntry; id: 2; level: 127; timestamp: 1166969967978; replayable: true; assertion: false; msg: Command invoked: COMMAND; ex: ; displayableTitle: Label; cmdLabel: COMMAND
+class: org.robotme.core.log.entries.TextBoxModificationLogEntry; id: 4; level: 127; timestamp: 1166969972056; replayable: true; assertion: false; msg: ; ex: ; string: mrcin
+class: org.robotme.core.log.entries.CommandLogEntry; id: 2; level: 127; timestamp: 1166969972088; replayable: true; assertion: false; msg: Command invoked: COMMAND; ex: ; displayableTitle: Label; cmdLabel: COMMAND

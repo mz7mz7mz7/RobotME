@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {1}{Participants}{2}{0}{1}
+\beamer@sectionintoc {2}{Motivation}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Types of Application Tests}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Writing and testing applications in J2ME}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Project scope}{12}{0}{2}
+\beamer@subsectionintoc {2}{4}{Related works}{14}{0}{2}
+\beamer@sectionintoc {3}{RobotME}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Dynamic code injection}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{At the bytecode level}{33}{0}{3}
+\beamer@subsectionintoc {3}{3}{Test maintenance}{49}{0}{3}
+\beamer@subsectionintoc {3}{4}{Proof-of-concept prototype}{50}{0}{3}

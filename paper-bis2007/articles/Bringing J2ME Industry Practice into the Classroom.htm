@@ -1,0 +1,721 @@
+<html><head><style type="text/css">
+<!--
+	.goohl0{color:black;background-color:#ffff66}
+	.goohl1{color:black;background-color:#A0FFFF}
+	.goohl2{color:black;background-color:#99ff99}
+	.goohl3{color:black;background-color:#ff9999}
+-->
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="CreationDate" content="D:20031106152841-06'00'"><meta name="ModDate" content="D:20031106152841-06'00'"><meta name="Producer" content="Acrobat Distiller 5.0.5 (Windows)"><meta name="Author" content="umphrda"><meta name="Creator" content="PScript5.dll Version 5.2"><title>Bringing J2ME Industry Practice into the Classroom</title></head><body bgcolor="#ffffff" link="blue" vlink="blue"><table border="1" width="100%"><tbody><tr><td><table color="#ffffff" bgcolor="#ffffff" border="1" cellpadding="10" cellspacing="0" width="100%"><tbody><tr><td><font color="black" face="arial,sans-serif" size="-1">This is the html version of the file <a href="http://www.sheridanprinting.com/sigcse04/files/p176-umphress11.pdf"><font color="blue">http://www.sheridanprinting.com/sigcse04/files/p176-umphress11.pdf</font></a>.<br> <b><font color="#0039b6">G</font> <font color="#c41200">o</font> <font color="#f3c518">o</font> <font color="#0039b6">g</font> <font color="#30a72f">l</font> <font color="#c41200">e</font></b> automatically generates html versions of documents as we crawl the web.</font><br><br><center><font size="-2"><i>Google is neither affiliated with the authors of this page nor responsible for its content.</i></font></center></td></tr>
+<tr><td>
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><font color="black" face="arial,sans-serif" size="-1">These search terms have been highlighted:&nbsp;</font></td><td bgcolor="#ffff66"><b><font color="black" face="arial,sans-serif" size="-1">j2me&nbsp;</font></b></td><td bgcolor="#a0ffff"><b><font color="black" face="arial,sans-serif" size="-1">quality&nbsp;</font></b></td><td bgcolor="#a0ffff"><b><font color="black" face="arial,sans-serif" size="-1">assurance&nbsp;</font></b></td><td bgcolor="#99ff99"><b><font color="black" face="arial,sans-serif" size="-1">user&nbsp;</font></b></td><td bgcolor="#ff9999"><b><font color="black" face="arial,sans-serif" size="-1">interface&nbsp;</font></b></td></tr></tbody></table>
+</td></tr></tbody></table></td></tr></tbody></table>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" width="100%"><tbody><tr><td align="right" bgcolor="#eeeeee"><font face="arial,sans-serif"><a name="1"><b>Page 1</b></a></font></td></tr></tbody></table><font face="Times" size="4"><span style="font-size: 25px; font-family: Times;">
+<div style="position: absolute; top: 284px; left: 125px;"><nobr><b>Bringing <b><span class="goohl0">J2ME</span></b> Industry Practice into the Classroom </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 320px; left: 85px;"><nobr>David A. Umphress  James H Cross II </nobr></div>
+<div style="position: absolute; top: 320px; left: 436px;"><nobr>Jhilmil Jain </nobr></div>
+<div style="position: absolute; top: 320px; left: 562px;"><nobr>Nischita Meda  Larry A. Barowski </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 341px; left: 271px;"><nobr>Department of Computer Science &amp; Software Engineering </nobr></div>
+<div style="position: absolute; top: 358px; left: 366px;"><nobr>Auburn University AL  36849 </nobr></div>
+<div style="position: absolute; top: 375px; left: 414px;"><nobr>334.844-4330 </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 399px; left: 231px;"><nobr>{umphrda, crossjh, jainjhi, medanis, barowla}@auburn.edu </nobr></div>
+<div style="position: absolute; top: 451px; left: 81px;"><nobr><b>ABSTRACT</b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 471px; left: 81px;"><nobr>This paper describes efforts to use industry wireless software </nobr></div>
+<div style="position: absolute; top: 487px; left: 81px;"><nobr>development practices in the classroom.  Nokia's OK Java 2 </nobr></div>
+<div style="position: absolute; top: 503px; left: 81px;"><nobr>Platform Micro Edition (<b><span class="goohl0">J2ME</span></b>) application certification program </nobr></div>
+<div style="position: absolute; top: 519px; left: 81px;"><nobr>was chosen for use in a core set of wireless software engineering </nobr></div>
+<div style="position: absolute; top: 534px; left: 81px;"><nobr>courses.  The adaptation process included  1) modifying Nokia </nobr></div>
+<div style="position: absolute; top: 550px; left: 81px;"><nobr>OK application standards for classroom use as examples of what </nobr></div>
+<div style="position: absolute; top: 566px; left: 81px;"><nobr>is expected of industry-quality software; 2) incorporating Nokia </nobr></div>
+<div style="position: absolute; top: 582px; left: 81px;"><nobr>OK software development tools into a student-friendly software </nobr></div>
+<div style="position: absolute; top: 598px; left: 81px;"><nobr>development environment; and 3) implementing in-house Nokia </nobr></div>
+<div style="position: absolute; top: 614px; left: 81px;"><nobr>OK certification procedures as a basis for assessing student </nobr></div>
+<div style="position: absolute; top: 629px; left: 81px;"><nobr>projects and providing feedback.   </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 664px; left: 81px;"><nobr><b>Categories and Subject Descriptors</b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 685px; left: 81px;"><nobr>K.3.2 </nobr></div>
+<div style="position: absolute; top: 685px; left: 132px;"><nobr>[<b>Computer and  Information  Science Education</b>]:</nobr></div>
+<div style="position: absolute; top: 700px; left: 81px;"><nobr>Computer science education. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 735px; left: 81px;"><nobr><b>General Terms</b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 755px; left: 81px;"><nobr>Standardization, Verification. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 790px; left: 81px;"><nobr><b>Keywords</b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 810px; left: 81px;"><nobr><b><span class="goohl0">J2ME</span></b>,  Wireless  application  development,  Nokia  OK,  jGRASP, </nobr></div>
+<div style="position: absolute; top: 826px; left: 81px;"><nobr>Software engineering education </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 861px; left: 81px;"><nobr><b>1. INTRODUCTION </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 881px; left: 81px;"><nobr>Equipping  students  with  knowledge about  developing  software </nobr></div>
+<div style="position: absolute; top: 897px; left: 81px;"><nobr>for  wireless devices is problematic  in  today’s academic  arena. </nobr></div>
+<div style="position: absolute; top: 913px; left: 81px;"><nobr>Colleges teach students the principles of software development, </nobr></div>
+<div style="position: absolute; top: 929px; left: 81px;"><nobr>but that instruction is oriented mostly to conventional hardware </nobr></div>
+<div style="position: absolute; top: 944px; left: 81px;"><nobr>platforms.  Developing  software for  mobile  devices  requires </nobr></div>
+<div style="position: absolute; top: 960px; left: 81px;"><nobr>specific knowledge in working with hardware that is limited in </nobr></div>
+<div style="position: absolute; top: 976px; left: 81px;"><nobr>speed,  memory,  power,  and  <b><span class="goohl2">user</span></b> interfaces.  The  traditional </nobr></div>
+<div style="position: absolute; top: 992px; left: 81px;"><nobr>university curricula do not address these areas in any depth [9].</nobr></div>
+<div style="position: absolute; top: 1014px; left: 81px;"><nobr>We  have  augmented  our  conventional  computer  science  and </nobr></div>
+<div style="position: absolute; top: 1030px; left: 81px;"><nobr>software  engineering  education  by orienting  an  undergraduate </nobr></div>
+<div style="position: absolute; top: 1045px; left: 81px;"><nobr>degree to wireless devices.  We have found that course material </nobr></div>
+<div style="position: absolute; top: 1061px; left: 81px;"><nobr>on developing softare for wireless computers, including cellular </nobr></div>
+<div style="position: absolute; top: 1077px; left: 81px;"><nobr>phones, is readily available.  What is missing is the mechanism to </nobr></div>
+<div style="position: absolute; top: 1093px; left: 81px;"><nobr>expose students to real-world software issues encountered in the </nobr></div>
+<div style="position: absolute; top: 450px; left: 477px;"><nobr>wireless software industry. Without this exposure, we and our </nobr></div>
+<div style="position: absolute; top: 466px; left: 477px;"><nobr>students can  only guess as what  makes a  piece  of  software </nobr></div>
+<div style="position: absolute; top: 482px; left: 477px;"><nobr>“suitable,” especially since wireless software development is such </nobr></div>
+<div style="position: absolute; top: 497px; left: 477px;"><nobr>a recent innovation. </nobr></div>
+<div style="position: absolute; top: 522px; left: 477px;"><nobr>This  paper  explores  our  initial  efforts  in  a  two-year  project  to </nobr></div>
+<div style="position: absolute; top: 538px; left: 477px;"><nobr>apply to the classroom software development practices currently</nobr></div>
+<div style="position: absolute; top: 554px; left: 477px;"><nobr>being used by a sector of the wireless industry. In particular, we </nobr></div>
+<div style="position: absolute; top: 570px; left: 477px;"><nobr>describe our choice of industrial practices, how those practices are </nobr></div>
+<div style="position: absolute; top: 586px; left: 477px;"><nobr>being  adapted  to  the  curriculum,  and  results  of  applying  the </nobr></div>
+<div style="position: absolute; top: 602px; left: 477px;"><nobr>practices to test groups. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 636px; left: 477px;"><nobr><b>2. INDUSTRIAL PRACTICE AS A </b></nobr></div>
+<div style="position: absolute; top: 657px; left: 477px;"><nobr><b>CURRICULUM BUILDING BLOCK  </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 678px; left: 477px;"><nobr>In response to global trends in wireless communications, one of </nobr></div>
+<div style="position: absolute; top: 693px; left: 477px;"><nobr>the strategic goals of Auburn University is to prepare students for </nobr></div>
+<div style="position: absolute; top: 709px; left: 477px;"><nobr>meaningful careers in the wireless device industry. To this end, </nobr></div>
+<div style="position: absolute; top: 725px; left: 477px;"><nobr>the Department of Computer Science and Software Engineering </nobr></div>
+<div style="position: absolute; top: 741px; left: 477px;"><nobr>and  the  Department  of  Electrical  and  Computer  Engineering </nobr></div>
+<div style="position: absolute; top: 757px; left: 477px;"><nobr>established an undergraduate degree in Wireless Engineering [25].  </nobr></div>
+<div style="position: absolute; top: 773px; left: 477px;"><nobr>Students majoring in the degree program take a set of common </nobr></div>
+<div style="position: absolute; top: 788px; left: 477px;"><nobr>courses  related  to  wireless  technology,  and  then  specialize  in </nobr></div>
+<div style="position: absolute; top: 804px; left: 477px;"><nobr>wireless  hardware engineering or wireless software engineering </nobr></div>
+<div style="position: absolute; top: 820px; left: 477px;"><nobr>topics.   </nobr></div>
+<div style="position: absolute; top: 845px; left: 477px;"><nobr>The  courses  in  the  software  track  expose  students  to  a  wide </nobr></div>
+<div style="position: absolute; top: 861px; left: 477px;"><nobr>variety of  programming  languages, devices,  and  practices,  but </nobr></div>
+<div style="position: absolute; top: 877px; left: 477px;"><nobr>several core technologies comprise the primary building blocks of </nobr></div>
+<div style="position: absolute; top: 892px; left: 477px;"><nobr>the wireless curriculum.  These components are the foundational </nobr></div>
+<div style="position: absolute; top: 908px; left: 477px;"><nobr>technologies  for  articulating  key concepts  and  are  common </nobr></div>
+<div style="position: absolute; top: 924px; left: 477px;"><nobr>threads across the required courses in the major.   </nobr></div>
+<div style="position: absolute; top: 949px; left: 477px;"><nobr>Cellular phones are our first core building block.  The choice to </nobr></div>
+<div style="position: absolute; top: 965px; left: 477px;"><nobr>use cellular phones in a wireless curriculum is natural, given the </nobr></div>
+<div style="position: absolute; top: 981px; left: 477px;"><nobr>estimated 400 million phones in global use today and the growth </nobr></div>
+<div style="position: absolute; top: 996px; left: 477px;"><nobr>to 1 billion phones by 2003 [1]. This communication medium has </nobr></div>
+<div style="position: absolute; top: 1012px; left: 477px;"><nobr>become so pervasive that many developing countries now have a </nobr></div>
+<div style="position: absolute; top: 1028px; left: 477px;"><nobr>cellular communications infrastructure that are more reliable than </nobr></div>
+<div style="position: absolute; top: 1044px; left: 477px;"><nobr>their legacy land lines [8].</nobr></div>
+<div style="position: absolute; top: 1044px; left: 647px;"><nobr>In  developed  nations,  particularly</nobr></div>
+<div style="position: absolute; top: 1060px; left: 477px;"><nobr>among  students  and  young  professionals,  cellular  phones  are </nobr></div>
+<div style="position: absolute; top: 1076px; left: 477px;"><nobr>increasingly replacing traditional wired phones because they offer </nobr></div>
+<div style="position: absolute; top: 1091px; left: 477px;"><nobr>mobility, attractive calling rates, and, frequently, digital services </nobr></div>
+<div style="position: absolute; top: 1107px; left: 477px;"><nobr>such as messaging and Internet facilities [26]. </nobr></div>
+<div style="position: absolute; top: 1132px; left: 477px;"><nobr>The importance of software comes sharply into focus when these </nobr></div>
+<div style="position: absolute; top: 1148px; left: 477px;"><nobr>devices are viewed as nodes of a large digital network, with each </nobr></div>
+<div style="position: absolute; top: 1164px; left: 477px;"><nobr>node  having  varying  degrees  of  onboard  computation  power. </nobr></div>
+<div style="position: absolute; top: 1180px; left: 477px;"><nobr>Java,  with  its  cross-platform capabilities  and  support  for  small </nobr></div>
+<div style="position: absolute; top: 1196px; left: 477px;"><nobr>devices, makes it appealing for  applications running on  a  wide </nobr></div>
+<div style="position: absolute; top: 1211px; left: 477px;"><nobr>variety of cellular phone  hardware and operating systems [23]. </nobr></div>
+<div style="position: absolute; top: 1227px; left: 477px;"><nobr>Currently,  15  cellular  handset  manufacturers  (Casio,  Fujitsu, </nobr></div>
+</span></font>
+<font face="Times" size="2"><span style="font-size: 9px; font-family: Times;">
+<div style="position: absolute; top: 1128px; left: 79px;"><nobr>Permission  to make digital or hard copies of all or part of this work for</nobr></div>
+<div style="position: absolute; top: 1142px; left: 79px;"><nobr>personal or classroom use is granted without fee provided that copies are not </nobr></div>
+<div style="position: absolute; top: 1156px; left: 79px;"><nobr>made or distributed for profit or commercial advantage and that copies bear </nobr></div>
+<div style="position: absolute; top: 1170px; left: 79px;"><nobr>this  notice  and  the full citation on the first page. To copy otherwise, or</nobr></div>
+<div style="position: absolute; top: 1184px; left: 79px;"><nobr>republish, to post on servers or to redistribute to lists, requires prior specific </nobr></div>
+<div style="position: absolute; top: 1199px; left: 79px;"><nobr>permission and/or a fee.</nobr></div>
+<div style="position: absolute; top: 1213px; left: 79px;"><nobr><i>SIGCSE’04</i>, March 3–7, 2004, Norfolk, Virginia, USA.</nobr></div>
+<div style="position: absolute; top: 1227px; left: 79px;"><nobr>Copyright 2004 ACM 1-58113-798-2/04/0003…$5.00.</nobr></div>
+</span></font>
+
+<div style="position: absolute; top: 1363px; left: 0pt;"><hr><table border="0" width="100%"><tbody><tr><td align="right" bgcolor="#eeeeee"><font face="arial,sans-serif"><a name="2"><b>Page 2</b></a></font></td></tr></tbody></table></div><font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 1472px; left: 81px;"><nobr>Hitachi, LG, Panasonic, Mitsubishi, Motorola, NEC, Nokia, RIM, </nobr></div>
+<div style="position: absolute; top: 1487px; left: 81px;"><nobr>Samsung, Sharp, Siemens, Sony Ericsson and Toshiba [22]) offer </nobr></div>
+<div style="position: absolute; top: 1503px; left: 81px;"><nobr>33 models of phones enabled for Java 2 Platform Micro Edition </nobr></div>
+<div style="position: absolute; top: 1519px; left: 81px;"><nobr>(<b><span class="goohl0">J2ME</span></b>),  the  version  of  the  Java run-time  environment  that  is </nobr></div>
+<div style="position: absolute; top: 1535px; left: 81px;"><nobr>optimized  for  small  devices. </nobr></div>
+<div style="position: absolute; top: 1535px; left: 278px;"><nobr>Although  this  represents  a </nobr></div>
+<div style="position: absolute; top: 1551px; left: 81px;"><nobr>comparatively small  percentage  of  the  overall  cellular  phone </nobr></div>
+<div style="position: absolute; top: 1567px; left: 81px;"><nobr>market, 80% of phones are expected to support Java by 2006 [10]. </nobr></div>
+<div style="position: absolute; top: 1582px; left: 81px;"><nobr><b><span class="goohl0">J2ME</span></b>  is  seen  as  fueling  an  “aftermarket”  of  cellular  products, </nobr></div>
+<div style="position: absolute; top: 1598px; left: 81px;"><nobr>giving  people  the  ability to  add  capabilities  to  their  phones </nobr></div>
+<div style="position: absolute; top: 1614px; left: 81px;"><nobr>without  having  to  purchase  new  ones  [10].  Thus,  Java  is  our </nobr></div>
+<div style="position: absolute; top: 1630px; left: 81px;"><nobr>second building block. </nobr></div>
+<div style="position: absolute; top: 1655px; left: 81px;"><nobr>However enabling the synergy between on-phone computers and </nobr></div>
+<div style="position: absolute; top: 1671px; left: 81px;"><nobr>Java may be, it is not sufficient in itself to ensure high quality, </nobr></div>
+<div style="position: absolute; top: 1686px; left: 81px;"><nobr>secure,  usable  products.  Wireless  device  manufacturers  are </nobr></div>
+<div style="position: absolute; top: 1702px; left: 81px;"><nobr>turning  to  defined  software  development,  <b><span class="goohl2">user  </span></b><b><span class="goohl3">interface</span></b>,  and </nobr></div>
+<div style="position: absolute; top: 1718px; left: 81px;"><nobr><b><span class="goohl1">quality assurance</span></b> standards in an effort to control the quality of </nobr></div>
+<div style="position: absolute; top: 1734px; left: 81px;"><nobr>software loaded onto cellular phones at the time of their purchase </nobr></div>
+<div style="position: absolute; top: 1750px; left: 81px;"><nobr>or downloaded later as a capability upgrade [16], [11].    It is this </nobr></div>
+<div style="position: absolute; top: 1766px; left: 81px;"><nobr>aspect – software development practices – that comprises the third </nobr></div>
+<div style="position: absolute; top: 1782px; left: 81px;"><nobr>building  block  of  our  wireless  curriculum.  It  is  this  building </nobr></div>
+<div style="position: absolute; top: 1797px; left: 81px;"><nobr>block that we are drawing from industry to give our students a </nobr></div>
+<div style="position: absolute; top: 1813px; left: 81px;"><nobr>rounded exposure to real-world practice. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 1848px; left: 81px;"><nobr><b>3. WHAT WIRELESS INDUSTRY </b></nobr></div>
+<div style="position: absolute; top: 1869px; left: 81px;"><nobr><b>PRACTICES ARE AVAILABLE? </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 1889px; left: 81px;"><nobr>Motorola  [11],  Nokia  [19],  and  Ericsson  [21] have  established </nobr></div>
+<div style="position: absolute; top: 1905px; left: 81px;"><nobr>processes whereby <b><span class="goohl0">J2ME</span></b> third-party software is certified for use</nobr></div>
+<div style="position: absolute; top: 1921px; left: 81px;"><nobr>on their products.  Their certification programs are similar in that </nobr></div>
+<div style="position: absolute; top: 1937px; left: 81px;"><nobr>they define  standards  that  application  software  must  meet; </nobr></div>
+<div style="position: absolute; top: 1953px; left: 81px;"><nobr>application  programmer  <b><span class="goohl3">interface</span></b>  (API)  libraries and  tools</nobr></div>
+<div style="position: absolute; top: 1968px; left: 81px;"><nobr>approved  for  production  use;  and  procedures  by which  the </nobr></div>
+<div style="position: absolute; top: 1984px; left: 81px;"><nobr>application software is tested.  Once certified, software may bear </nobr></div>
+<div style="position: absolute; top: 2000px; left: 81px;"><nobr>a  signifying  logo  as  well as be listed on a registry of products </nobr></div>
+<div style="position: absolute; top: 2016px; left: 81px;"><nobr>sanctioned  as  “approved”  by</nobr></div>
+<div style="position: absolute; top: 2016px; left: 292px;"><nobr>the  respective  wireless </nobr></div>
+<div style="position: absolute; top: 2032px; left: 81px;"><nobr>manufacturer. </nobr></div>
+<div style="position: absolute; top: 2054px; left: 81px;"><nobr>The relevance of this to the academic world is that each of these </nobr></div>
+<div style="position: absolute; top: 2069px; left: 81px;"><nobr>companies has a publicly available set of guidelines for defining </nobr></div>
+<div style="position: absolute; top: 2085px; left: 81px;"><nobr>application software suitability.  The companies benefit by being </nobr></div>
+<div style="position: absolute; top: 2101px; left: 81px;"><nobr>able  to  vet  software  for  usability,  robustness,  functionality, </nobr></div>
+<div style="position: absolute; top: 2117px; left: 81px;"><nobr>performance, security, and installation.  We feel that universities </nobr></div>
+<div style="position: absolute; top: 2133px; left: 81px;"><nobr>can benefit from this effort by using the standards as  windows </nobr></div>
+<div style="position: absolute; top: 2149px; left: 81px;"><nobr>into what the industry considers to be “good” software. </nobr></div>
+<div style="position: absolute; top: 2171px; left: 81px;"><nobr>All  three  companies  announced  their  certification  programs </nobr></div>
+<div style="position: absolute; top: 2186px; left: 81px;"><nobr>within six months of each other in 2002.  Of the three, Ericsson’s </nobr></div>
+<div style="position: absolute; top: 2202px; left: 81px;"><nobr>appears to be the least mature.  It has the smallest web presence, </nobr></div>
+<div style="position: absolute; top: 2218px; left: 81px;"><nobr>and  details  of  application  standards  and  testing  processes  are </nobr></div>
+<div style="position: absolute; top: 2234px; left: 81px;"><nobr>sketchy. Motorola’s <i>Application Certification </i>and Nokia’s  <i>OK</i></nobr></div>
+<div style="position: absolute; top: 2250px; left: 81px;"><nobr>programs are roughly equivalent in rigor; however, Nokia has the </nobr></div>
+<div style="position: absolute; top: 2266px; left: 81px;"><nobr>edge  by offering  automated  testing  tools  as  well  as  a  more </nobr></div>
+<div style="position: absolute; top: 2281px; left: 81px;"><nobr>detailed testing process. </nobr></div>
+<div style="position: absolute; top: 2303px; left: 81px;"><nobr>The  Nokia  <i>OK </i>process  has  a  number  of  features  that  can  be </nobr></div>
+<div style="position: absolute; top: 2319px; left: 81px;"><nobr>cultivated for classroom adaptation.  First,  Nokia provides a) <b><span class="goohl2">user</span></b> </nobr></div>
+<div style="position: absolute; top: 2335px; left: 81px;"><nobr><b><span class="goohl3">interface</span></b>  style guides [12] which describe the look and feel of </nobr></div>
+<div style="position: absolute; top: 2351px; left: 81px;"><nobr>applications  running  on  various  handset  models;  b)  a  <b><span class="goohl0">J2ME</span></b> </nobr></div>
+<div style="position: absolute; top: 2367px; left: 81px;"><nobr>application  requirements  description  [13] which  defines </nobr></div>
+<div style="position: absolute; top: 2382px; left: 81px;"><nobr>restrictions  on  application  information  content,  performance </nobr></div>
+<div style="position: absolute; top: 2398px; left: 81px;"><nobr>latency, operation sequencing, usability, security, and installation; </nobr></div>
+<div style="position: absolute; top: 2414px; left: 81px;"><nobr>and  c)  standards  for  cellular  phone  games  [14] describing </nobr></div>
+<div style="position: absolute; top: 1472px; left: 477px;"><nobr>requirements  on  content,  menu  operations,  scoring,  sound, </nobr></div>
+<div style="position: absolute; top: 1487px; left: 477px;"><nobr>robustness, usability, and installation.  Second, it provides APIs, </nobr></div>
+<div style="position: absolute; top: 1503px; left: 477px;"><nobr>emulators,  and  testing  gremlins  for  handsets  supporting  <b><span class="goohl0">J2ME</span></b> </nobr></div>
+<div style="position: absolute; top: 1519px; left: 477px;"><nobr>[15],  [18].  Third,  it  provides  a  test  process  framework  for </nobr></div>
+<div style="position: absolute; top: 1535px; left: 477px;"><nobr>certifying application suitability [17]. </nobr></div>
+<div style="position: absolute; top: 1557px; left: 477px;"><nobr>Since the announcement of the Nokia OK program in mid-2002, </nobr></div>
+<div style="position: absolute; top: 1573px; left: 477px;"><nobr>over 150 <b><span class="goohl0">J2ME</span></b> applications have been submitted for certification. </nobr></div>
+<div style="position: absolute; top: 1588px; left: 477px;"><nobr>Of  those,  less  than  a  third  been  certified.  Inability to  satisfy</nobr></div>
+<div style="position: absolute; top: 1604px; left: 477px;"><nobr>usability criteria  is  the  most  common  reason  for  not  being </nobr></div>
+<div style="position: absolute; top: 1620px; left: 477px;"><nobr>certified  [16].  Nokia points to 93% of submitted applications </nobr></div>
+<div style="position: absolute; top: 1636px; left: 477px;"><nobr>failing certification tests, with many requiring up to three re-tests, </nobr></div>
+<div style="position: absolute; top: 1652px; left: 477px;"><nobr>as  an  indicator  of  the  success  of  the  program's  ability to </nobr></div>
+<div style="position: absolute; top: 1668px; left: 477px;"><nobr>effectively scrutinize  software  [6].</nobr></div>
+<div style="position: absolute; top: 1668px; left: 691px;"><nobr>In  forming  its  application </nobr></div>
+<div style="position: absolute; top: 1684px; left: 477px;"><nobr>certification program, it is taking advantage of the success from </nobr></div>
+<div style="position: absolute; top: 1699px; left: 477px;"><nobr>other sectors, such as the Information Technology community in </nobr></div>
+<div style="position: absolute; top: 1715px; left: 477px;"><nobr>which  certification  tests  have  shown  a  10-fold  increase  in </nobr></div>
+<div style="position: absolute; top: 1731px; left: 477px;"><nobr>reliability over time [24], and the software safety community in </nobr></div>
+<div style="position: absolute; top: 1747px; left: 477px;"><nobr>which certification tests are mandatory and must be successfully</nobr></div>
+<div style="position: absolute; top: 1763px; left: 477px;"><nobr>passed  before  software  can  even  be  used  in  a  production </nobr></div>
+<div style="position: absolute; top: 1779px; left: 477px;"><nobr>environment.  While cell phone software does not deal with life-</nobr></div>
+<div style="position: absolute; top: 1794px; left: 477px;"><nobr>critical  issues,  many of <b><span class="goohl0">J2ME</span></b> cell phone applications originate </nobr></div>
+<div style="position: absolute; top: 1810px; left: 477px;"><nobr>from individuals and small businesses that may not have software </nobr></div>
+<div style="position: absolute; top: 1826px; left: 477px;"><nobr>development  processes  which  assure  products  of  consistent </nobr></div>
+<div style="position: absolute; top: 1842px; left: 477px;"><nobr>quality.  Nokia's certification efforts model industry leaders that </nobr></div>
+<div style="position: absolute; top: 1858px; left: 477px;"><nobr>have  similar  software  development  populations  –  Palm, </nobr></div>
+<div style="position: absolute; top: 1874px; left: 477px;"><nobr>Handspring, and BlackBerry [20] – and which rely on third-party</nobr></div>
+<div style="position: absolute; top: 1889px; left: 477px;"><nobr>certification to enforce minimum standards of usability.   </nobr></div>
+<div style="position: absolute; top: 1911px; left: 477px;"><nobr>Postings  on  Nokia’s  “Developer’s  Discussion  Board” </nobr></div>
+<div style="position: absolute; top: 1927px; left: 477px;"><nobr>(http://nkn.forum.nokia.com) and Slashdot (http://slashdot.org) by</nobr></div>
+<div style="position: absolute; top: 1943px; left: 477px;"><nobr>in-the-trench software developers give  a qualitative insight into </nobr></div>
+<div style="position: absolute; top: 1959px; left: 477px;"><nobr>the  program's success. Nokia's content  policies that  prevent </nobr></div>
+<div style="position: absolute; top: 1975px; left: 477px;"><nobr>cellular phone game software from depicting violence and adult </nobr></div>
+<div style="position: absolute; top: 1990px; left: 477px;"><nobr>themes is viewed as positive; all the developers that indicated that </nobr></div>
+<div style="position: absolute; top: 2006px; left: 477px;"><nobr>they had undergone the certification tests felt that they paid more </nobr></div>
+<div style="position: absolute; top: 2022px; left: 477px;"><nobr>attention to the quality of their software than had they not been </nobr></div>
+<div style="position: absolute; top: 2038px; left: 477px;"><nobr>faced with certification. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 2069px; left: 477px;"><nobr><b>4. OUR APPROACH </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 2090px; left: 477px;"><nobr>We have taken a three-prong approach to adapting the <i>Nokia OK </i></nobr></div>
+<div style="position: absolute; top: 2106px; left: 477px;"><nobr>certification  concept  into  the  software  engineering  courses</nobr></div>
+<div style="position: absolute; top: 2122px; left: 477px;"><nobr>required of our Wireless  Engineering majors:  standards, tools, </nobr></div>
+<div style="position: absolute; top: 2137px; left: 477px;"><nobr>and certification. </nobr></div>
+<div style="position: absolute; top: 2160px; left: 477px;"><nobr>1.</nobr></div>
+<div style="position: absolute; top: 2160px; left: 504px;"><nobr><b>Standards</b>:  Adapt  Nokia  OK  application  standards  for </nobr></div>
+<div style="position: absolute; top: 2175px; left: 504px;"><nobr>classroom use as examples of what is expected of industry-</nobr></div>
+<div style="position: absolute; top: 2191px; left: 504px;"><nobr>quality software. </nobr></div>
+<div style="position: absolute; top: 2213px; left: 477px;"><nobr>2.</nobr></div>
+<div style="position: absolute; top: 2213px; left: 504px;"><nobr><b>Tools</b>:  Incorporate  Nokia  OK  software  development  and </nobr></div>
+<div style="position: absolute; top: 2229px; left: 504px;"><nobr>emulation tools into a student-friendly software development </nobr></div>
+<div style="position: absolute; top: 2245px; left: 504px;"><nobr>environment. </nobr></div>
+<div style="position: absolute; top: 2267px; left: 477px;"><nobr>3.</nobr></div>
+<div style="position: absolute; top: 2267px; left: 504px;"><nobr><b>Certification</b>:   Implement in-house Nokia OK certification </nobr></div>
+<div style="position: absolute; top: 2283px; left: 504px;"><nobr>procedures as a  basis for  assessing  student  projects  and </nobr></div>
+<div style="position: absolute; top: 2299px; left: 504px;"><nobr>providing feedback. </nobr></div>
+<div style="position: absolute; top: 2321px; left: 477px;"><nobr>Our  long  range  goal  is  to  introduce  industry practices </nobr></div>
+<div style="position: absolute; top: 2337px; left: 477px;"><nobr>incrementally across four courses, COMP 1210 (Foundations of </nobr></div>
+<div style="position: absolute; top: 2352px; left: 477px;"><nobr>Computing  I),  COMP  2210  (Foundations  of  Computing  II), </nobr></div>
+<div style="position: absolute; top: 2368px; left: 477px;"><nobr>COMP  3710  (Embedded  Systems  Development),  and  COMP </nobr></div>
+<div style="position: absolute; top: 2384px; left: 477px;"><nobr>4710 (Senior Design Project), as shown in Figure 1.  COMP 1210 </nobr></div>
+<div style="position: absolute; top: 2400px; left: 477px;"><nobr>and  2210  are  introductory software development  courses  using </nobr></div>
+<div style="position: absolute; top: 2416px; left: 477px;"><nobr>Java.  Using the development and emulation environment, we  </nobr></div>
+</span></font>
+
+<div style="position: absolute; top: 2551px; left: 0pt;"><hr><table border="0" width="100%"><tbody><tr><td align="right" bgcolor="#eeeeee"><font face="arial,sans-serif"><a name="3"><b>Page 3</b></a></font></td></tr></tbody></table></div><font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 2682px; left: 332px;"><nobr>Freshman </nobr></div>
+<div style="position: absolute; top: 2682px; left: 462px;"><nobr>Sophomore</nobr></div>
+<div style="position: absolute; top: 2682px; left: 599px;"><nobr>Junior </nobr></div>
+<div style="position: absolute; top: 2682px; left: 720px;"><nobr>Senior </nobr></div>
+<div style="position: absolute; top: 2700px; left: 340px;"><nobr><b>Intro to </b></nobr></div>
+<div style="position: absolute; top: 2718px; left: 326px;"><nobr><b>Computing </b></nobr></div>
+<div style="position: absolute; top: 2735px; left: 327px;"><nobr><b>using Java </b></nobr></div>
+<div style="position: absolute; top: 2700px; left: 485px;"><nobr><b>Data </b></nobr></div>
+<div style="position: absolute; top: 2718px; left: 463px;"><nobr><b>Structures </b></nobr></div>
+<div style="position: absolute; top: 2735px; left: 462px;"><nobr><b>using Java </b></nobr></div>
+<div style="position: absolute; top: 2700px; left: 581px;"><nobr><b>Embedded </b></nobr></div>
+<div style="position: absolute; top: 2718px; left: 589px;"><nobr><b>Systems </b></nobr></div>
+<div style="position: absolute; top: 2735px; left: 595px;"><nobr><b>Design </b></nobr></div>
+<div style="position: absolute; top: 2700px; left: 708px;"><nobr><b>Capstone </b></nobr></div>
+<div style="position: absolute; top: 2718px; left: 717px;"><nobr><b>Design </b></nobr></div>
+<div style="position: absolute; top: 2735px; left: 717px;"><nobr><b>Project </b></nobr></div>
+<div style="position: absolute; top: 2753px; left: 327px;"><nobr>COMP1210 </nobr></div>
+<div style="position: absolute; top: 2752px; left: 429px;"><nobr>→</nobr></div>
+<div style="position: absolute; top: 2753px; left: 466px;"><nobr>COMP221</nobr></div>
+<div style="position: absolute; top: 2770px; left: 497px;"><nobr>0 </nobr></div>
+<div style="position: absolute; top: 2752px; left: 556px;"><nobr>→ COMP3710  → COMP4710 </nobr></div>
+<div style="position: absolute; top: 2787px; left: 148px;"><nobr>Standards </nobr></div>
+<div style="position: absolute; top: 2787px; left: 497px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2787px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2806px; left: 165px;"><nobr>UI </nobr></div>
+<div style="position: absolute; top: 2805px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2805px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2824px; left: 165px;"><nobr>Usability </nobr></div>
+<div style="position: absolute; top: 2824px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2824px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2842px; left: 165px;"><nobr>Performance </nobr></div>
+<div style="position: absolute; top: 2842px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2842px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2861px; left: 165px;"><nobr>Security </nobr></div>
+<div style="position: absolute; top: 2860px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2860px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2879px; left: 165px;"><nobr>Functionality </nobr></div>
+<div style="position: absolute; top: 2879px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2879px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2897px; left: 165px;"><nobr>Installation </nobr></div>
+<div style="position: absolute; top: 2897px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2916px; left: 148px;"><nobr>Tools </nobr></div>
+<div style="position: absolute; top: 2933px; left: 165px;"><nobr>Editor/compiler </nobr></div>
+<div style="position: absolute; top: 2933px; left: 362px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2933px; left: 497px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2933px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2933px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2951px; left: 165px;"><nobr>Emulator </nobr></div>
+<div style="position: absolute; top: 2951px; left: 362px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2951px; left: 497px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2951px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2951px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2970px; left: 165px;"><nobr>Handset </nobr></div>
+<div style="position: absolute; top: 2969px; left: 615px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2969px; left: 738px;"><nobr>√</nobr></div>
+<div style="position: absolute; top: 2968px; left: 124px;"><nobr>Wireless industry aspects </nobr></div>
+<div style="position: absolute; top: 2988px; left: 148px;"><nobr>Application certification </nobr></div>
+<div style="position: absolute; top: 2988px; left: 738px;"><nobr>√</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 3008px; left: 89px;"><nobr><b>Figure
+1. This is the sequence of software engineering courses in the Wireless
+Engineering software track that take advantage of </b></nobr></div>
+<div style="position: absolute; top: 3023px; left: 89px;"><nobr><b>the
+Nokia OK material. The wireless aspects play an introductory role at
+the end of the first two courses, and a more prominent </b></nobr></div>
+<div style="position: absolute; top: 3039px; left: 382px;"><nobr><b>role in the last two courses </b></nobr></div>
+<div style="position: absolute; top: 3563px; left: 262px;"><nobr><b>Figure 2.  Testing a <b><span class="goohl0">J2ME</span></b> MIDlet on a DefaultColorPhone emulator </b></nobr></div>
+<div style="position: absolute; top: 3584px; left: 81px;"><nobr>introduce students to the notion that Java is platform independent </nobr></div>
+<div style="position: absolute; top: 3600px; left: 81px;"><nobr>by illustrating  application  development  with  <b><span class="goohl0">J2ME</span></b>  in  COMP </nobr></div>
+<div style="position: absolute; top: 3584px; left: 477px;"><nobr>1210. </nobr></div>
+<div style="position: absolute; top: 3584px; left: 528px;"><nobr>In  COMP  2210,  students  construct  a  rudimentary</nobr></div>
+<div style="position: absolute; top: 3600px; left: 477px;"><nobr>application that adheres to the <b><span class="goohl2">user </span></b><b><span class="goohl3">interface</span></b> standards. COMP</nobr></div>
+</span></font>
+
+<div style="position: absolute; top: 3739px; left: 0pt;"><hr><table border="0" width="100%"><tbody><tr><td align="right" bgcolor="#eeeeee"><font face="arial,sans-serif"><a name="4"><b>Page 4</b></a></font></td></tr></tbody></table></div><font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 3848px; left: 81px;"><nobr>3710 addresses system-level aspects of wireless devices.  Here </nobr></div>
+<div style="position: absolute; top: 3863px; left: 81px;"><nobr>students use  <b><span class="goohl2">user </span></b><b><span class="goohl3">interface</span></b>, performance, and security standards</nobr></div>
+<div style="position: absolute; top: 3879px; left: 81px;"><nobr>and  the development environment  to create applications.  They</nobr></div>
+<div style="position: absolute; top: 3895px; left: 81px;"><nobr>first test their software using the emulator environment, and then </nobr></div>
+<div style="position: absolute; top: 3911px; left: 81px;"><nobr>test their software with actual hardware.  COMP 4710 is the point </nobr></div>
+<div style="position: absolute; top: 3927px; left: 81px;"><nobr>at  which  students  demonstrate  their  ability to  integrate  the </nobr></div>
+<div style="position: absolute; top: 3943px; left: 81px;"><nobr>knowledge  they gained across previous coursework.  Here they</nobr></div>
+<div style="position: absolute; top: 3958px; left: 81px;"><nobr>develop  an  application  for  an actual customer.  Their software </nobr></div>
+<div style="position: absolute; top: 3974px; left: 81px;"><nobr>must  adhere  to  the  full  complement  of  standards;  they use  the </nobr></div>
+<div style="position: absolute; top: 3990px; left: 81px;"><nobr>wireless  development  tools;  and  their  software  is  evaluated </nobr></div>
+<div style="position: absolute; top: 4006px; left: 81px;"><nobr>internally using the certification process. </nobr></div>
+<div style="position: absolute; top: 4028px; left: 81px;"><nobr>To date, we have adapted the standards, prototyped a functional </nobr></div>
+<div style="position: absolute; top: 4044px; left: 81px;"><nobr>software development environment, and drafted the certification </nobr></div>
+<div style="position: absolute; top: 4060px; left: 81px;"><nobr>process.  The certification process is still under review and has </nobr></div>
+<div style="position: absolute; top: 4075px; left: 81px;"><nobr>not been used.  The group of volunteer students pilot-tested the </nobr></div>
+<div style="position: absolute; top: 4091px; left: 81px;"><nobr>standards and tool while developing a <b><span class="goohl0">J2ME</span></b> implementation of an </nobr></div>
+<div style="position: absolute; top: 4107px; left: 81px;"><nobr>arcade game for cell phones.  They provided valuable feedback </nobr></div>
+<div style="position: absolute; top: 4123px; left: 81px;"><nobr>regarding usability and usefulness of our efforts, validating in a </nobr></div>
+<div style="position: absolute; top: 4139px; left: 81px;"><nobr>limited  sense  the  role  of  industry practices  in  the  classroom. </nobr></div>
+<div style="position: absolute; top: 4155px; left: 81px;"><nobr>Their assessment of the standards and tools was sufficient enough </nobr></div>
+<div style="position: absolute; top: 4170px; left: 81px;"><nobr>to take the project to the next milestone:  releasing the material on </nobr></div>
+<div style="position: absolute; top: 4186px; left: 81px;"><nobr>an  evaluative  basis to  the  mainstream software  engineering </nobr></div>
+<div style="position: absolute; top: 4202px; left: 81px;"><nobr>courses.</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 4234px; left: 81px;"><nobr><b>4.1 Adapting Nokia OK standards to the </b></nobr></div>
+<div style="position: absolute; top: 4255px; left: 81px;"><nobr><b>classroom </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 4275px; left: 81px;"><nobr>The documents below have  been  incorporated into a single lab </nobr></div>
+<div style="position: absolute; top: 4291px; left: 81px;"><nobr>manual  which  describes  our  expectations of  the  character  and </nobr></div>
+<div style="position: absolute; top: 4307px; left: 81px;"><nobr>quality of student application software. </nobr></div>
+<div style="position: absolute; top: 4328px; left: 103px;"><nobr>− Nokia OK MIDP Application Requirements </nobr></div>
+<div style="position: absolute; top: 4345px; left: 103px;"><nobr>− Nokia OK MIDP Application Requirements for Games </nobr></div>
+<div style="position: absolute; top: 4362px; left: 103px;"><nobr>− Developer Check List for <b><span class="goohl0">J2ME</span></b> Applications </nobr></div>
+<div style="position: absolute; top: 4379px; left: 103px;"><nobr>− Nokia Series 60 UI Style Guide </nobr></div>
+<div style="position: absolute; top: 4402px; left: 81px;"><nobr>References to procedures that are unique to working directly with </nobr></div>
+<div style="position: absolute; top: 4418px; left: 81px;"><nobr>Nokia have been removed (although, of course, Nokia has been </nobr></div>
+<div style="position: absolute; top: 4434px; left: 81px;"><nobr>fully acknowledged  as  the  information  source).  Duplication </nobr></div>
+<div style="position: absolute; top: 4449px; left: 81px;"><nobr>among the standards has been eliminated, and explanations added </nobr></div>
+<div style="position: absolute; top: 4465px; left: 81px;"><nobr>to  standards  that  are  unclear  to  a  non-Nokia  audience.  The </nobr></div>
+<div style="position: absolute; top: 4481px; left: 81px;"><nobr>resulting lab manual articulate standards on <b><span class="goohl2">user </span></b><b><span class="goohl3">interface</span></b> look </nobr></div>
+<div style="position: absolute; top: 4497px; left: 81px;"><nobr>and  feel,  human-computer  interaction  guidelines,  security</nobr></div>
+<div style="position: absolute; top: 4513px; left: 81px;"><nobr>requirements,  reliability guidelines,  performance  requirements, </nobr></div>
+<div style="position: absolute; top: 4529px; left: 81px;"><nobr>content restrictions, installation packaging. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 4554px; left: 81px;"><nobr><b>4.2 Implement Nokia tools into a student-</b></nobr></div>
+<div style="position: absolute; top: 4575px; left: 81px;"><nobr><b>friendly environment </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 4596px; left: 81px;"><nobr>Although we wish our students to have an exposure to real-world </nobr></div>
+<div style="position: absolute; top: 4611px; left: 81px;"><nobr>standards, we recognize that we have an obligation to make sure </nobr></div>
+<div style="position: absolute; top: 4627px; left: 81px;"><nobr>that  experience  is  presented  in  a  pedagogically-sound  fashion. </nobr></div>
+<div style="position: absolute; top: 4643px; left: 81px;"><nobr>We use a particular software development environment, jGRASP, </nobr></div>
+<div style="position: absolute; top: 4659px; left: 81px;"><nobr>across our  computer  science,  software  engineering,  and,  now, </nobr></div>
+<div style="position: absolute; top: 4675px; left: 81px;"><nobr>wireless engineering, programs.  jGRASP has been demonstrated </nobr></div>
+<div style="position: absolute; top: 4691px; left: 81px;"><nobr>to  be  an  effective  tool  for  teaching  [4] and  learning  [7], as</nobr></div>
+<div style="position: absolute; top: 4707px; left: 81px;"><nobr>indicated by its current <b><span class="goohl2">user</span></b> base and its inclusion in a number of </nobr></div>
+<div style="position: absolute; top: 4722px; left: 81px;"><nobr>Java  text  books.  As  jGRASP  is  the  intellectual  property of </nobr></div>
+<div style="position: absolute; top: 4738px; left: 81px;"><nobr>Auburn University, we have the ability to tightly integrate other </nobr></div>
+<div style="position: absolute; top: 4754px; left: 81px;"><nobr>tools into it.  Incorporating wireless software libraries, tools, and </nobr></div>
+<div style="position: absolute; top: 4770px; left: 81px;"><nobr>emulators into jGRASP gives our students the ability to develop </nobr></div>
+<div style="position: absolute; top: 4786px; left: 81px;"><nobr>cellular  phone  applications  without  having  to  learn  another </nobr></div>
+<div style="position: absolute; top: 4802px; left: 81px;"><nobr>development environment.  jGRASP is available at no cost to the </nobr></div>
+<div style="position: absolute; top: 3848px; left: 477px;"><nobr>software development community at large [see www.jgrasp.org]; </nobr></div>
+<div style="position: absolute; top: 3863px; left: 477px;"><nobr>the added benefit of this approach is that other educators can take </nobr></div>
+<div style="position: absolute; top: 3879px; left: 477px;"><nobr>immediate advantage of our work. </nobr></div>
+<div style="position: absolute; top: 3901px; left: 477px;"><nobr>We recognize that several <b><span class="goohl0">J2ME</span></b> development environments are </nobr></div>
+<div style="position: absolute; top: 3917px; left: 477px;"><nobr>available.  The primary disadvantage to them is that they were not </nobr></div>
+<div style="position: absolute; top: 3933px; left: 477px;"><nobr>intended for educational use, but rather as professional software </nobr></div>
+<div style="position: absolute; top: 3949px; left: 477px;"><nobr>development  tools,  which  require a  substantial  investment  in </nobr></div>
+<div style="position: absolute; top: 3964px; left: 477px;"><nobr>training time.  jGRASP, in addition to requiring very little time to </nobr></div>
+<div style="position: absolute; top: 3980px; left: 477px;"><nobr>learn, has a number of proven pedagogical features built into it, </nobr></div>
+<div style="position: absolute; top: 3996px; left: 477px;"><nobr>including  (1)  reverse  engineering  of  UML  class  diagrams  and </nobr></div>
+<div style="position: absolute; top: 4012px; left: 477px;"><nobr>dependency relationships  from  source  code  [2]; (2)  tight </nobr></div>
+<div style="position: absolute; top: 4028px; left: 477px;"><nobr>integration with a visual debugger for explicating source code [5];</nobr></div>
+<div style="position: absolute; top: 4044px; left: 477px;"><nobr>and (3) automatic annotation of  source code control constructs, </nobr></div>
+<div style="position: absolute; top: 4060px; left: 477px;"><nobr>control paths, and overall program structure [3];.   The latter has </nobr></div>
+<div style="position: absolute; top: 4075px; left: 477px;"><nobr>been  shown  empirically to  improve  the  comprehensibility of </nobr></div>
+<div style="position: absolute; top: 4091px; left: 477px;"><nobr>source code [7]. In short, jGRASP is a lightweight tool that is </nobr></div>
+<div style="position: absolute; top: 4107px; left: 477px;"><nobr>rich in features needed to assist students in engineering software </nobr></div>
+<div style="position: absolute; top: 4123px; left: 477px;"><nobr>while,  at  the  same time,  being  unencumbered  by unnecessary</nobr></div>
+<div style="position: absolute; top: 4139px; left: 477px;"><nobr>features required by large-scale professional development. </nobr></div>
+<div style="position: absolute; top: 4161px; left: 477px;"><nobr>At this point, we have integrated on a prototype basis the Nokia </nobr></div>
+<div style="position: absolute; top: 4176px; left: 477px;"><nobr>handset  Mobile  Information  Device  Profiles  (MIDP),  <b><span class="goohl0">J2ME</span></b> </nobr></div>
+<div style="position: absolute; top: 4192px; left: 477px;"><nobr>compiler,  class  libraries,  virtual  machine  (KVM),  phone  APIs, </nobr></div>
+<div style="position: absolute; top: 4208px; left: 477px;"><nobr>and phone emulators into jGRASP.  Figure 2 shows a screenshot </nobr></div>
+<div style="position: absolute; top: 4224px; left: 477px;"><nobr>of the prototype <b><span class="goohl0">J2ME</span></b> after having launched the phone emulator. </nobr></div>
+<div style="position: absolute; top: 4240px; left: 477px;"><nobr>The  environment  is  awkward  to configure,  and  lacks  full </nobr></div>
+<div style="position: absolute; top: 4256px; left: 477px;"><nobr>integration of test gremlins; but, results to date demonstrate the </nobr></div>
+<div style="position: absolute; top: 4271px; left: 477px;"><nobr>feasibility of  supporting  <b><span class="goohl0">J2ME</span></b>.  One  of  the  most  important </nobr></div>
+<div style="position: absolute; top: 4287px; left: 477px;"><nobr>lessons  learned  from the  pilot-test  group  was  the  necessity of </nobr></div>
+<div style="position: absolute; top: 4303px; left: 477px;"><nobr>integrating into jGRASP the logistics of <b><span class="goohl0">J2ME</span></b> development that </nobr></div>
+<div style="position: absolute; top: 4319px; left: 477px;"><nobr>differs from traditional desktop Java development, such as byte-</nobr></div>
+<div style="position: absolute; top: 4335px; left: 477px;"><nobr>code verification and JAR manifest support.  </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 4360px; left: 477px;"><nobr><b>4.3 Implementing a Nokia-like certification </b></nobr></div>
+<div style="position: absolute; top: 4381px; left: 477px;"><nobr><b>process </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 4402px; left: 477px;"><nobr>The third facet of our project – and only in a very rough draft </nobr></div>
+<div style="position: absolute; top: 4418px; left: 477px;"><nobr>state at this stage – is the adaptation of certification portion of the </nobr></div>
+<div style="position: absolute; top: 4433px; left: 477px;"><nobr>Nokia OK concept.  The actual Nokia OK process has third-party</nobr></div>
+<div style="position: absolute; top: 4449px; left: 477px;"><nobr>vendors  submitting  software  to  Nokia,  which,  in  turn,  has  an </nobr></div>
+<div style="position: absolute; top: 4465px; left: 477px;"><nobr>independent  laboratory test  the  software  for  conformance  to </nobr></div>
+<div style="position: absolute; top: 4481px; left: 477px;"><nobr>standards.  We plan to implement this process in the small  for </nobr></div>
+<div style="position: absolute; top: 4497px; left: 477px;"><nobr>capstone  design  projects  built  in COMP  4710.  Senior  design </nobr></div>
+<div style="position: absolute; top: 4513px; left: 477px;"><nobr>teams  will  submit  their  applications  to  a  graduate  students </nobr></div>
+<div style="position: absolute; top: 4529px; left: 477px;"><nobr>working for the Center for Innovations in Mobile Pervasive Agile </nobr></div>
+<div style="position: absolute; top: 4544px; left: 477px;"><nobr>Computing Technologies (IMPACT), an Auburn University Peak </nobr></div>
+<div style="position: absolute; top: 4560px; left: 477px;"><nobr>of  Excellence  program  dedicated  to  conducting  research  on </nobr></div>
+<div style="position: absolute; top: 4576px; left: 477px;"><nobr>ubiquitous computers.  Working under the mentorship of a faculty</nobr></div>
+<div style="position: absolute; top: 4592px; left: 477px;"><nobr>member,  this  group  will  follow  the  Nokia  process  to  test  the </nobr></div>
+<div style="position: absolute; top: 4608px; left: 477px;"><nobr>software and determine its certifiability.  No senior design team</nobr></div>
+<div style="position: absolute; top: 4624px; left: 477px;"><nobr>will be allowed to consider its project complete until it has been </nobr></div>
+<div style="position: absolute; top: 4639px; left: 477px;"><nobr>certified.  </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 4671px; left: 477px;"><nobr><b>5. NEXT STEPS </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 4691px; left: 477px;"><nobr>The  outcomes  we  anticipate  will come from adapting an actual </nobr></div>
+<div style="position: absolute; top: 4707px; left: 477px;"><nobr>industry best practice for the classroom are  1)  students  will  be </nobr></div>
+<div style="position: absolute; top: 4723px; left: 477px;"><nobr>immersed  in  a  technology similar  to  what  they are  likely to </nobr></div>
+<div style="position: absolute; top: 4739px; left: 477px;"><nobr>encounter  in  their  first  years  of  work;  2)  wireless  industry</nobr></div>
+<div style="position: absolute; top: 4755px; left: 477px;"><nobr>standards  will  be  examined  for  suitability by a  non-expert </nobr></div>
+<div style="position: absolute; top: 4771px; left: 477px;"><nobr>audience; 3) <b><span class="goohl0">J2ME</span></b> development capabilities will be incorporated </nobr></div>
+<div style="position: absolute; top: 4786px; left: 477px;"><nobr>into a pedagogically-sound software tool; 4) an industry testing </nobr></div>
+<div style="position: absolute; top: 4802px; left: 477px;"><nobr>process will be introduced in an academic setting; and 5) evidence </nobr></div>
+</span></font>
+
+<div style="position: absolute; top: 4927px; left: 0pt;"><hr><table border="0" width="100%"><tbody><tr><td align="right" bgcolor="#eeeeee"><font face="arial,sans-serif"><a name="5"><b>Page 5</b></a></font></td></tr></tbody></table></div><font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5036px; left: 81px;"><nobr>of  the  effectiveness  of  using  wireless  industry practices  in  the </nobr></div>
+<div style="position: absolute; top: 5051px; left: 81px;"><nobr>classroom. </nobr></div>
+<div style="position: absolute; top: 5076px; left: 81px;"><nobr>Continued refinement of the Nokia OK concept for classroom use </nobr></div>
+<div style="position: absolute; top: 5092px; left: 81px;"><nobr>is clearly needed.  While this work has shown promising results in </nobr></div>
+<div style="position: absolute; top: 5108px; left: 81px;"><nobr>its feasibility stages, it is crucial that the adaptation be evaluated </nobr></div>
+<div style="position: absolute; top: 5124px; left: 81px;"><nobr>in the classroom as a matter of ordinary business.   </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 5158px; left: 81px;"><nobr><b>6. ACKNOWLEDGMENTS </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5179px; left: 81px;"><nobr>This  research  was  supported  in  part  by the  National  Science </nobr></div>
+<div style="position: absolute; top: 5195px; left: 81px;"><nobr>Foundation (NSF 0311339) </nobr></div>
+<div style="position: absolute; top: 5219px; left: 81px;"><nobr>The authors also wish to thank the senior capstone design team – </nobr></div>
+<div style="position: absolute; top: 5235px; left: 81px;"><nobr>Justin  Smith,  Shairylann  Lisonbee,  and  Jonathan  Russell  –  for </nobr></div>
+<div style="position: absolute; top: 5251px; left: 81px;"><nobr>their invaluable student's insight into <b><span class="goohl0">J2ME</span></b> development. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 16px; font-family: Times;">
+<div style="position: absolute; top: 5285px; left: 81px;"><nobr><b>7. REFERENCES </b></nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5306px; left: 81px;"><nobr>[1]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5307px; left: 108px;"><nobr>Cellular Phone News.  Untitled.  </nobr></div>
+<div style="position: absolute; top: 5323px; left: 108px;"><nobr>http://www.cellularphonenews.com/ ebook/overview.html.  </nobr></div>
+<div style="position: absolute; top: 5339px; left: 108px;"><nobr>Nov 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5361px; left: 81px;"><nobr>[2]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5363px; left: 108px;"><nobr>Cross, J. H. and L. A. Barowski, "Extraction and Use of </nobr></div>
+<div style="position: absolute; top: 5378px; left: 108px;"><nobr>Class Dependency Information for Java," Proceedings of the </nobr></div>
+<div style="position: absolute; top: 5394px; left: 108px;"><nobr>9th Working Conference on Reverse Engineering, </nobr></div>
+<div style="position: absolute; top: 5410px; left: 108px;"><nobr>Richmond, VA, October 28 - November 1, 2002, 309-315. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5432px; left: 81px;"><nobr>[3]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5433px; left: 108px;"><nobr>Cross, J. H., S. Maghsoodloo, and T. D. Hendrix. "Control </nobr></div>
+<div style="position: absolute; top: 5449px; left: 108px;"><nobr>Structure Diagrams: Overview and Evaluation," Journal of </nobr></div>
+<div style="position: absolute; top: 5465px; left: 108px;"><nobr>Empirical Software Engineering, Vol. 3, No. 2, 1998, 131-</nobr></div>
+<div style="position: absolute; top: 5481px; left: 108px;"><nobr>158. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5503px; left: 81px;"><nobr>[4]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5504px; left: 108px;"><nobr>Cross, J. H., T. Dean Hendrix, and Larry A. Barowski, </nobr></div>
+<div style="position: absolute; top: 5520px; left: 108px;"><nobr>"Debugging [in] CS1," Proceedings of 2001 ACM Southeast </nobr></div>
+<div style="position: absolute; top: 5536px; left: 108px;"><nobr>Conference, Athens, GA, March 16-17, 2001. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5558px; left: 81px;"><nobr>[5]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5559px; left: 108px;"><nobr>Cross, J. H.,  T. D. Hendrix, and L. A. Barowski. "Using the </nobr></div>
+<div style="position: absolute; top: 5575px; left: 108px;"><nobr>Debugger as an Integral Part of Teaching CS1," Proceedings </nobr></div>
+<div style="position: absolute; top: 5591px; left: 108px;"><nobr>of Frontiers in Education 2002, November 5-9, 2001, F1G-1 </nobr></div>
+<div style="position: absolute; top: 5607px; left: 108px;"><nobr>- F1G-6. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5629px; left: 81px;"><nobr>[6]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5630px; left: 108px;"><nobr>Helin, R.Nokia OK Program Manager. E-mail </nobr></div>
+<div style="position: absolute; top: 5646px; left: 108px;"><nobr>correspondence. 4 December 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5668px; left: 81px;"><nobr>[7]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5670px; left: 108px;"><nobr>Hendrix, T. D., J. H. Cross, S. Maghsoodloo, and K. H. </nobr></div>
+<div style="position: absolute; top: 5685px; left: 108px;"><nobr>Chang.  "Empirically Evaluating Scaleable Software </nobr></div>
+<div style="position: absolute; top: 5701px; left: 108px;"><nobr>Visualizations: An Experimental Framework," IEEE </nobr></div>
+<div style="position: absolute; top: 5717px; left: 108px;"><nobr>Transactions on Software Engineering, Vol. 28, No. 5, May</nobr></div>
+<div style="position: absolute; top: 5733px; left: 108px;"><nobr>2002, 463-477. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5755px; left: 81px;"><nobr>[8]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5756px; left: 108px;"><nobr>International Telecommunication Union.  World </nobr></div>
+<div style="position: absolute; top: 5772px; left: 108px;"><nobr>Telecommunication Development Report.  </nobr></div>
+<div style="position: absolute; top: 5788px; left: 108px;"><nobr>http://www.itu.int/newsarchive/wtdc2002/ </nobr></div>
+<div style="position: absolute; top: 5804px; left: 108px;"><nobr>backgrounder.html.  Nov 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5826px; left: 81px;"><nobr>[9]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5827px; left: 108px;"><nobr>Kiely, D. 2001.  Wanted:  Programmers for Handheld </nobr></div>
+<div style="position: absolute; top: 5843px; left: 108px;"><nobr>Devices.  IEEE Computer 34, 5 (May 2001), 12-14 </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5036px; left: 477px;"><nobr>[10]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5037px; left: 504px;"><nobr>Lawton, G.  Moving Java into mobile phones.  IEEE </nobr></div>
+<div style="position: absolute; top: 5053px; left: 504px;"><nobr>Computer, Vol. 35, Number 6, June 2002, pp. 17-20. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5075px; left: 477px;"><nobr>[11]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5076px; left: 504px;"><nobr>Motorola.  "Motorola Application Certification Program".  </nobr></div>
+<div style="position: absolute; top: 5092px; left: 504px;"><nobr>Version R1.3A.  Available from http://qpqa.com.  Nov 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5114px; left: 477px;"><nobr>[12]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5116px; left: 504px;"><nobr>Nokia.  The Nokia Series 60 Games Style Guide.  Accessible </nobr></div>
+<div style="position: absolute; top: 5131px; left: 504px;"><nobr>from http://forum.nokia.com/main.  Nov. 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5153px; left: 477px;"><nobr>[13]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5155px; left: 504px;"><nobr>Nokia. Nokia OK MIDP Application Requirements v1.1.  </nobr></div>
+<div style="position: absolute; top: 5171px; left: 504px;"><nobr>Accessible from http://forum.nokia.com/main.  Nov. 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5193px; left: 477px;"><nobr>[14]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5194px; left: 504px;"><nobr>Nokia. Nokia OK MIDP Application Requirements for </nobr></div>
+<div style="position: absolute; top: 5210px; left: 504px;"><nobr>Games v1.2.  Accessible from http://forum.nokia.com/main. </nobr></div>
+<div style="position: absolute; top: 5226px; left: 504px;"><nobr>Nov. 2002 </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5248px; left: 477px;"><nobr>[15]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5249px; left: 504px;"><nobr>Nokia.  Nokia Software Development Tools.  </nobr></div>
+<div style="position: absolute; top: 5265px; left: 504px;"><nobr>http://forum.nokia.com/main.   Nov. 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5287px; left: 477px;"><nobr>[16]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5288px; left: 504px;"><nobr>Nokia.  How to Get the 'Nokia OK' on Your Mobile </nobr></div>
+<div style="position: absolute; top: 5304px; left: 504px;"><nobr>Application. Nokia Developer Channel.  </nobr></div>
+<div style="position: absolute; top: 5320px; left: 504px;"><nobr>http://portals.devx.com/Nokia/Article/6729.  Nov. 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5342px; left: 477px;"><nobr>[17]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5343px; left: 504px;"><nobr>Nokia.  Nokia OK Terminal Software Application Process </nobr></div>
+<div style="position: absolute; top: 5359px; left: 504px;"><nobr>Flowchart.  http://forum.nokia.com/main.  Nov. 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5381px; left: 477px;"><nobr>[18]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5383px; left: 504px;"><nobr>Nokia.  Nokia Testing Suite.  Accessible from </nobr></div>
+<div style="position: absolute; top: 5399px; left: 504px;"><nobr>http://forum.nokia.com/main.  Nov. 2002 </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5421px; left: 477px;"><nobr>[19]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5422px; left: 504px;"><nobr>Nokia.  Nokia OK Concept.  http://forum.nokia.com/main.  </nobr></div>
+<div style="position: absolute; top: 5438px; left: 504px;"><nobr>Nov 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5460px; left: 477px;"><nobr>[20]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5461px; left: 504px;"><nobr>Quality Partners.  Custom Compliance Programs.  </nobr></div>
+<div style="position: absolute; top: 5477px; left: 504px;"><nobr>http://qpqa.com/qpspecial.htm. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5499px; left: 477px;"><nobr>[21]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5500px; left: 504px;"><nobr>Sony Ericsson.  Sony Ericsson to deliver tools and services </nobr></div>
+<div style="position: absolute; top: 5516px; left: 504px;"><nobr>to wireless developers with Metrowerks.  Press Release.  </nobr></div>
+<div style="position: absolute; top: 5532px; left: 504px;"><nobr>http://www.sonyericsson.com/spg.jsp?page=gis&amp;Redir=page</nobr></div>
+<div style="position: absolute; top: 5548px; left: 504px;"><nobr>%3DC2_1_26%26B%3Dns.  18 March 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5570px; left: 477px;"><nobr>[22]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5571px; left: 504px;"><nobr>Sun Microsystems.  " First Understand Your Market."   </nobr></div>
+<div style="position: absolute; top: 5587px; left: 504px;"><nobr>http://wireless.java.sun.com/deploy/market.html.  Nov 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5609px; left: 477px;"><nobr>[23]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5611px; left: 504px;"><nobr>Sun Microsystems.  JavaTM 2 Platform, Micro Edition </nobr></div>
+<div style="position: absolute; top: 5626px; left: 504px;"><nobr>(J2METM)http://java.sun.com/<b><span class="goohl0">j2me</span></b>.  Nov 2002. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5648px; left: 477px;"><nobr>[24]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5650px; left: 504px;"><nobr>Wakid, S., D. Kuhn, and D. Wallace.  Toward Credible IT </nobr></div>
+<div style="position: absolute; top: 5666px; left: 504px;"><nobr>Testing and Certification.  IEEE Software, 16, 4, pp. 39-47.  </nobr></div>
+<div style="position: absolute; top: 5682px; left: 504px;"><nobr>July/August 1999.   </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5704px; left: 477px;"><nobr>[25]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5705px; left: 504px;"><nobr>WEREC.  Wireless Engineering Research And Education </nobr></div>
+<div style="position: absolute; top: 5721px; left: 504px;"><nobr>Center (WEREC) Whitepaper.  2001.  College of </nobr></div>
+<div style="position: absolute; top: 5737px; left: 504px;"><nobr>Engineering, Auburn University. </nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 13px; font-family: Times;">
+<div style="position: absolute; top: 5759px; left: 477px;"><nobr>[26]</nobr></div>
+</span></font>
+<font face="Times" size="3"><span style="font-size: 11px; font-family: Times;">
+<div style="position: absolute; top: 5760px; left: 504px;"><nobr>Wireless Mobile Phone Search.  “Cell phone vs land lines.”  </nobr></div>
+<div style="position: absolute; top: 5776px; left: 504px;"><nobr>http://www.wireless-mobile-phone-search.com/ </nobr></div>
+<div style="position: absolute; top: 5792px; left: 504px;"><nobr>cell_vs_wireless.htm.  Nov. 2002.</nobr></div>
+</span></font>
+
+</body></html>

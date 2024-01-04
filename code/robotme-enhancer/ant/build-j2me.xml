@@ -1,0 +1,154 @@
+<project name="J2ME compilation/ preverification" default="_empty" basedir="..">
+
+	<!-- Compile J2ME source code -->
+	<target name="compile.j2me" depends="wtk.check" description="Compiles J2ME source code.">
+
+		<fail unless="j2me.classes" />
+
+		<property name="j2me.bytecode.compatibility" value="1.1" />
+		<property name="j2me.source.compatibility" value="1.3" />
+
+		<fail unless="j2me.example.src" />
+		<fail unless="j2me.core.src" />
+
+		<copy failonerror="true" includeemptydirs="true" todir="${j2me.classes}" encoding="UTF-8">
+			<fileset dir="${j2me.example.src}">
+				<exclude name="**/*.java" />
+				<exclude name="**/_svn/**" />
+				<exclude name="**/.svn/**" />
+				<exclude name="**/*.ucd" />
+				<exclude name="**/*.uml" />
+			</fileset>
+			<fileset dir="${j2me.core.src}">
+				<exclude name="**/*.java" />
+				<exclude name="**/_svn/**" />
+				<exclude name="**/.svn/**" />
+				<exclude name="**/*.ucd" />
+				<exclude name="**/*.uml" />
+			</fileset>
+		</copy>
+
+		<copy failonerror="true" includeemptydirs="true" todir="${j2me.all.src}" encoding="UTF-8">
+			<fileset dir="${j2me.example.src}">
+				<include name="**/*.java" />
+			</fileset>
+			<fileset dir="${j2me.core.src}">
+				<include name="**/*.java" />
+			</fileset>
+		</copy>
+
+		<javac debug="true" optimize="false" srcdir="${j2me.all.src}" destdir="${j2me.classes}" encoding="UTF-8" source="${j2me.source.compatibility}" target="${j2me.bytecode.compatibility}">
+			<bootclasspath refid="j2me.bootclasspath" />
+			<classpath refid="j2me.classpath" />
+		</javac>
+
+	</target>
+
+	<target name="run.wtk" description="Runs the currently deployed JAR using WTK.">
+		<fail unless="jad.location" />
+
+		<exec executable="${wtk.home}/bin/emulator" failonerror="true" vmlauncher="false">
+			<arg value="-Xdevice:DefaultColorPhone" />
+			<arg value="-Xdescriptor:${jad.location}" />
+			<arg value="-Xheapsize:8M" />
+		</exec>
+	</target>
+
+	<target name="wtk.check">
+		<fail unless="wtk.home" />
+
+		<!-- Define named paths -->
+		<path id="j2me.bootclasspath" description="J2ME container boot classpath.">
+			<fileset dir="${wtk.home}">
+				<include name="lib/cldcapi10.jar" />
+				<include name="lib/midpapi20.jar" />
+				<include name="lib/jsr082.jar" />
+				<include name="lib/wma11.jar" />
+			</fileset>
+		</path>
+	</target>
+
+	<!-- Preverify J2ME classes (used internally) -->
+	<target name="preverify" depends="wtk.check">
+		<fail unless="j2me.classes" />
+		<fail unless="j2me.preverified" />
+		
+		<mkdir dir="${j2me.preverified}" />
+
+		<pathconvert targetos="windows" property="tmp.classpath">
+			<path refid="j2me.bootclasspath" />
+		</pathconvert>
+
+		<delete dir="${j2me.preverified}" failonerror="false" />
+
+		<echo>Preverifying...</echo>
+		<exec executable="${wtk.home}/bin/preverify" failonerror="true" vmlauncher="false">
+			<arg value="-classpath" />
+			<arg path="${tmp.classpath}" />
+			<arg value="-d" />
+			<arg file="${j2me.preverified}" />
+			<arg value="-target" />
+			<arg value="CLDC1.0" />
+			<arg line="-nofinalize -nonative -nofp" />
+			<arg file="${j2me.obfuscated}" />
+		</exec>
+
+		<!-- copy resources: -->
+		<copy todir="${j2me.preverified}" includeEmptyDirs="false">
+			<fileset dir="${j2me.classes}">
+				<exclude name="**/*.class" />
+				<exclude name="*.class" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<!-- Obfuscate J2ME classes (used internally) -->
+	<target name="obfuscate">
+		<mkdir dir="${j2me.obfuscated}" />
+		
+		<pathconvert dirsep="${file.separator}" pathsep="${path.separator}" property="tmp.classpath">
+            <path refid="j2me.bootclasspath" />
+        </pathconvert>
+
+	    <taskdef name="proguard" classname="com.dawidweiss.ant.AltProguardTask" loaderref="proguardloader">
+			<classpath>
+				<fileset dir="lib" includes="proguard*.jar" />
+			</classpath>
+	    </taskdef>
+		<proguard>
+            <!--
+            # this option reduces size of jar ( at 4KB ) but it was not tested
+            # -overloadaggressively 
+        	-->
+            -libraryjars ${tmp.classpath}
+
+            -injars      ${j2me.classes}
+            -outjars     ${j2me.obfuscated}
+
+            -dontnote
+            -defaultpackage ''
+
+            -dontusemixedcaseclassnames
+
+            -allowaccessmodification
+    
+            -printusage tmp/proguard-deadcode.txt
+            -printmapping tmp/proguard-mapping.txt
+
+			-keep public class * extends javax.microedition.midlet.MIDlet
+			-keep class org.robotme.** { * ; }
+
+            # Enable/ disable optimizations
+            # -dontoptimize
+            
+                       
+            # These are class merging options
+            # -movestatic
+        </proguard>
+	</target>
+
+	<!-- One and only target that does nothing -->
+	<target name="_empty">
+		<fail>Not to be used separately.</fail>
+	</target>
+</project>

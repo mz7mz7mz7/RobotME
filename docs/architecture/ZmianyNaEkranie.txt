@@ -1,0 +1,20 @@
+Zmiany w obiektach typow dziedziczacych po javax.microedition.lcdui.Screen (czyli: Alert, Form, List, TextBox )
+bedziemy sprawdzac po kazdej wykonanej przez uzytkownika akcji (Command) i nastepnie nagrywac roznice od tego
+co bylo od ostatniej akcji (albo od ukazania sie tego obiektu na ekranie).
+W etapie odgrywania kazda taka zmiane bedziemy aplikowac na polach obiektu, zanim zasymulujemy wykonanie kolejnej
+akcji (Command) przez uzytkownika.
+
+W obiekcie typu 'Form' mamy mozliwosc podpiecia sie pod metode Form#setItemStateListener(ItemStateListener). Jesli
+zdecydujemy sie jej uzyc to musimy to zrobic w taki sposob aby nie nadpisac ewentualnego ItemStateListener'a
+ustawionego przez samego programiste w danym MIDletcie.
+
+ItemStateListener jest informowany o nastepujacych zmianach (za JavaDoc'em) :
+- changes the set of selected values in a ChoiceGroup; 
+- adjusts the value of an interactive Gauge; 
+- enters or modifies the value in a TextField; 
+- enters a new date or time in a DateField; and 
+- Item.notifyStateChanged() was called on an Item. 
+
+(It is up to the device to decide when it considers a new value to have been entered into an Item. For example,
+ implementations of text editing within a TextField vary greatly from device to device.)
+
