@@ -16,7 +16,7 @@
 <a href="/files/AutomatedGUITestingOfMobileJavaApplications.pdf">Thesis: "Automated GUI Testing of Mobile Java Applications"</a><br/>
 <a href="http://www.cs.put.poznan.pl/dweiss/site/publications/slides/robotme-idss.pdf">Presentation: "Capture-Replay Tests in J2ME"</a><br/>
 
-<br/>Contact with: <a href="mailto:mzduniak@j2me.pl">mzduniak@j2me.pl</a>
+<br/>Contact with: <a href="mailto:marcin@zduniak.com">marcin@zduniak.com</a>
 
 </center>
 </BODY>
